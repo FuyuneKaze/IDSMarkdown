@@ -7,7 +7,7 @@
 > - 已知问题见 §「已知问题」，下一步计划见 §「进度与计划」；
 > - 只有确信能跑通的部分才写在这里 —— 没写的就是没做。
 
-用 **KAGE 笔画数据** 把一个 IDS（Ideographic Description Sequence，如 `⿴囗人`）
+用 **KAGE 笔画数据** 把一个 IDS（Ideographic Description Sequence，如 `⿴代物`）
 合成为一个字形，并提供 Markdown 编辑器做所见即所得的预览。
 
 本项目的重点是**组字的几何求解**：不依赖从字体里学习放置，而是从**容器自身的墨迹**
@@ -16,7 +16,7 @@
 ## 目录
 
 ```
-web/                     编辑器 (Vite + React 19 + TypeScript)
+web/                     编辑器 (Vite + React 19 + TypeScript)，vibe的
   src/editor/
     kageEngine.ts        KAGE 字形树展开 / IDS → 复合字形 / SVG 渲染
     strokeOutline.ts     笔画中心线采样 → 轮廓 → 单笔包围盒  (对应 scripts/stroke_outer.py)
@@ -25,7 +25,7 @@ web/                     编辑器 (Vite + React 19 + TypeScript)
     compose.ts           包围结构的合成流程                (对应 scripts/ids_anal.surround)
     glyphSource.ts       字形数据来源: bundle → 缓存 → GlyphWiki API
   public/data/           词典表 (Unihan 派生, 见 THIRD-PARTY.md §3)
-scripts/                 算法的 Python 实验实现 (与 web 端同一套语义)
+scripts/                 算法的 Python 实验实现，核心算法基本上是人写的 (与 web 端同一套语义)
 web/analysis/            对拍 / 评分 / 诊断脚本, 以及 DATA_LAYER.md (数据层契约)
 ```
 
