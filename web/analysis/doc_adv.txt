@@ -1,0 +1,130 @@
+ 
+ GlyphWiki:高度な活用方法 - GlyphWiki 
+ 导航 首页 
+ 最近更新的页面 
+ 帮助 教程 
+ 常见问题 
+ 报告漏洞 
+ 通知 
+ 讨论区 
+ 网站地图 
+ 搜索 
+ 工具箱 RSS 
+ 此版本的永久链接 
+ IDS编辑器 
+ 其他语言 English 
+ 日本語 
+ 한국어 
+ 繁体中文 
+ 登录或注册帐户 
+ 文章 讨论 编辑 历史 
+ GlyphWiki:高度な活用方法
+ 字形维基(GlyphWiki), 自由的字形数据库 
+ 目录
+ 全グリフデータの取得について 
+ 個別のグリフをJSON/JSONP形式で取得する 
+ 【試行】API専用URLの設定とアクセス許可 
+ 【試行】関連グリフ一括取得API 
+ ウェブフォントとして呼び出す 
+ グループページとして登録した場合 
+ グリフ1文字として呼び出す場合 
+ サンプル 
+ <head>を操作できない場合 
+ １字フォントの場合（例：sandbox） 
+ グループページの場合（例：Group:ウェブフォント） 
+ 関連情報：「花園明朝」をWord上で漢字のみにフォントを適用する 
+ 日本語 English 简体中文 繁體中文 
+このページに書かれた内容は、上級者向けです。
+ 全グリフデータの取得について
+グリフウィキに投稿された全グリフデータは、1日ごとに1つのファイルにまとめられた上で公開されています。URLは以下となります。
+ https://glyphwiki.org/dump.tar.gz 
+このアーカイブファイルには2つのデータファイル(dump_newest_only.txt および dump_all_versions.txt)が含まれます。それぞれ1行ごとにグリフ名、関連字、グリフデータの並びで記述されています。dump_newest_only.txtに含まれるのは最新バージョンのみのデータです。dump_all_versions.txtに含まれるのは各グリフのすべてのバージョンのデータです。ただしいずれも有効なデータのみ含まれます。
+このデータは、KAGE/engineを用いて漢字字形に変換して活用することが可能です。
+ GlyphWiki:KAGEデータ仕様 
+GitHubリポジトリ https://github.com/kamichikoichi/kage-engine 
+ 個別のグリフをJSON/JSONP形式で取得する
+以下のURL記述により個別のグリフをJSON/JSONP形式で取得できます。
+ http://glyphwiki.org/json?name=[グリフ名]{@[バージョン番号]}{&callback=[コールバック関数名]}
+ http://glyphwiki.org/json?name=u4e00 
+ http://glyphwiki.org/json?name=u4e00@2 
+ http://glyphwiki.org/json?name=u4e00&callback=callback 
+取得データの内容は以下の通りです。
+ name グリフ名 
+ version バージョン番号 
+ related 関連字(U+[符号位置]) 
+ data KAGEデータ 
+なお、無効なグリフ名の場合には空のオブジェクトが返ります。無効なバージョン指定の場合、dataとrelatedにはnullが入ります。コールバック関数形式の場合は関数名を指定してください。先頭はアンダースコアか英字、それ以降はアンダースコアか英数字を指定してください。無効な場合はcallbackとなります。
+ 【試行】API専用URLの設定とアクセス許可
+以下のURL記述については、「Access-Control-Allow-Origin」を「"*"」に設定しています。今後、上記URLから以下に移行予定です。
+ https://glyphwiki.org/api/glyph?name=[グリフ名]{@[バージョン番号]}{&callback=[コールバック関数名]}
+ https://glyphwiki.org/api/glyph?name=u4e00 
+ https://glyphwiki.org/api/glyph?name=u4e00@2 
+ https://glyphwiki.org/api/glyph?name=u4e00&callback=callback 
+（「json」を「glyph」に変更しました）
+（HTTP通信の場合は non-ssl.glyphwiki.orgをお使いください）
+ 【試行】関連グリフ一括取得API
+ https://glyphwiki.org/api/related?code=[符号位置]}{&callback=[コールバック関数名]}
+ https://glyphwiki.org/api/related?code=4e00 
+ https://glyphwiki.org/api/related?code=4e00&callback=callback 
+（HTTP通信の場合は non-ssl.glyphwiki.orgをお使いください）
+符号位置は大文字小文字関係なく16進数4桁または5桁を指定します。戻り値は"related"で、グリフ群ごとに「,」で区切られ、エイリアスグリフは2つ目以降に「=」区切りで列挙されます（JSONらしくない数珠繋ぎになります）。グリフページの「関連グリフ」における指定した符号位置の「関連字」に並ぶグリフ群のグリフ名が得られます。
+ ウェブフォントとして呼び出す
+グループとして登録したものや、登録したグリフ1字をウェブフォント（@font-face）として呼び出すことができます。閲覧ブラウザがウェブフォントに対応している必要があります。
+ グループページとして登録した場合
+先に、グループページを開いてフォントが生成済みであることを確認してください。
+HTMLの<head>内に以下を記述してください。
+ <link rel="stylesheet" type="text/css" href="http://glyphwiki.org/style?page=(ページ名)&label=(任意のラベル)">
+たとえば以下のようになります。ページはバージョン付にも対応しています。ラベルは英数字60字以内です。ラベルを付けなかった場合は「glyphwiki」というラベルになります。
+ <link rel="stylesheet" type="text/css" href="http://glyphwiki.org/style?page=Group:ウェブフォント&label=webfont">
+ <link rel="stylesheet" type="text/css" href="http://glyphwiki.org/style?page=Group:ウェブフォント@1&label=webfont">
+ <link rel="stylesheet" type="text/css" href="http://glyphwiki.org/style?page=Group:ウェブフォント">
+上記1行を記述すると、実際には以下のように解釈されます（一番目の例）。
+ @font-face {
+ font-family: webfont;
+ src: url(http://glyphwiki.org/font/gw465758.ttf);
+ }
+ .webfont {
+ font-family: webfont;
+ }
+あとは、<span class="webfont">■</span> の形式でフォントを使うことができます。または直接スタイルで「style="font-family: webfont;"」と指定できます。
+ラベルを書き分けることによって複数のグループページのフォントを呼び出すことができます。
+ グリフ1文字として呼び出す場合
+HTMLの<head>内に以下を記述してください。
+ <link rel="stylesheet" type="text/css" href="http://glyphwiki.org/style?glyph=(グリフ名)">
+たとえば以下のようになります。
+ <link rel="stylesheet" type="text/css" href="http://glyphwiki.org/style?glyph=sandbox">
+グリフ1文字の場合はバージョンを指定することはできません。また、「〓」にそのグリフが割り当てられていますので、その文字を使いたい部分に以下を記述します。ラベルはグリフ名となります。
+ <span class="sandbox">〓</span>
+ サンプル
+ 使用サンプル をご覧ください。
+またグリフウィキのドキュメントページでは簡単にウェブフォントを利用できるようになっています（現在試行中）。詳細は GlyphWiki:フォント生成 をご覧ください。
+ <head>を操作できない場合
+ブログなど<head>内に記述ができない場合、もし<script>の記述が許可されているならばGoogle Font APIを活用することができます。以下のように記述すれば同じようにグリフウィキの文字を呼び出すことができます。
+ １字フォントの場合（例：sandbox）
+ <script type="text/javascript">
+ WebFontConfig = { custom: { urls: ['http://glyphwiki.org/style?glyph=sandbox'] } };
+ </script>
+ <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" type="text/javascript"></script>
+文字の出し方は<link>の場合と同じです。
+ <span class="sandbox">〓</span>
+ グループページの場合（例：Group:ウェブフォント）
+ <script type="text/javascript">
+ WebFontConfig = { custom: { urls: ['http://glyphwiki.org/style?page=Group:ウェブフォント'] } };
+ </script>
+ <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" type="text/javascript"></script>
+文字の出し方は<link>の場合と同じです。
+ <span class="glyphwiki">雨</span>
+classを指定したい場合は
+ WebFontConfig = { custom: { urls: ['http://glyphwiki.org/style?page=Group:ウェブフォント&label=(任意のラベル)'] } };
+とし、呼び出すときは
+ <span class="(任意のラベル)">雨</span>
+となります。
+ 関連情報：「花園明朝」をWord上で漢字のみにフォントを適用する
+ GlyphWiki:replaceNonBMPinWord をご覧ください。
+最后修订于2025年8月30日(星期六) 18:27.
+ 著作权与许可协议 
+ 隐私政策 
+ 关于字形维基 
+ 免责声明 
+ 网页总结
+ 

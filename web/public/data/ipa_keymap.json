@@ -1,0 +1,1263 @@
+{
+  "chars": {
+    "ae ipa": [
+      230
+    ],
+    "a script": [
+      593
+    ],
+    "a script nasalized": [
+      593,
+      771
+    ],
+    "v upside": [
+      652
+    ],
+    "a upside": [
+      592
+    ],
+    "schwa": [
+      601
+    ],
+    "schwa rhotic": [
+      602
+    ],
+    "schwa upside": [
+      600
+    ],
+    "schwa closed": [
+      629
+    ],
+    "epsilon ipa": [
+      603
+    ],
+    "epsilon nasalized": [
+      603,
+      771
+    ],
+    "epsilon flipped": [
+      604
+    ],
+    "epsilon flipped rhotic": [
+      605
+    ],
+    "epsilon flipped closed": [
+      606
+    ],
+    "I small": [
+      618
+    ],
+    "schwi": [
+      618,
+      776
+    ],
+    "i barred": [
+      616
+    ],
+    "a script upside": [
+      594
+    ],
+    "o open": [
+      596
+    ],
+    "o open nasalized": [
+      596,
+      771
+    ],
+    "o stroke ipa": [
+      248
+    ],
+    "oe ipa": [
+      339
+    ],
+    "OE small": [
+      630
+    ],
+    "rams horns": [
+      612
+    ],
+    "u horseshoe": [
+      650
+    ],
+    "u barred": [
+      649
+    ],
+    "beta ipa": [
+      946
+    ],
+    "b hook": [
+      595
+    ],
+    "B small": [
+      665
+    ],
+    "c cedil ipa": [
+      231
+    ],
+    "c loop": [
+      597
+    ],
+    "eth ipa": [
+      240
+    ],
+    "dzh": [
+      100,
+      865,
+      658
+    ],
+    "d hook high": [
+      599
+    ],
+    "d hook low": [
+      598
+    ],
+    "g hook": [
+      608
+    ],
+    "G small": [
+      610
+    ],
+    "G small hook": [
+      667
+    ],
+    "g script": [
+      609
+    ],
+    "h hook": [
+      614
+    ],
+    "h low hook": [
+      615
+    ],
+    "h barred": [
+      295
+    ],
+    "h upside": [
+      613
+    ],
+    "H small": [
+      668
+    ],
+    "j loop": [
+      669
+    ],
+    "j barred": [
+      607
+    ],
+    "j mirrored": [
+      644
+    ],
+    "l wave": [
+      619
+    ],
+    "l loop": [
+      620
+    ],
+    "l long": [
+      621
+    ],
+    "lzh": [
+      622
+    ],
+    "L small": [
+      671
+    ],
+    "m hook": [
+      625
+    ],
+    "ng": [
+      331
+    ],
+    "n hook left": [
+      626
+    ],
+    "n hook right": [
+      627
+    ],
+    "N small": [
+      628
+    ],
+    "phi ipa": [
+      632
+    ],
+    "r upside": [
+      633
+    ],
+    "r upside long": [
+      634
+    ],
+    "r tap": [
+      638
+    ],
+    "r upside hook": [
+      635
+    ],
+    "r hook": [
+      637
+    ],
+    "R small": [
+      640
+    ],
+    "R small upside": [
+      641
+    ],
+    "sh": [
+      643
+    ],
+    "s hook": [
+      642
+    ],
+    "theta ipa": [
+      952
+    ],
+    "tsh": [
+      116,
+      865,
+      643
+    ],
+    "ts": [
+      116,
+      865,
+      115
+    ],
+    "t long": [
+      648
+    ],
+    "v smooth": [
+      651
+    ],
+    "v hook": [
+      11377
+    ],
+    "w upside": [
+      653
+    ],
+    "u extra bowl": [
+      623
+    ],
+    "u extra bowl hook": [
+      624
+    ],
+    "chi ipa": [
+      967
+    ],
+    "Y small": [
+      655
+    ],
+    "y upside": [
+      654
+    ],
+    "gamma ipa": [
+      611
+    ],
+    "zh": [
+      658
+    ],
+    "z loop": [
+      657
+    ],
+    "z hook": [
+      656
+    ],
+    "dental click": [
+      448
+    ],
+    "palatal click": [
+      450
+    ],
+    "lateral click": [
+      449
+    ],
+    "bilabial click": [
+      664
+    ],
+    "(post-)alveolar click": [
+      451
+    ],
+    "glottal stop": [
+      660
+    ],
+    "glottal stop barred": [
+      673
+    ],
+    "glottal stop flipped": [
+      661
+    ],
+    "glottal stop flipped barred": [
+      674
+    ],
+    "primary stress": [
+      712
+    ],
+    "secondary stress": [
+      716
+    ],
+    "length mark": [
+      720
+    ],
+    "half length mark": [
+      721
+    ],
+    "extra short": [
+      774
+    ],
+    "minor group": [
+      124
+    ],
+    "major group": [
+      8214
+    ],
+    "linking": [
+      8255
+    ],
+    "tie bar upper": [
+      865
+    ],
+    "tie bar lower": [
+      860
+    ],
+    "r superscript": [
+      691
+    ],
+    "aspirated": [
+      688
+    ],
+    "palatalized": [
+      690
+    ],
+    "velarized": [
+      736
+    ],
+    "pharyngealized": [
+      740
+    ],
+    "stoed": [
+      704
+    ],
+    "nasal release": [
+      8319
+    ],
+    "lateral release": [
+      737
+    ],
+    "breathy-voice aspirated": [
+      689
+    ],
+    "lip compression": [
+      7517
+    ],
+    "ejective": [
+      700
+    ],
+    "rhotacized": [
+      734
+    ],
+    "labialized": [
+      695
+    ],
+    "centralized": [
+      776
+    ],
+    "nasalized": [
+      771
+    ],
+    "voiceless": [
+      805
+    ],
+    "voiceless high": [
+      778
+    ],
+    "voiced": [
+      812
+    ],
+    "syllabic": [
+      809
+    ],
+    "schwa superscript": [
+      7498
+    ],
+    "t superscript": [
+      7511
+    ],
+    "velarized or pharyngealized": [
+      820
+    ],
+    "raised": [
+      797
+    ],
+    "lowered": [
+      798
+    ],
+    "advanced": [
+      799
+    ],
+    "retracted": [
+      800
+    ],
+    "dental": [
+      810
+    ],
+    "apical": [
+      826
+    ],
+    "not audibly released": [
+      794
+    ],
+    "more rounded": [
+      825
+    ],
+    "less rounded": [
+      796
+    ],
+    "mid-centralized": [
+      829
+    ],
+    "non-syllabic": [
+      815
+    ],
+    "non-syllabic high": [
+      785
+    ],
+    "breathy voiced": [
+      804
+    ],
+    "creaky voiced": [
+      816
+    ],
+    "linguolabial": [
+      828
+    ],
+    "advanced tongue root": [
+      792
+    ],
+    "retracted tongue root": [
+      793
+    ],
+    "laminal": [
+      827
+    ],
+    "dentolabial": [
+      838
+    ],
+    "labioalveolar": [
+      839
+    ],
+    "nasal fricative": [
+      843
+    ],
+    "velopharyngeal friction": [
+      844
+    ],
+    "denasal": [
+      842
+    ],
+    "labial spreading": [
+      845
+    ],
+    "strong articulation": [
+      840
+    ],
+    "weak articulation": [
+      841
+    ],
+    "whistled articulation": [
+      846
+    ],
+    "whispery": [
+      803
+    ],
+    "gesture offset left": [
+      852
+    ],
+    "gesture offset right": [
+      853
+    ],
+    "sliding articulation": [
+      866
+    ],
+    "unaspirated": [
+      749
+    ],
+    "R small upside superscript": [
+      694
+    ],
+    "velopharyngeal fricative": [
+      681
+    ],
+    "voiceless grooved lateral alveolar fricative": [
+      682
+    ],
+    "voiced grooved lateral alveolar fricative": [
+      683
+    ],
+    "voiceless retroflex lateral fricative": [
+      42894
+    ],
+    "bilabial percussive": [
+      684
+    ],
+    "bidental percussive": [
+      685
+    ],
+    "sublingual percussive": [
+      161
+    ],
+    "ingressive airflow": [
+      8595
+    ],
+    "buccal": [
+      8576
+    ],
+    "extra high": [
+      779
+    ],
+    "high": [
+      769
+    ],
+    "mid": [
+      772
+    ],
+    "low": [
+      768
+    ],
+    "extra low": [
+      783
+    ],
+    "rising": [
+      780
+    ],
+    "falling": [
+      770
+    ],
+    "high rising": [
+      7620
+    ],
+    "low rising": [
+      7621
+    ],
+    "rising-falling": [
+      7624
+    ],
+    "extra high alt": [
+      741
+    ],
+    "high alt": [
+      742
+    ],
+    "mid alt": [
+      743
+    ],
+    "low alt": [
+      744
+    ],
+    "extra low alt": [
+      745
+    ],
+    "rising alt": [
+      745,
+      741
+    ],
+    "falling alt": [
+      741,
+      745
+    ],
+    "high rising alt": [
+      742,
+      741
+    ],
+    "low rising alt": [
+      745,
+      744
+    ],
+    "rising-falling alt": [
+      743,
+      742,
+      743
+    ],
+    "downstep": [
+      42780
+    ],
+    "upstep": [
+      42779
+    ],
+    "global rise": [
+      8599,
+      65038
+    ],
+    "global fall": [
+      8600,
+      65038
+    ],
+    "right arrow": [
+      8594
+    ],
+    "zero": [
+      8709
+    ],
+    "middle dot": [
+      183
+    ],
+    "/": [
+      47
+    ],
+    "[": [
+      91
+    ],
+    "]": [
+      93
+    ],
+    "apostrophe": [
+      8217
+    ],
+    "straight apostrophe": [
+      39
+    ],
+    "high inverted quote": [
+      8220
+    ],
+    "high quote": [
+      8221
+    ],
+    "straight quote": [
+      34
+    ],
+    "dash": [
+      45
+    ],
+    "endash": [
+      8211
+    ],
+    "emdash": [
+      8212
+    ]
+  },
+  "keys": [
+    {
+      "base": "A",
+      "shift": false,
+      "chars": [
+        "a script",
+        "ae ipa",
+        "a upside",
+        "a script nasalized"
+      ]
+    },
+    {
+      "base": "B",
+      "shift": false,
+      "chars": [
+        "beta ipa",
+        "b hook",
+        "B small"
+      ]
+    },
+    {
+      "base": "C",
+      "shift": false,
+      "chars": [
+        "c cedil ipa",
+        "c loop"
+      ]
+    },
+    {
+      "base": "D",
+      "shift": false,
+      "chars": [
+        "eth ipa",
+        "dzh",
+        "d hook low",
+        "d hook high"
+      ]
+    },
+    {
+      "base": "E",
+      "shift": false,
+      "chars": [
+        "schwa",
+        "schwa rhotic",
+        "schwa closed",
+        "schwa upside"
+      ]
+    },
+    {
+      "base": "3",
+      "shift": false,
+      "chars": [
+        "epsilon ipa",
+        "epsilon flipped",
+        "epsilon flipped rhotic",
+        "epsilon nasalized",
+        "epsilon flipped closed"
+      ]
+    },
+    {
+      "base": "G",
+      "shift": false,
+      "chars": [
+        "g hook",
+        "G small",
+        "G small hook",
+        "g script"
+      ]
+    },
+    {
+      "base": "H",
+      "shift": false,
+      "chars": [
+        "h barred",
+        "h hook",
+        "h upside",
+        "h low hook",
+        "H small"
+      ]
+    },
+    {
+      "base": "I",
+      "shift": false,
+      "chars": [
+        "I small",
+        "i barred",
+        "schwi"
+      ]
+    },
+    {
+      "base": "J",
+      "shift": false,
+      "chars": [
+        "j loop",
+        "j barred",
+        "j mirrored"
+      ]
+    },
+    {
+      "base": "L",
+      "shift": false,
+      "chars": [
+        "l wave",
+        "l long",
+        "l loop",
+        "L small",
+        "lzh"
+      ]
+    },
+    {
+      "base": "M",
+      "shift": false,
+      "chars": [
+        "m hook"
+      ]
+    },
+    {
+      "base": "N",
+      "shift": false,
+      "chars": [
+        "ng",
+        "n hook left",
+        "n hook right",
+        "N small"
+      ]
+    },
+    {
+      "base": "O",
+      "shift": false,
+      "chars": [
+        "o open",
+        "oe ipa",
+        "a script upside",
+        "o open nasalized",
+        "OE small"
+      ]
+    },
+    {
+      "base": "0",
+      "shift": false,
+      "chars": [
+        "o stroke ipa",
+        "zero"
+      ]
+    },
+    {
+      "base": "P",
+      "shift": false,
+      "chars": [
+        "phi ipa"
+      ]
+    },
+    {
+      "base": "R",
+      "shift": false,
+      "chars": [
+        "r tap",
+        "r upside",
+        "R small upside",
+        "R small",
+        "r upside hook",
+        "r hook",
+        "r upside long"
+      ]
+    },
+    {
+      "base": "S",
+      "shift": false,
+      "chars": [
+        "sh",
+        "s hook"
+      ]
+    },
+    {
+      "base": "T",
+      "shift": false,
+      "chars": [
+        "theta ipa",
+        "tsh",
+        "ts",
+        "t long"
+      ]
+    },
+    {
+      "base": "U",
+      "shift": false,
+      "chars": [
+        "u horseshoe",
+        "u barred"
+      ]
+    },
+    {
+      "base": "V",
+      "shift": false,
+      "chars": [
+        "v upside",
+        "v smooth",
+        "v hook"
+      ]
+    },
+    {
+      "base": "W",
+      "shift": false,
+      "chars": [
+        "u extra bowl",
+        "w upside",
+        "u extra bowl hook"
+      ]
+    },
+    {
+      "base": "X",
+      "shift": false,
+      "chars": [
+        "chi ipa"
+      ]
+    },
+    {
+      "base": "Y",
+      "shift": false,
+      "chars": [
+        "gamma ipa",
+        "y upside",
+        "Y small",
+        "rams horns"
+      ]
+    },
+    {
+      "base": "Z",
+      "shift": false,
+      "chars": [
+        "zh",
+        "z hook",
+        "z loop"
+      ]
+    },
+    {
+      "base": "2",
+      "shift": false,
+      "chars": [
+        "glottal stop",
+        "glottal stop flipped",
+        "glottal stop barred",
+        "glottal stop flipped barred"
+      ]
+    },
+    {
+      "base": "Q",
+      "shift": false,
+      "chars": [
+        "primary stress",
+        "secondary stress"
+      ]
+    },
+    {
+      "base": ",<",
+      "shift": false,
+      "chars": [
+        "primary stress",
+        "secondary stress",
+        "ejective"
+      ]
+    },
+    {
+      "base": ".>",
+      "shift": false,
+      "chars": [
+        "length mark",
+        "extra short",
+        "half length mark"
+      ]
+    },
+    {
+      "base": "F",
+      "shift": true,
+      "chars": [
+        "length mark",
+        "extra short",
+        "half length mark"
+      ]
+    },
+    {
+      "base": ";:",
+      "shift": false,
+      "chars": [
+        "length mark",
+        "extra short",
+        "half length mark"
+      ]
+    },
+    {
+      "base": ";:",
+      "shift": true,
+      "chars": [
+        "length mark",
+        "extra short",
+        "half length mark"
+      ]
+    },
+    {
+      "base": "1",
+      "shift": false,
+      "chars": [
+        "minor group",
+        "major group"
+      ]
+    },
+    {
+      "base": "/?",
+      "shift": false,
+      "chars": [
+        "minor group",
+        "major group"
+      ]
+    },
+    {
+      "base": "F",
+      "shift": false,
+      "chars": [
+        "tie bar upper",
+        "tie bar lower",
+        "linking"
+      ]
+    },
+    {
+      "base": ".>",
+      "shift": true,
+      "chars": [
+        "centralized",
+        "breathy voiced"
+      ]
+    },
+    {
+      "base": "S",
+      "shift": true,
+      "chars": [
+        "nasalized",
+        "velarized or pharyngealized",
+        "creaky voiced"
+      ]
+    },
+    {
+      "base": "O",
+      "shift": true,
+      "chars": [
+        "voiceless",
+        "voiceless high",
+        "laminal"
+      ]
+    },
+    {
+      "base": "V",
+      "shift": true,
+      "chars": [
+        "voiced"
+      ]
+    },
+    {
+      "base": "I",
+      "shift": true,
+      "chars": [
+        "syllabic"
+      ]
+    },
+    {
+      "base": "E",
+      "shift": true,
+      "chars": [
+        "schwa superscript"
+      ]
+    },
+    {
+      "base": "M",
+      "shift": true,
+      "chars": [
+        "linguolabial"
+      ]
+    },
+    {
+      "base": "R",
+      "shift": true,
+      "chars": [
+        "r superscript",
+        "rhotacized"
+      ]
+    },
+    {
+      "base": "H",
+      "shift": true,
+      "chars": [
+        "aspirated",
+        "breathy-voice aspirated"
+      ]
+    },
+    {
+      "base": "W",
+      "shift": true,
+      "chars": [
+        "labialized"
+      ]
+    },
+    {
+      "base": "J",
+      "shift": true,
+      "chars": [
+        "palatalized"
+      ]
+    },
+    {
+      "base": "Up",
+      "shift": false,
+      "chars": [
+        "raised"
+      ]
+    },
+    {
+      "base": "Down",
+      "shift": false,
+      "chars": [
+        "lowered"
+      ]
+    },
+    {
+      "base": "Left",
+      "shift": false,
+      "chars": [
+        "advanced",
+        "advanced tongue root"
+      ]
+    },
+    {
+      "base": "Right",
+      "shift": false,
+      "chars": [
+        "retracted",
+        "retracted tongue root",
+        "right arrow"
+      ]
+    },
+    {
+      "base": "K",
+      "shift": false,
+      "chars": [
+        "dental click",
+        "lateral click",
+        "palatal click",
+        "(post-)alveolar click",
+        "bilabial click"
+      ]
+    },
+    {
+      "base": "B",
+      "shift": true,
+      "chars": [
+        "lip compression"
+      ]
+    },
+    {
+      "base": "D",
+      "shift": true,
+      "chars": [
+        "dental",
+        "apical"
+      ]
+    },
+    {
+      "base": ",",
+      "shift": true,
+      "chars": [
+        "more rounded",
+        "less rounded"
+      ]
+    },
+    {
+      "base": "X",
+      "shift": true,
+      "chars": [
+        "mid-centralized"
+      ]
+    },
+    {
+      "base": "C",
+      "shift": true,
+      "chars": [
+        "non-syllabic",
+        "non-syllabic high"
+      ]
+    },
+    {
+      "base": "Y",
+      "shift": true,
+      "chars": [
+        "velarized"
+      ]
+    },
+    {
+      "base": "2",
+      "shift": true,
+      "chars": [
+        "pharyngealized",
+        "stoed"
+      ]
+    },
+    {
+      "base": "N",
+      "shift": true,
+      "chars": [
+        "nasal release"
+      ]
+    },
+    {
+      "base": "T",
+      "shift": true,
+      "chars": [
+        "t superscript"
+      ]
+    },
+    {
+      "base": "L",
+      "shift": true,
+      "chars": [
+        "not audibly released",
+        "lateral release"
+      ]
+    },
+    {
+      "base": "3",
+      "shift": true,
+      "chars": [
+        "low",
+        "extra low"
+      ]
+    },
+    {
+      "base": "4",
+      "shift": true,
+      "chars": [
+        "mid"
+      ]
+    },
+    {
+      "base": "5",
+      "shift": true,
+      "chars": [
+        "high",
+        "extra high"
+      ]
+    },
+    {
+      "base": "6",
+      "shift": true,
+      "chars": [
+        "falling",
+        "rising-falling"
+      ]
+    },
+    {
+      "base": "7",
+      "shift": true,
+      "chars": [
+        "rising",
+        "low rising",
+        "high rising"
+      ]
+    },
+    {
+      "base": "\\'\"",
+      "shift": false,
+      "chars": [
+        "apostrophe",
+        "primary stress"
+      ]
+    },
+    {
+      "base": "`~",
+      "shift": false,
+      "chars": [
+        "apostrophe",
+        "primary stress"
+      ]
+    },
+    {
+      "base": "\\'\"",
+      "shift": true,
+      "chars": [
+        "high inverted quote",
+        "high quote"
+      ]
+    },
+    {
+      "base": "`~",
+      "shift": true,
+      "chars": [
+        "high inverted quote",
+        "high quote"
+      ]
+    },
+    {
+      "base": "-_",
+      "shift": false,
+      "chars": [
+        "endash",
+        "emdash"
+      ]
+    },
+    {
+      "base": "4",
+      "shift": false,
+      "chars": [
+        "apostrophe",
+        "primary stress"
+      ]
+    },
+    {
+      "base": "5",
+      "shift": false,
+      "chars": [
+        "high inverted quote",
+        "high quote"
+      ]
+    },
+    {
+      "base": "6",
+      "shift": false,
+      "chars": [
+        "endash",
+        "emdash"
+      ]
+    }
+  ]
+}
