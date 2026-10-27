@@ -1,4 +1,4 @@
-# 2026harucpp —— IDS 组字引擎与编辑器
+# IDSmd——IDS 组字引擎与编辑器
 
 > ## ⚠️ 本项目是**毛胚品**（early prototype / work in progress）
 >

@@ -1,0 +1,58 @@
+# Build outputs
+build/
+*.exe
+*.dll
+*.obj
+*.o
+*.moc
+*.pro.user
+*.autogen
+*.WebView2/
+
+# Archives (not part of active project)
+speech_synth_archive/
+zitool/
+zitool群资料/
+backup/
+archive/
+cpp-desktop/
+
+# External docs / PDFs
+*.pdf
+*.epub
+GlyphWiki_*.html
+GlyphWiki_*_files/
+
+# IDE / editor
+.DS_Store
+Thumbs.db
+*.user
+*.suo
+.vscode/
+
+# Claude workspace
+.claude/
+
+# Python 缓存 / 中间产物
+__pycache__/
+*.pyc
+analysis/tsout/
+web/analysis/tsout/
+
+# ---------------------------------------------------------------
+# 数据: 不入库, 运行时获取 (见 THIRD-PARTY.md)
+# 注意: .gitignore 不支持行尾注释, 规则必须独占一行
+# ---------------------------------------------------------------
+# cjkvi-ids / CHISE 的 IDS 文本, GPLv2
+data/ids/
+# 100+ MB, 超过 GitHub 单文件上限
+web/public/core_glyphs.json
+web/public/core_glyphs.json.bak
+web/public/ids_lv*.txt
+# 字体: 许可未查清, 用户自备
+web/public/*.ttf
+
+# 构建产物 / 依赖
+web/dist/
+web/node_modules/
+node_modules/
