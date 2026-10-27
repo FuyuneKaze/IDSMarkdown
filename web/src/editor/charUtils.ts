@@ -46,7 +46,7 @@ export function idsOperatorArity(cp: number): number {
 
 // Surround operators: outer child encloses inner child
 export const SURROUND_OPS = new Set([
-  0x2ff4, 0x2ff5, 0x2ff6, 0x2ff7, 0x2ff8, 0x2ff9, 0x2ffa, 0x2ffc,
+  0x2ff4, 0x2ff5, 0x2ff6, 0x2ff7, 0x2ff8, 0x2ff9, 0x2ffa, 0x2ffc, 0x2ffd,
 ]);
 
 export function isSurroundOp(cp: number): boolean {

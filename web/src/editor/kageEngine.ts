@@ -78,6 +78,12 @@ function leafSuffix(opCp: number, position: number): string {
   case 0x2FF1: return position === 0 ? "-03" : "-04";
   case 0x2FF2: return position <= 1 ? "-01" : "-02";
   case 0x2FF3: return position <= 1 ? "-03" : "-04";
+  // 包围算符: 容器取 -05 (外框变体), 内部件取 -06 (内容物变体)。
+  // 与 ids_anal.surround 的 return_bone(args[0]+"-05") / (args[1]+"-06") 一致;
+  // 库里没有该后缀时 selectLeafVariant 会退化到本体 (与 get_data 的子串回退等价)。
+  case 0x2FF4: case 0x2FF5: case 0x2FF6: case 0x2FF7: case 0x2FF8:
+  case 0x2FF9: case 0x2FFA: case 0x2FFC: case 0x2FFD:
+    return position === 0 ? "-05" : "-06";
   default: return "";
   }
 }
