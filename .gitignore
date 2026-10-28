@@ -59,3 +59,21 @@ node_modules/
 
 # 实验用的渲染输出 (可重新生成, 只留在本地)
 scripts/render*.html
+# ---------------------------------------------------------------
+# scripts/: 只保留「组字核心依赖链」+「生成词典/字库的脚本」
+# 其余实验脚本只留本地, 不入库 (需要时把名字加到下面的放行列表)
+# ---------------------------------------------------------------
+scripts/*.py
+# 组字核心: preview -> ids_anal -> cavity/central_box/glyph_extend/stroke_outer
+!scripts/glyph_extend.py
+!scripts/stroke_outer.py
+!scripts/ids_anal.py
+!scripts/cavity.py
+!scripts/central_box.py
+!scripts/central_box_old.py
+!scripts/kage_contour.py
+# 数据生成脚本
+!scripts/unihan.py
+!scripts/hangul.py
+!scripts/extract_ipa.py
+!scripts/extract_core_glyphs.py
