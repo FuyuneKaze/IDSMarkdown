@@ -14,7 +14,8 @@
 | 数据 | 来源 | 许可 | 说明 |
 | --- | --- | --- | --- |
 | GlyphWiki 字形（KAGE 笔画） | [glyphwiki.org](https://glyphwiki.org/) / [dump 下载](https://zhs.glyphwiki.org/wiki/GlyphWiki) | GlyphWiki 字形数据可自由使用（社区惯例；具体以其站点声明为准） | **不入库**。本项目通过 `https://glyphwiki.org/api/glyph?name=…` 运行时按需获取（`web/src/editor/glyphSource.ts`） |
-| IDS 表意文字序列 | [cjkvi-ids](https://github.com/cjkvi/cjkvi-ids)（源自 [CHISE](http://www.chise.org/)） | **GPLv2** | **不入库**。需要者自行下载；本仓库不含该数据，故不影响本仓库的 MIT 授权 |
+| IDS 表意文字序列（`ids_lv0/1/2.txt`、`ts.txt`） | [yi-bai/ids](https://github.com/yi-bai/ids)，作者 [Yi Bai](http://y-bai.com) | **MIT** | 与上游同名同格式（三列：汉字 / 主 IDS / 备选 IDS，括号内为变体标记）。**MIT，可随本仓库分发**，须保留版权与许可声明 |
+| 其它 IDS 衍生文件（`component.txt`、`ids_lv4.txt`、`TangutIDS.txt`） | 来源待核（不在 yi-bai/ids 的文件清单里） | **未核实** | **默认不入库**；如要分发请先确认来源 |
 | Unicode Han 数据库（Unihan） | [Unicode UCD](https://www.unicode.org/Public/UCD/latest/ucd/) | [Unicode License v3](https://www.unicode.org/license.txt) | 允许衍生与再分发，须保留版权声明 |
 
 ## 2. 字体（不入库，用户自备）

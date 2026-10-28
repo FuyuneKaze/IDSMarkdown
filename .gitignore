@@ -43,7 +43,7 @@ web/analysis/tsout/
 # 数据: 不入库, 运行时获取 (见 THIRD-PARTY.md)
 # 注意: .gitignore 不支持行尾注释, 规则必须独占一行
 # ---------------------------------------------------------------
-# cjkvi-ids / CHISE 的 IDS 文本, GPLv2
+# IDS 文本: ids_lv0-2/ts 是 yi-bai/ids (MIT, 可入库); 其余来源待核, 先整体排除
 data/ids/
 # 100+ MB, 超过 GitHub 单文件上限
 web/public/core_glyphs.json
