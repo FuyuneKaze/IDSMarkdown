@@ -61,9 +61,10 @@ npm run build        # tsc -b + vite build
 
 没有 bundle 也能用，只是第一次显示每个字会慢一点（按需取，且取过的会缓存）。
 
-IDS 文本（`data/ids/ids_lv*.txt`、`ts.txt`）来自 [yi-bai/ids](https://github.com/yi-bai/ids)
-（**MIT**，作者 Yi Bai），可以随仓库分发；同目录下 `component.txt` / `ids_lv4.txt` /
-`TangutIDS.txt` 来源待核，默认不入库。只做字形合成并不需要 IDS 表。
+IDS 文本 `data/ids/ids_lv0/1/2.txt`、`ts.txt` 来自 [yi-bai/ids](https://github.com/yi-bai/ids)
+（**MIT**，作者 Yi Bai），**已随仓库分发**。同目录下的 `ids_lv4.txt` / `TangutIDS.txt`
+是西夏文 IDS（源自 [JLHwung/TangutIDS](https://github.com/JLHwung/TangutIDS)，未见 license），
+`component.txt` 来源不详 —— 这三个不入库，本项目也不需要它们。
 
 ## 进度与计划
 

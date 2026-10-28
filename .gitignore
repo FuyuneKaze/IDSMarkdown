@@ -43,8 +43,10 @@ web/analysis/tsout/
 # 数据: 不入库, 运行时获取 (见 THIRD-PARTY.md)
 # 注意: .gitignore 不支持行尾注释, 规则必须独占一行
 # ---------------------------------------------------------------
-# IDS 文本: ids_lv0-2/ts 是 yi-bai/ids (MIT, 可入库); 其余来源待核, 先整体排除
-data/ids/
+# IDS: ids_lv0/1/2.txt 与 ts.txt 来自 yi-bai/ids (MIT, 已入库); 下面三个来源待核/无 license
+data/ids/component.txt
+data/ids/ids_lv4.txt
+data/ids/TangutIDS.txt
 # 100+ MB, 超过 GitHub 单文件上限
 web/public/core_glyphs.json
 web/public/core_glyphs.json.bak
