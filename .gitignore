@@ -77,3 +77,7 @@ scripts/*.py
 !scripts/hangul.py
 !scripts/extract_ipa.py
 !scripts/extract_core_glyphs.py
+# scripts/ 下的实验产物 (csv/png/svg 与 render 输出)
+scripts/output/
+scripts/render*
+scripts/bezier_contour.svg
