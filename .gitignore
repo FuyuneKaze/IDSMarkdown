@@ -56,3 +56,6 @@ web/public/*.ttf
 web/dist/
 web/node_modules/
 node_modules/
+
+# 实验用的渲染输出 (可重新生成, 只留在本地)
+scripts/render*.html
