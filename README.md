@@ -1,5 +1,5 @@
 # IDSmd——IDS 组字引擎与编辑器
-![thumbnail](web/thumbnail.png)
+![thumbnail](thumbnail.png)
 > ## ⚠️ 本项目是**毛胚品**（early prototype / work in progress）
 >
 > - **未完成**，功能、API、数据结构、文件位置都还会变，**不要依赖当前形态**；
