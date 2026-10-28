@@ -14,7 +14,7 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data"
 IDS_DIR = os.path.join(DATA_DIR, "ids")
 OUTPUT = os.path.join(DATA_DIR, "core_glyphs.json")
 
-DUMP_PATH = r"D:\2026harucpp\19G252FuyuneKazec++高级语言程序设计\程序和数据\data\dump_newest_only.txt"
+DUMP_PATH = os.environ.get("KAGE_DUMP", r"D:\KAGE_GLYPH\dump_newest_only.txt")
 
 def is_ids_operator(cp):
     return (0x2FF0 <= cp <= 0x2FFF) or cp == 0x31EF
