@@ -83,3 +83,9 @@ scripts/*.py
 scripts/output/
 scripts/render*
 scripts/bezier_contour.svg
+
+# 运行时必须随站点分发 (CI 构建时 public/ 会被拷进 dist)
+!web/public/kage-bundle.js
+!web/public/ids_lv0.txt
+!web/public/ids_lv1.txt
+!web/public/ids_lv2.txt
