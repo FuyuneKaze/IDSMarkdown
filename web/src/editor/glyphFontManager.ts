@@ -19,7 +19,7 @@ const SCALE = FONT_UNITS / SVG_SIZE;  // 5.0
 const FONT_FAMILY = "IDSGlyphFont";
 
 // IDS 运算符 (U+2FF0-2FFF): 表达式的起始字符
-const IDS_OPERATORS = "⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻⿾⿿㇯";
+const IDS_OPERATORS = "⿰⿱⿲⿳⿴⿵⿶⿷⿼⿸⿹⿺⿽⿻⿾⿿㇯";
 
 export interface GlyphMapping {
   idsToPua: [string, number][];

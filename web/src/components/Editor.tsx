@@ -46,9 +46,12 @@ interface EditorProps {
 
 const initialContent = [
   '<p># IDS 文本编辑器</p>',
-  '<p>欢迎使用 IDS Markdown 编辑器。输入 IDS 表达式（如 ⿰木子）将自动合成为对应的字符。</p>',
-  '<p>**Alt+Numpad0~9** 输入 ⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹ **Alt+Numpad+/-** 输入 ⿺⿻</p>',
-  '<p>试试输入：⿰亻尔、⿱山石、⿰女且、⿱雨相、⿰石另</p>',
+  '<p>1. 输入U内字符ids表达式可实现替换：⿰ 白 勺→⿰白勺</p>',
+  '<p>2. 可通过`alt+Numpad0~9/+/-`输入**二元**ids运算符，`ctrl+alt+Numpad+/-`输入**三元**运算符</p>',
+  '<p>3. 可输入合法裸ids表达式与普通文本混排，立即合成，退格展开，可修改。比如“我的⿰名字是⿵代物”</p>',
+  '<p>4. 点击右上角*“KAGE”*按钮可自定义字形与名称并插入文本，光标在合成字形附近右键亦可对其进行编辑</p>',
+  '<p>5. 英文输入法下`alt+若干下主键盘字母/数字键`可输入IPA符号</p>',
+  '<p>6. 下拉*“候选”*可点选四种候选框开启，使用英文输入法输入拉丁字母即可联想</p>',
 ].join('\n');
 
 const Editor = forwardRef<EditorHandle, EditorProps>(function Editor(
