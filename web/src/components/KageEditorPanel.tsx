@@ -33,7 +33,7 @@ export default function KageEditorPanel({
     if (initialData) {
       params.push(`data=${encodeURIComponent(initialData)}`);
     }
-    return `/kage-editor/index.html#${params.join("&")}`;
+    return assetUrl(`/kage-editor/index.html#${params.join("&")}`);
   }, [initialData]);
 
   // ============================================================

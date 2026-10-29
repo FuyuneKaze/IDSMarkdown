@@ -1177,6 +1177,27 @@ export class KageEngine {
       .finally(() => { this.prefetching.delete(ids); });
   }
 
+  /**
+   * 远程取到字形之后的重排触发
+   *
+   * 为什么不是直接 `__recomposeIds?.()`: 线上(无 bundle)首次渲染发生得很早,
+   * 那一刻 idsCompose 的插件可能**还没注册** __recomposeIds, 或者它的 IDS 数据库
+   * 还没 loaded —— 直接调用会被静默吞掉, 于是字一直停在"等待数据"的黄色状态。
+   * 这里改成轮询等待函数出现, 再交给它自己的重试预算去等数据库。
+   */
+  private afterPrefetch(attempt = 0): void {
+    const fn = (window as any).__recomposeIds;
+    if (typeof fn === "function") {
+      fn();
+      return;
+    }
+    if (attempt >= 20) {
+      console.warn("[KageEngine] __recomposeIds 一直未注册, 放弃自动重排");
+      return;
+    }
+    setTimeout(() => this.afterPrefetch(attempt + 1), 250);
+  }
+
   /** 将 IDS 字符串渲染为 SVG，未就绪或失败返回 null */
   renderSvg(ids: string): string | null {
     const out = this.renderSvgInner(ids);

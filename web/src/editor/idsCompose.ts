@@ -720,12 +720,12 @@ export const IdsComposeExtension = Extension.create({
 
             (window as any).__recomposeIds = (optView?: any) => {
               if (!loaded) {
-                console.log("[idsCompose] __recomposeIds: database not loaded, retrying in 300ms (attempt " + (recomposeRetries + 1) + ")");
-                if (recomposeRetries < 10) {
+                console.log("[idsCompose] __recomposeIds: database not loaded, retrying in 500ms (attempt " + (recomposeRetries + 1) + ")");
+                if (recomposeRetries < 40) {
                   recomposeRetries++;
-                  setTimeout(() => (window as any).__recomposeIds?.(optView), 300);
+                  setTimeout(() => (window as any).__recomposeIds?.(optView), 500);
                 } else {
-                  console.warn("[idsCompose] __recomposeIds: gave up after 10 retries");
+                  console.warn("[idsCompose] __recomposeIds: gave up after 40 retries");
                 }
                 return;
               }
