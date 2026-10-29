@@ -1,6 +1,6 @@
 import { Extension } from "@tiptap/core";
 import { Plugin, PluginKey } from "@tiptap/pm/state";
-
+/*
 const IDS_ALT_NUMPAD: Record<string, string> = {
   Numpad0: "⿰",       // ⿰ 左右
   Numpad1: "⿱",       // ⿱ 上下
@@ -15,7 +15,30 @@ const IDS_ALT_NUMPAD: Record<string, string> = {
   NumpadAdd: "⿺",     // ⿺ 左下包围
   NumpadSubtract: "⿻", // ⿻ 重叠
 };
-
+*/
+const IDS_ALT_NUMPAD: Record<string, string> = {
+  NumpadAdd: "⿱",     //UD
+  NumpadSubtract: "⿰", //LR
+  Numpad1: "⿺",       //RU
+  Numpad2: "⿶",       //OU
+  Numpad3: "⿽",       //LU
+  Numpad4: "⿷",       //OR
+  Numpad5: "⿴",       //OC
+  Numpad6: "⿼",       //OL
+  Numpad7: "⿸",       //RD
+  Numpad8: "⿵",       //OD
+  Numpad9: "⿹",       //LD
+  Numpad0: "⿻",       //XX
+  KeyM: "⿾", //MI
+  KeyT: "⿿", //RO
+  KeyJ: "㇯", //SU
+};
+const Trity_IDS_OPERATOR: Record<string,string> ={
+  Equal: "⿳", //UU
+  Minus: "⿲", //LL
+  NumpadAdd: "⿳", //UU
+  NumpadSubtract: "⿲", //LL
+};
 export const IdsNumpad = Extension.create({
   name: "idsNumpad",
 
@@ -28,6 +51,16 @@ export const IdsNumpad = Extension.create({
             keydown: (view, event) => {
               if (event.altKey && !event.ctrlKey && !event.shiftKey && !event.metaKey) {
                 const op = IDS_ALT_NUMPAD[event.code];
+                if (op) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  const tr = view.state.tr.insertText(op);
+                  view.dispatch(tr);
+                  return true;
+                }
+              }
+              if (event.altKey && event.ctrlKey && !event.shiftKey && !event.metaKey) {
+                const op =Trity_IDS_OPERATOR[event.code];
                 if (op) {
                   event.preventDefault();
                   event.stopPropagation();

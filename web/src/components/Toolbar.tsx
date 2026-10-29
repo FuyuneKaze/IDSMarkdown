@@ -30,22 +30,36 @@ const CAND_SOURCES: { key: CandidateSource; label: string }[] = [
   { key: "vi", label: "越南文" },
 ];
 
+/**
+ * IDS 算符按钮
+ *
+ * 顺序、快捷键、方向码全部对齐 `editor/idsNumpad.ts`：
+ *   主字典 IDS_ALT_NUMPAD  → NumpadAdd(Numpad+) / NumpadSubtract(Numpad-) / 1…0 / M / T / J
+ *   三聚字典 Trity_IDS_OPERATOR → Equal(=) 或 Ctrl+Numpad+ 得 ⿳，Minus(-) 或 Ctrl+Numpad- 得 ⿲
+ *
+ * title 里的两个字母是字典注释里的方向码：
+ *   U/D/L/R = 上/下/左/右, O = open (开口方向), C = closed (全包围),
+ *   XX = 重叠, MI = 镜像, RO = 旋转, SU = 减去, UU/LL = 上下三叠 / 左右三并
+ * 所以 ⿸ = RD（向右下开口）、⿹ = LD、⿵ = OD、⿶ = OU、⿷ = OR、⿼ = OL、⿽ = LU、⿺ = RU。
+ */
 const IDS_OPERATORS = [
-  { label: "⿰", title: "左右结构 — Alt+Numpad0" },
-  { label: "⿱", title: "上下结构 — Alt+Numpad1" },
-  { label: "⿲", title: "左中右 — Alt+Numpad2" },
-  { label: "⿳", title: "上中下 — Alt+Numpad3" },
-  { label: "⿴", title: "全包围 — Alt+Numpad4" },
-  { label: "⿵", title: "上三包围 — Alt+Numpad5" },
-  { label: "⿶", title: "下三包围 — Alt+Numpad6" },
-  { label: "⿷", title: "左三包围 — Alt+Numpad7" },
-  { label: "⿸", title: "左上包围 — Alt+Numpad8" },
-  { label: "⿹", title: "右上包围 — Alt+Numpad9" },
-  { label: "⿺", title: "左下包围 — Alt+Numpad+" },
-  { label: "⿻", title: "重叠 — Alt+Numpad-" },
-  { label: "⿾", title: "镜像 — " },
-  { label: "⿿", title: "旋转 — " },
-  { label: "㇯", title: "减去 — " },
+  { label: "⿱", title: "UD 上下结构 — Alt+Numpad+" },
+  { label: "⿰", title: "LR 左右结构 — Alt+Numpad-" },
+  { label: "⿺", title: "RU 左下包围 (向右上开口) — Alt+Numpad1" },
+  { label: "⿶", title: "OU 下三包围 (向上开口) — Alt+Numpad2" },
+  { label: "⿽", title: "LU 右下包围 (向左上开口) — Alt+Numpad3" },
+  { label: "⿷", title: "OR 左三包围 (向右开口) — Alt+Numpad4" },
+  { label: "⿴", title: "OC 全包围 — Alt+Numpad5" },
+  { label: "⿼", title: "OL 右二包围 (向左开口) — Alt+Numpad6" },
+  { label: "⿸", title: "RD 左上包围 (向右下开口) — Alt+Numpad7" },
+  { label: "⿵", title: "OD 上三包围 (向下开口) — Alt+Numpad8" },
+  { label: "⿹", title: "LD 右上包围 (向左下开口) — Alt+Numpad9" },
+  { label: "⿻", title: "XX 重叠 — Alt+Numpad0" },
+  { label: "⿾", title: "MI 镜像 — Alt+M" },
+  { label: "⿿", title: "RO 旋转 — Alt+T" },
+  { label: "㇯", title: "SU 减去 — Alt+J" },
+  { label: "⿳", title: "UU 上中下 — Alt+Ctrl+= 或 Alt+Ctrl+Numpad+" },
+  { label: "⿲", title: "LL 左中右 — Alt+Ctrl+- 或 Alt+Ctrl+Numpad-" },
 ];
 
 function Toolbar({
