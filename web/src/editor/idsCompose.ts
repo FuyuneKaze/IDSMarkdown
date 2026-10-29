@@ -1,3 +1,4 @@
+import { assetUrl } from "./assetUrl";
 import { Extension } from "@tiptap/core";
 import { Plugin, PluginKey } from "@tiptap/pm/state";
 import { Decoration, DecorationSet } from "@tiptap/pm/view";
@@ -691,7 +692,7 @@ export const IdsComposeExtension = Extension.create({
             const files = ["ids_lv0.txt", "ids_lv1.txt", "ids_lv2.txt", "ids_lv4.txt"];
             for (const fn of files) {
               try {
-                const resp = await fetch(`/${fn}`);
+                const resp = await fetch(assetUrl(`/${fn}`));
                 if (resp.ok) {
                   const text = await resp.text();
                   db.load(text);

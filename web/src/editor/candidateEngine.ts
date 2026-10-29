@@ -1,3 +1,4 @@
+import { assetUrl } from "./assetUrl";
 // 候选引擎: 加载 4 词典 → romaji 前缀匹配 → 返回分行候选
 // 移植自 C++ CandidateEngine.h/cpp
 
@@ -506,7 +507,7 @@ class CandidateEngine {
   // ── 私有 ──
 
   private async loadJapanese(path: string): Promise<void> {
-    const resp = await fetch(path);
+    const resp = await fetch(assetUrl(path));
     const root = await resp.json();
     for (const [syllable, entry] of Object.entries(root)) {
       const obj = entry as any;
@@ -520,7 +521,7 @@ class CandidateEngine {
   }
 
   private async loadKorean(path: string): Promise<void> {
-    const resp = await fetch(path);
+    const resp = await fetch(assetUrl(path));
     const root = await resp.json();
     for (const [romaji, entry] of Object.entries(root)) {
       const obj = entry as any;
@@ -534,7 +535,7 @@ class CandidateEngine {
   }
 
   private async loadVietnamese(path: string): Promise<void> {
-    const resp = await fetch(path);
+    const resp = await fetch(assetUrl(path));
     const text = await resp.text();
     for (const line of text.split("\n")) {
       const trimmed = line.trim();
@@ -554,7 +555,7 @@ class CandidateEngine {
   }
 
   private async loadJamo(path: string): Promise<void> {
-    const resp = await fetch(path);
+    const resp = await fetch(assetUrl(path));
     const root = await resp.json();
     const loadSection = (obj: Record<string, string>, map: Map<string, string>) => {
       for (const [key, val] of Object.entries(obj)) {

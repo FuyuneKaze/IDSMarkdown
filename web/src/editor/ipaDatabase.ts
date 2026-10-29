@@ -1,3 +1,4 @@
+import { assetUrl } from "./assetUrl";
 // IPA 数据库: 加载 data/ipa_keymap.json, Alt+key 查表
 // 移植自 C++ IpaDatabase.h/cpp
 
@@ -44,7 +45,7 @@ class IpaDatabase {
 
   async load(path = "/data/ipa_keymap.json"): Promise<void> {
     try {
-      const resp = await fetch(path);
+      const resp = await fetch(assetUrl(path));
       const root = await resp.json();
 
       // 第一遍: 名称 → fromCodePoint 字符串 (支持多码点组合, 如 [593,771] = ɑ̃)
