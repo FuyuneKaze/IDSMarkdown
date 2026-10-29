@@ -1,3 +1,4 @@
+import { assetUrl } from "../editor/assetUrl";
 import { useEffect, useRef, useCallback, useState } from "react";
 
 interface KageEditorPanelProps {

@@ -1171,7 +1171,7 @@ export class KageEngine {
         if (total > 0) {
           console.warn(`[KageEngine] ${total} 个字形取不到 (远端子集): ${failed.slice(0, 6).join(", ")}…`);
         }
-        (window as any).__recomposeIds?.();
+        this.afterPrefetch();
       })
       .catch(() => { /* 网络问题不阻塞渲染 */ })
       .finally(() => { this.prefetching.delete(ids); });
