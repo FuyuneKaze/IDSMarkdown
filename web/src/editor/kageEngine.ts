@@ -1,4 +1,4 @@
-import { assetUrl, glyphBase } from "./assetUrl";
+import { glyphBase } from "./assetUrl";
 /**
  * KAGE 引擎 — 从 C++ KageJsRenderer.cpp 移植
  *
