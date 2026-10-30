@@ -11,7 +11,12 @@ import sys, os, re, json
 from collections import defaultdict
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
-IDS_DIR = os.path.join(DATA_DIR, "ids")
+# IDS 表只有一份, 在 web/public/ (运行时也要从这里取); data/ids/ 仅留 ts.txt
+IDS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                       "web", "public")
+_fallback = os.path.join(DATA_DIR, "ids")
+if not os.path.exists(os.path.join(IDS_DIR, "ids_lv0.txt")):
+    IDS_DIR = _fallback
 OUTPUT = os.path.join(DATA_DIR, "core_glyphs.json")
 
 DUMP_PATH = os.environ.get("KAGE_DUMP", r"D:\KAGE_GLYPH\dump_newest_only.txt")

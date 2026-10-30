@@ -1,4 +1,4 @@
-import { assetUrl } from "./assetUrl";
+import { assetUrl, glyphBase } from "./assetUrl";
 /**
  * KAGE 引擎 — 从 C++ KageJsRenderer.cpp 移植
  *
@@ -325,7 +325,7 @@ export class KageEngine {
   /** 加载 core_glyphs.json 到内存 */
   async loadCoreGlyphs(): Promise<void> {
     try {
-      const resp = await fetch(assetUrl("/core_glyphs.json"));
+      const resp = await fetch(glyphBase() + "core_glyphs.json");
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const json = await resp.json();
       const glyphs = json.glyphs as Record<string, string>;

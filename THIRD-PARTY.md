@@ -14,7 +14,7 @@
 | 数据 | 来源 | 许可 | 说明 |
 | --- | --- | --- | --- |
 | GlyphWiki 字形（KAGE 笔画） | [glyphwiki.org](https://glyphwiki.org/) / [dump 下载](https://zhs.glyphwiki.org/wiki/GlyphWiki) | GlyphWiki 字形数据可自由使用（社区惯例；具体以其站点声明为准） | **不入库**。本项目通过 `https://glyphwiki.org/api/glyph?name=…` 运行时按需获取（`web/src/editor/glyphSource.ts`） |
-| IDS 表意文字序列（`ids_lv0/1/2.txt`、`ts.txt`） | [yi-bai/ids](https://github.com/yi-bai/ids)，作者 [Yi Bai](http://y-bai.com) | **MIT** | **已入库** `data/ids/`。三列格式：汉字 / 主 IDS / 备选 IDS，括号内为变体标记。Copyright (c) Yi Bai，按 MIT 分发 |
+| IDS 表意文字序列（`ids_lv0/1/2.txt`、`ts.txt`） | [yi-bai/ids](https://github.com/yi-bai/ids)，作者 [Yi Bai](http://y-bai.com) | **MIT** | **已入库** `web/public/`（`ts.txt` 在 `data/ids/`）。三列格式：汉字 / 主 IDS / 备选 IDS，括号内为变体标记。Copyright (c) Yi Bai，按 MIT 分发 |
 | `ids_lv4.txt`、`TangutIDS.txt` | 西夏文 IDS，来自 [JLHwung/TangutIDS](https://github.com/JLHwung/TangutIDS)（两者内容相同，`TangutIDS.txt` 多一列码位） | **未见 license，可用性存疑** | **不入库**（本项目也不必需） |
 | `component.txt` | 部件清单（一丨丿丶…），来源不详 | **未核实** | **不入库** |
 | Unicode Han 数据库（Unihan） | [Unicode UCD](https://www.unicode.org/Public/UCD/latest/ucd/) | [Unicode License v3](https://www.unicode.org/license.txt) | 允许衍生与再分发，须保留版权声明 |

@@ -12,3 +12,20 @@ export function assetUrl(path: string): string {
   const base = import.meta.env.BASE_URL || "/";
   return base.replace(/\/$/, "") + path;
 }
+
+/**
+ * 字形数据根 URL
+ *
+ * 构建时可用环境变量 VITE_GLYPH_BASE 指向自建服务器，例如:
+ *   VITE_GLYPH_BASE=https://data.example.com/glyphs/
+ * 未设置则使用同源站点（把 core_glyphs.json 放在 public/ 就自动生效）。
+ *
+ * 服务器只需静态托管 + `Access-Control-Allow-Origin: *`，不必写后端。
+ * 建议同时放一份 core_glyphs.json.gz 并开启 nginx 的 gzip_static:
+ * 浏览器会自动解压（Content-Encoding: gzip），传输量从 103MB 降到约 15MB。
+ */
+export function glyphBase(): string {
+  const env = (import.meta.env.VITE_GLYPH_BASE as string | undefined) ?? "";
+  if (!env) return assetUrl("/");
+  return env.endsWith("/") ? env : env + "/";
+}

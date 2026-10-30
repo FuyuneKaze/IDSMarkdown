@@ -31,6 +31,8 @@ jobs:
         working-directory: web
         env:
           GHPAGES: "1"
+          # 可选: 仓库 Settings → Variables 里设 GLYPH_BASE 指向自建数据服务器
+          VITE_GLYPH_BASE: ${{ vars.GLYPH_BASE }}
         run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
