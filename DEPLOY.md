@@ -110,3 +110,32 @@ location /ids/ {
 | 网页资源 404（子路径） | 是否漏了 `assetUrl()`；构建时有没有设 `GHPAGES=1` |
 | 字缺笔画 | 线上没带完整 bundle；子件（`-j` 等）不会递归取 → 需 `GLYPH_BASE` |
 | 字一直"等待数据" | Console 看 `[KageEngine] __recomposeIds` 与 `[idsCompose] database not loaded` |
+
+## 6. 数据文件怎么上传（用户偏好，别再用 scp）
+
+**用宝塔面板「文件」界面直接上传**。原因：Windows 路径 `D:\...` 里的盘符冒号会被 `scp`
+当成"主机名"，报 `Could not resolve hostname d`。
+
+流程：
+
+1. 本地生成/更新（瘦身库脚本会把两个文件都写出来）：
+   ```powershell
+   python scripts/slim_bundle.py      # → D:\KAGE_GLYPH\core_glyphs.slim.json{,.gz}
+   ```
+2. 宝塔 → 文件 → 进入 `/www/wwwroot/utai.space/glyphs/` → 上传并**覆盖命名为**：
+   - `core_glyphs.slim.json`    →  `core_glyphs.json`
+   - `core_glyphs.slim.json.gz` →  `core_glyphs.json.gz`
+3. **不需要** reload nginx（静态文件，改完即生效）。
+4. 验证（任何一台机器）：
+   ```powershell
+   curl.exe -sI -H "Origin: https://fuyunekaze.github.io" -H "Accept-Encoding: gzip" `
+     https://utai.space/glyphs/core_glyphs.json
+   ```
+   期望：`200` + `Content-Encoding: gzip` + `Content-Length: 3966224`（当前瘦身版）
+   + `Access-Control-Allow-Origin: *`
+
+以后只需要告诉"上传哪几个文件、放到哪个路径"。
+
+> ⚠️ **缓存注意**：当前 `location /glyphs/` 带 `Cache-Control: max-age=31536000, immutable`，
+> 意味着浏览器**一年内不会重新请求** `core_glyphs.json`。所以以后替换数据后，老访客看不到更新。
+> 想避免，把这条改成 `max-age=3600`（一小时）；或将来改成带版本号的 URL（`core_glyphs.v2.json`）。
