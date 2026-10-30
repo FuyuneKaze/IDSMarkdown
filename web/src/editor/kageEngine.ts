@@ -325,10 +325,21 @@ export class KageEngine {
   /** 加载 core_glyphs.json 到内存 */
   async loadCoreGlyphs(): Promise<void> {
     try {
-      const json = await this.fetchBundle<{ glyphs?: Record<string, string> }>(
-        glyphBase() + "core_glyphs.json",
-        glyphBase() + "core_glyphs.json.gz",
-      );
+      // 数据源两段式: 先自建服务器(GLYPH_BASE), 失败则退回**同源**(站点自己目录下),
+      // 这样任一侧故障都不会让字形库完全加载不了。
+      let json: { glyphs?: Record<string, string> };
+      try {
+        json = await this.fetchBundle<{ glyphs?: Record<string, string> }>(
+          glyphBase() + "core_glyphs.json",
+          glyphBase() + "core_glyphs.json.gz",
+        );
+      } catch (e) {
+        console.warn("[KageEngine] 远程数据源失败, 改用同源 core_glyphs.json:", e);
+        json = await this.fetchBundle<{ glyphs?: Record<string, string> }>(
+          "core_glyphs.json",
+          "core_glyphs.json.gz",
+        );
+      }
       const glyphs = json.glyphs as Record<string, string>;
       for (const [name, data] of Object.entries(glyphs)) {
         this.glyphData.set(name, data);
