@@ -325,9 +325,10 @@ export class KageEngine {
   /** 加载 core_glyphs.json 到内存 */
   async loadCoreGlyphs(): Promise<void> {
     try {
-      const resp = await fetch(glyphBase() + "core_glyphs.json");
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      const json = await resp.json();
+      const json = await this.fetchBundle<{ glyphs?: Record<string, string> }>(
+        glyphBase() + "core_glyphs.json",
+        glyphBase() + "core_glyphs.json.gz",
+      );
       const glyphs = json.glyphs as Record<string, string>;
       for (const [name, data] of Object.entries(glyphs)) {
         this.glyphData.set(name, data);
