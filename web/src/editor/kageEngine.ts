@@ -1169,8 +1169,44 @@ export class KageEngine {
       "-10", "-11", "-14", "-15", "-24", "-j"];
     const names = guessGlyphNames(ids, SUFFIXES).filter((n) => !this.glyphData.has(n));
     if (names.length === 0) return [];
-    const r = await this.source.ensure(names);
-    return r.failed;
+    const failed: string[] = [];
+    await this.fetchDeep(names, 3, failed);
+    return failed;
+  }
+
+  /**
+   * 取一批字形，并把它们 99 引用到的**子件递归取完**
+   *
+   * 为什么必须递归：GlyphWiki 的 `u4e00` 数据是 `99:0:0:0:0:200:200:u4e00-j` ——
+   * 只取 `u4e00` 而不取 `u4e00-j`，渲染时子件缺失，就成了线上那个"缺胳膊少腿"。
+   * 有了 bundle 时走不到这里；网络差/无 bundle 时这条链保证字形仍然完整。
+   *
+   * @param depth 剩余递归层数（实测 3 层足够：本体 → -j 部件 → 更细的部件）
+   */
+  private async fetchDeep(names: string[], depth: number, failed: string[]): Promise<void> {
+    const miss = names.filter((n) => !this.glyphData.has(n));
+    if (miss.length === 0) return;
+
+    const r = await this.source!.ensure(miss);
+    failed.push(...r.failed);
+
+    const got = miss.filter((n) => this.glyphData.has(n));
+    if (depth <= 0 || got.length === 0) return;
+
+    // 收集这些新字形的 99 引用目标（子件）
+    const refs = new Set<string>();
+    for (const n of got) {
+      const d = this.glyphData.get(n);
+      if (!d) continue;
+      for (const seg of d.split("$")) {
+        if (!seg.startsWith("99:")) continue;
+        const p = seg.split(":");
+        if (p.length < 8) continue;
+        const t = p[7].split("@")[0];
+        if (!this.glyphData.has(t)) refs.add(t);
+      }
+    }
+    if (refs.size > 0) await this.fetchDeep([...refs], depth - 1, failed);
   }
 
   /** 渲染失败时按串去重地排一次预取, 取到后触发一次重排 */
