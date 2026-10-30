@@ -1199,6 +1199,71 @@ export class KageEngine {
     setTimeout(() => this.afterPrefetch(attempt + 1), 250);
   }
 
+  /**
+   * 分块 + 重试地下载字形库。
+   * 3.8MB 压缩包在跨境线路上常**中途卡死/重置** → 浏览器报 TypeError: Failed to fetch。
+   * 这里按 256KB 做 HTTP Range 分块(4 路并行, 每块重试 3 次), 取 .gz 原始字节
+   * (服务器对 .gz 不带 Content-Encoding, Range 才是合法的), 最后用
+   * DecompressionStream 一次性解压 —— 单块失败不会拖死全局。
+   */
+  private async fetchBundle<T>(jsonUrl: string, gzUrl: string): Promise<T> {
+    const CHUNK = 256 * 1024;
+    const PARALLEL = 4;
+    const RETRY = 3;
+    const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+    const hasDecompress = typeof (globalThis as any).DecompressionStream === "function";
+
+    if (hasDecompress) {
+      try {
+        const head = await fetch(gzUrl, { method: "HEAD" });
+        const len = head.ok ? Number(head.headers.get("content-length") || 0) : 0;
+        if (len > 0) {
+          const n = Math.ceil(len / CHUNK);
+          const parts = new Array<Uint8Array | null>(n);
+          let next = 0;
+          const worker = async () => {
+            for (;;) {
+              const i = next++;
+              if (i >= n) return;
+              const start = i * CHUNK;
+              const end = Math.min(start + CHUNK, len) - 1;
+              for (let attempt = 1; attempt <= RETRY; attempt++) {
+                try {
+                  const r = await fetch(gzUrl, { headers: { Range: `bytes=${start}-${end}` } });
+                  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                  parts[i] = new Uint8Array(await r.arrayBuffer());
+                  break;
+                } catch (e) {
+                  if (attempt === RETRY) throw e;
+                  await sleep(300 * attempt);
+                }
+              }
+            }
+          };
+          await Promise.all(Array.from({ length: Math.min(PARALLEL, n) }, worker));
+          const total = parts.reduce((a, p) => a + (p ? p.length : 0), 0);
+          const buf = new Uint8Array(total);
+          let off = 0;
+          for (const p of parts) {
+            if (!p) throw new Error("分块缺失");
+            buf.set(p, off);
+            off += p.length;
+          }
+          if (total !== len) throw new Error(`分块拼接不完整 ${total}/${len}`);
+          console.log(`[KageEngine] bundle: ${n} 块 / ${(len / 1048576).toFixed(2)} MB (gzip)`);
+          const ds = new (globalThis as any).DecompressionStream("gzip");
+          const text = await new Response(new Blob([buf]).stream().pipeThrough(ds)).text();
+          return JSON.parse(text) as T;
+        }
+      } catch (e) {
+        console.warn("[KageEngine] 分块下载失败, 退回整包下载:", e);
+      }
+    }
+
+    const resp = await fetch(jsonUrl);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return (await resp.json()) as T;
+  }
   /** 将 IDS 字符串渲染为 SVG，未就绪或失败返回 null */
   renderSvg(ids: string): string | null {
     const out = this.renderSvgInner(ids);
