@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { PanelMode, WritingMode } from "../App";
 import type { CandidateSource, CandidateSourceState } from "../editor/candidateEngine";
 
@@ -31,35 +31,44 @@ const CAND_SOURCES: { key: CandidateSource; label: string }[] = [
 ];
 
 /**
- * IDS 算符表
+ * IDS 算符宫格
  *
- * 顺序、快捷键、方向码全部对齐 `editor/idsNumpad.ts`：
- *   主字典 IDS_ALT_NUMPAD  → NumpadAdd(Numpad+) / NumpadSubtract(Numpad-) / 1…0 / M / T / J
- *   三聚字典 Trity_IDS_OPERATOR → Equal(=) 或 Ctrl+Numpad+ 得 ⿳，Minus(-) 或 Ctrl+Numpad- 得 ⿲
+ * 布局照 `ids_layout.txt`：
+ *   ⿰⿱⿲⿳      ← 4 个（结构）
+ *   ⿸⿵⿹        ← 3 个
+ *   ⿷⿴⿼        ← 3 个
+ *   ⿺⿶⿽        ← 3 个
+ *     ⿻         ← 居中
+ *   ⿾⿿㇯        ← 修饰（镜像/旋转/减去）
  *
- * title 里的两个字母是字典注释里的方向码：
- *   U/D/L/R = 上/下/左/右, O = open (开口方向), C = closed (全包围),
- *   XX = 重叠, MI = 镜像, RO = 旋转, SU = 减去, UU/LL = 上下三叠 / 左右三并
- * 所以 ⿸ = RD（向右下开口）、⿹ = LD、⿵ = OD、⿶ = OU、⿷ = OR、⿼ = OL、⿽ = LU、⿺ = RU。
+ * span 是 12 栅格里的跨度：4 个一行用 3，3 个一行用 4，⿻ 居中占 5–8。
+ * 顺序与快捷键说明见 `editor/idsNumpad.ts`（UD/LR/RU/OU/LU/OR/OC/OL/RD/OD/LD/XX/MI/RO/SU/UU/LL）。
  */
-const IDS_OPERATORS = [
-  { label: "⿱", title: "UD 上下结构 — Alt+Numpad+" },
-  { label: "⿰", title: "LR 左右结构 — Alt+Numpad-" },
-  { label: "⿺", title: "RU 左下包围 (向右上开口) — Alt+Numpad1" },
-  { label: "⿶", title: "OU 下三包围 (向上开口) — Alt+Numpad2" },
-  { label: "⿽", title: "LU 右下包围 (向左上开口) — Alt+Numpad3" },
-  { label: "⿷", title: "OR 左三包围 (向右开口) — Alt+Numpad4" },
-  { label: "⿴", title: "OC 全包围 — Alt+Numpad5" },
-  { label: "⿼", title: "OL 右二包围 (向左开口) — Alt+Numpad6" },
-  { label: "⿸", title: "RD 左上包围 (向右下开口) — Alt+Numpad7" },
-  { label: "⿵", title: "OD 上三包围 (向下开口) — Alt+Numpad8" },
-  { label: "⿹", title: "LD 右上包围 (向左下开口) — Alt+Numpad9" },
-  { label: "⿻", title: "XX 重叠 — Alt+Numpad0" },
-  { label: "⿾", title: "MI 镜像 — Alt+M" },
-  { label: "⿿", title: "RO 旋转 — Alt+T" },
-  { label: "㇯", title: "SU 减去 — Alt+J" },
-  { label: "⿳", title: "UU 上中下 — Alt+Ctrl+= 或 Alt+Ctrl+Numpad+" },
-  { label: "⿲", title: "LL 左中右 — Alt+Ctrl+- 或 Alt+Ctrl+Numpad-" },
+interface IdsPadItem {
+  label: string;
+  title: string;
+  span: number;
+  center?: boolean;
+}
+
+const IDS_PAD: IdsPadItem[] = [
+  { label: "⿰", span: 3, title: "LR 左右结构 — Alt+Numpad-" },
+  { label: "⿱", span: 3, title: "UD 上下结构 — Alt+Numpad+" },
+  { label: "⿲", span: 3, title: "LL 左中右 — Alt+Ctrl+- 或 Alt+Ctrl+Numpad-" },
+  { label: "⿳", span: 3, title: "UU 上中下 — Alt+Ctrl+= 或 Alt+Ctrl+Numpad+" },
+  { label: "⿸", span: 4, title: "RD 左上包围 (向右下开口) — Alt+Numpad7" },
+  { label: "⿵", span: 4, title: "OD 上三包围 (向下开口) — Alt+Numpad8" },
+  { label: "⿹", span: 4, title: "LD 右上包围 (向左下开口) — Alt+Numpad9" },
+  { label: "⿷", span: 4, title: "OR 左三包围 (向右开口) — Alt+Numpad4" },
+  { label: "⿴", span: 4, title: "OC 全包围 — Alt+Numpad5" },
+  { label: "⿼", span: 4, title: "OL 右二包围 (向左开口) — Alt+Numpad6" },
+  { label: "⿺", span: 4, title: "RU 左下包围 (向右上开口) — Alt+Numpad1" },
+  { label: "⿶", span: 4, title: "OU 下三包围 (向上开口) — Alt+Numpad2" },
+  { label: "⿽", span: 4, title: "LU 右下包围 (向左上开口) — Alt+Numpad3" },
+  { label: "⿻", span: 4, center: true, title: "XX 重叠 — Alt+Numpad0" },
+  { label: "⿾", span: 4, title: "MI 镜像 — Alt+M" },
+  { label: "⿿", span: 4, title: "RO 旋转 — Alt+T" },
+  { label: "㇯", span: 4, title: "SU 减去 — Alt+J" },
 ];
 
 type MenuKey = "file" | "md" | "ids" | "cand" | null;
@@ -71,17 +80,37 @@ function Toolbar({
   boldActive, italicActive, headingLevel,
   candEnabled, onToggleCandidate,
 }: ToolbarProps) {
-  // 手机上工具条放不下: 文件 / Markdown / IDS 算符都收进下拉菜单。
-  // 下拉外观统一用 .cand-toggle* 那套样式（与候选数据源菜单一致）。
   const [openMenu, setOpenMenu] = useState<MenuKey>(null);
-  const toggle = (k: Exclude<MenuKey, null>) => setOpenMenu((v) => (v === k ? null : k));
+  // IDS 宫格是"浮层"：手机上它比按钮宽得多，绝对定位会被屏幕/父元素裁掉。
+  // 打开时按按钮位置量一次，改成 position:fixed 并夹进视口内（等效居中）。
+  const idsBtnRef = useRef<HTMLButtonElement>(null);
+  const [idsPos, setIdsPos] = useState<{ left: number; top: number; width: number } | null>(null);
+
   const close = () => setOpenMenu(null);
+  const toggle = (k: Exclude<MenuKey, null>) => setOpenMenu((v) => (v === k ? null : k));
+
+  const openIds = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (openMenu === "ids") { close(); return; }
+    const r = idsBtnRef.current?.getBoundingClientRect();
+    const vw = window.innerWidth;
+    const w = Math.min(300, vw - 12);
+    if (r) {
+      const left = Math.min(Math.max(6, r.left + r.width / 2 - w / 2), vw - w - 6);
+      setIdsPos({ left, top: r.bottom + 4, width: w });
+    }
+    setOpenMenu("ids");
+  };
 
   useEffect(() => {
     if (!openMenu) return;
     const h = () => setOpenMenu(null);
     document.addEventListener("click", h);
-    return () => document.removeEventListener("click", h);
+    window.addEventListener("resize", h);
+    return () => {
+      document.removeEventListener("click", h);
+      window.removeEventListener("resize", h);
+    };
   }, [openMenu]);
 
   const stop = (e: React.MouseEvent) => e.stopPropagation();
@@ -190,33 +219,37 @@ function Toolbar({
         </div>
       )}
 
-      {/* IDS 算符: 下拉宫格 (外观与候选菜单一致) */}
+      {/* IDS 算符: 触发按钮用 ⿻ (重叠)，宫格按 ids_layout.txt 排 */}
       <div className="toolbar-group">
-        <div className="cand-toggle">
-          <button
-            className={`toolbar-btn${openMenu === "ids" ? " active" : ""}`}
-            title="IDS 组字算符"
-            onClick={(e) => { stop(e); toggle("ids"); }}
+        <button
+          ref={idsBtnRef}
+          className={`toolbar-btn ids-trigger${openMenu === "ids" ? " active" : ""}`}
+          title="IDS 组字算符"
+          onClick={openIds}
+        >
+          ⿻ ▾
+        </button>
+        {openMenu === "ids" && idsPos && (
+          <div
+            className="ids-menu"
+            style={{ position: "fixed", left: idsPos.left, top: idsPos.top, width: idsPos.width }}
+            onClick={stop}
           >
-            ⿰ ▾
-          </button>
-          {openMenu === "ids" && (
-            <div className="cand-toggle-menu ids-menu" onClick={stop}>
-              <div className="ids-menu-grid">
-                {IDS_OPERATORS.map((op) => (
-                  <button
-                    key={op.label}
-                    className="ids-menu-btn"
-                    title={op.title}
-                    onClick={() => { close(); onInsertText(op.label); }}
-                  >
-                    {op.label}
-                  </button>
-                ))}
-              </div>
+            <div className="ids-menu-grid">
+              {IDS_PAD.map((op) => (
+                <button
+                  key={op.label}
+                  className={`ids-menu-btn${op.center ? " center" : ""}`}
+                  style={{ gridColumn: op.center ? "5 / 9" : `span ${op.span}` }}
+                  title={op.title}
+                  onClick={() => { close(); onInsertText(op.label); }}
+                >
+                  {op.label}
+                </button>
+              ))}
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       <div className="toolbar-spacer" />

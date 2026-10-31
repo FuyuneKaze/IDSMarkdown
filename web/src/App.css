@@ -770,27 +770,49 @@
 .candidate-cell.label:hover {
   background: rgba(255,255,255,0.12);
 }
+/* ===== IDS 算符宫格 (浮层, 由 JS 定位; 布局按 ids_layout.txt) =====
+   字体: 系统字体常缺 U+2FF0–2FFF / U+31EF, 这里优先用自备的 IDS Symbols 子集字体,
+   没有该文件时按字体族回退表逐级降级 (不会报错)。 */
+@font-face {
+  font-family: "IDS Symbols";
+  src: url("/fonts/ids-symbols.woff2") format("woff2"),
+       url("/fonts/ids-symbols.woff") format("woff"),
+       url("/fonts/ids-symbols.ttf") format("truetype");
+  unicode-range: U+2FF0-2FFF, U+31EF;
+  font-display: swap;
+}
 
-/* ===== IDS 算符下拉宫格 (外观与 .cand-toggle-menu 一致) ===== */
+.ids-trigger,
+.ids-menu-btn {
+  font-family: "IDS Symbols", "Noto Sans Symbols 2", "Noto Sans Symbols",
+               "Segoe UI Symbol", "Noto Sans CJK SC", "Source Han Sans SC",
+               "Noto Sans Mono CJK SC", sans-serif;
+  font-feature-settings: normal;
+}
+
 .ids-menu {
-  min-width: 232px;
+  z-index: 300;
+  background: #2b2b2b;
+  border: 1px solid #505050;
+  border-radius: 6px;
   padding: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
 }
 .ids-menu-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: 4px;
 }
 .ids-menu-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 36px;
+  height: 40px;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   background: #3a3a3a;
   color: var(--text-primary, #e8e8e8);
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1;
   cursor: pointer;
 }
@@ -800,9 +822,7 @@
   color: #000;
 }
 
-/* ===== 竖屏 / 窄屏适配 =====
-   之前工具条是单行 flex 且 nowrap, 手机上右侧按钮被裁掉。
-   这里：允许换行 + 加大点击区 + 下拉菜单加大, 并把底部安全区考虑进去。 */
+/* ===== 竖屏 / 窄屏适配 ===== */
 @media (max-width: 760px), (max-height: 500px) {
   .toolbar {
     flex-wrap: wrap;
@@ -811,15 +831,9 @@
     padding: 3px 4px calc(3px + env(safe-area-inset-bottom, 0px)) 4px;
     row-gap: 2px;
   }
-  .toolbar-group {
-    padding: 0 2px;
-  }
-  .toolbar-group + .toolbar-group {
-    border-left: none;
-  }
-  .toolbar-spacer {
-    display: none;
-  }
+  .toolbar-group { padding: 0 2px; }
+  .toolbar-group + .toolbar-group { border-left: none; }
+  .toolbar-spacer { display: none; }
   .toolbar-btn,
   .toolbar-btn-idsop {
     height: 40px;
@@ -827,7 +841,6 @@
     font-size: 14px;
     padding: 0 10px;
   }
-  /* 下拉面板: 手机上一列, 项更高更好点 */
   .cand-toggle-menu {
     min-width: 180px;
     padding: 8px;
@@ -837,15 +850,7 @@
     padding: 10px 12px;
     font-size: 15px;
   }
-  .ids-menu {
-    min-width: 264px;
-  }
-  .ids-menu-grid {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 6px;
-  }
-  .ids-menu-btn {
-    height: 46px;
-    font-size: 20px;
-  }
+  .ids-menu { padding: 10px; }
+  .ids-menu-btn { height: 48px; font-size: 26px; }
+  .ids-menu-grid { gap: 6px; }
 }
