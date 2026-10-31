@@ -31,7 +31,7 @@ const CAND_SOURCES: { key: CandidateSource; label: string }[] = [
 ];
 
 /**
- * IDS 算符按钮
+ * IDS 算符表
  *
  * 顺序、快捷键、方向码全部对齐 `editor/idsNumpad.ts`：
  *   主字典 IDS_ALT_NUMPAD  → NumpadAdd(Numpad+) / NumpadSubtract(Numpad-) / 1…0 / M / T / J
@@ -43,24 +43,26 @@ const CAND_SOURCES: { key: CandidateSource; label: string }[] = [
  * 所以 ⿸ = RD（向右下开口）、⿹ = LD、⿵ = OD、⿶ = OU、⿷ = OR、⿼ = OL、⿽ = LU、⿺ = RU。
  */
 const IDS_OPERATORS = [
-  { label: "⿱", title: "UD — Alt+Numpad+" },
-  { label: "⿰", title: "LR — Alt+Numpad-" },
-  { label: "⿺", title: "RU — Alt+Numpad1" },
-  { label: "⿶", title: "OU — Alt+Numpad2" },
-  { label: "⿽", title: "LU — Alt+Numpad3" },
-  { label: "⿷", title: "OR — Alt+Numpad4" },
-  { label: "⿴", title: "OC — Alt+Numpad5" },
-  { label: "⿼", title: "OL — Alt+Numpad6" },
-  { label: "⿸", title: "RD — Alt+Numpad7" },
-  { label: "⿵", title: "OD — Alt+Numpad8" },
-  { label: "⿹", title: "LD — Alt+Numpad9" },
-  { label: "⿻", title: "XX — Alt+Numpad0" },
-  { label: "⿾", title: "MI — Alt+M" },
-  { label: "⿿", title: "RO — Alt+T" },
-  { label: "㇯", title: "SU — Alt+J" },
-  { label: "⿳", title: "UU — Alt+Ctrl+= || Alt+Ctrl+Numpad+" },
-  { label: "⿲", title: "LL — Alt+Ctrl+- || Alt+Ctrl+Numpad-" },
+  { label: "⿱", title: "UD 上下结构 — Alt+Numpad+" },
+  { label: "⿰", title: "LR 左右结构 — Alt+Numpad-" },
+  { label: "⿺", title: "RU 左下包围 (向右上开口) — Alt+Numpad1" },
+  { label: "⿶", title: "OU 下三包围 (向上开口) — Alt+Numpad2" },
+  { label: "⿽", title: "LU 右下包围 (向左上开口) — Alt+Numpad3" },
+  { label: "⿷", title: "OR 左三包围 (向右开口) — Alt+Numpad4" },
+  { label: "⿴", title: "OC 全包围 — Alt+Numpad5" },
+  { label: "⿼", title: "OL 右二包围 (向左开口) — Alt+Numpad6" },
+  { label: "⿸", title: "RD 左上包围 (向右下开口) — Alt+Numpad7" },
+  { label: "⿵", title: "OD 上三包围 (向下开口) — Alt+Numpad8" },
+  { label: "⿹", title: "LD 右上包围 (向左下开口) — Alt+Numpad9" },
+  { label: "⿻", title: "XX 重叠 — Alt+Numpad0" },
+  { label: "⿾", title: "MI 镜像 — Alt+M" },
+  { label: "⿿", title: "RO 旋转 — Alt+T" },
+  { label: "㇯", title: "SU 减去 — Alt+J" },
+  { label: "⿳", title: "UU 上中下 — Alt+Ctrl+= 或 Alt+Ctrl+Numpad+" },
+  { label: "⿲", title: "LL 左中右 — Alt+Ctrl+- 或 Alt+Ctrl+Numpad-" },
 ];
+
+type MenuKey = "file" | "md" | "ids" | "cand" | null;
 
 function Toolbar({
   writingMode, onToggleWritingMode, onOpenPanel, panelMode, onInsertText,
@@ -69,38 +71,52 @@ function Toolbar({
   boldActive, italicActive, headingLevel,
   candEnabled, onToggleCandidate,
 }: ToolbarProps) {
-  const [candMenuOpen, setCandMenuOpen] = useState(false);
+  // 手机上工具条放不下: 文件 / Markdown / IDS 算符都收进下拉菜单。
+  // 下拉外观统一用 .cand-toggle* 那套样式（与候选数据源菜单一致）。
+  const [openMenu, setOpenMenu] = useState<MenuKey>(null);
+  const toggle = (k: Exclude<MenuKey, null>) => setOpenMenu((v) => (v === k ? null : k));
+  const close = () => setOpenMenu(null);
 
-  // 点击外部关闭候选源菜单
   useEffect(() => {
-    if (!candMenuOpen) return;
-    const close = () => setCandMenuOpen(false);
-    document.addEventListener("click", close);
-    return () => document.removeEventListener("click", close);
-  }, [candMenuOpen]);
+    if (!openMenu) return;
+    const h = () => setOpenMenu(null);
+    document.addEventListener("click", h);
+    return () => document.removeEventListener("click", h);
+  }, [openMenu]);
+
+  const stop = (e: React.MouseEvent) => e.stopPropagation();
+  const mdLabel = headingLevel ? `H${headingLevel}` : "A";
 
   return (
     <div className="toolbar">
-      {/* Menu */}
       <div className="toolbar-group">
         <button className="toolbar-btn" title="菜单">≡</button>
       </div>
 
-      {/* File ops */}
+      {/* 文件: 一个下拉代替 新建/打开/保存 三个按钮 */}
       <div className="toolbar-group">
-        <button
-          className={`toolbar-btn wide ${showFileSidebar ? "active" : ""}`}
-          title="文件面板"
-          onClick={onToggleFileSidebar}
-        >
-          文件
-        </button>
-        <button className="toolbar-btn wide" title="新建 (Ctrl+N)" onClick={onNewFile}>新建</button>
-        <button className="toolbar-btn wide" title="打开 (Ctrl+O)" onClick={onOpenFile}>打开</button>
-        <button className="toolbar-btn primary" title="保存 (Ctrl+S)" onClick={onSaveFile}>保存</button>
+        <div className="cand-toggle">
+          <button
+            className={`toolbar-btn wide${openMenu === "file" ? " active" : ""}`}
+            title="文件"
+            onClick={(e) => { stop(e); toggle("file"); }}
+          >
+            文件 ▾
+          </button>
+          {openMenu === "file" && (
+            <div className="cand-toggle-menu" onClick={stop}>
+              <div className="cand-toggle-item" onClick={() => { close(); onToggleFileSidebar?.(); }}>
+                文件面板{showFileSidebar ? "（关）" : "（开）"}
+              </div>
+              <div className="cand-toggle-item" onClick={() => { close(); onNewFile?.(); }}>新建</div>
+              <div className="cand-toggle-item" onClick={() => { close(); onOpenFile?.(); }}>打开</div>
+              <div className="cand-toggle-item" onClick={() => { close(); onSaveFile?.(); }}>保存</div>
+            </div>
+          )}
+        </div>
       </div>
 
-      {/* Writing mode */}
+      {/* 写作方向 */}
       <div className="toolbar-group">
         <button
           className={`toolbar-btn wide ${writingMode === "vertical" ? "active" : ""}`}
@@ -111,17 +127,39 @@ function Toolbar({
         </button>
       </div>
 
-      {/* Markdown */}
+      {/* Markdown: 下拉 */}
       <div className="toolbar-group">
-        <button className={`toolbar-btn ${boldActive ? "active" : ""}`} title="粗体 (Ctrl+B)" onClick={onToggleBold}><b>B</b></button>
-        <button className={`toolbar-btn ${italicActive ? "active" : ""}`} title="斜体 (Ctrl+I)" onClick={onToggleItalic}><i>I</i></button>
-        <button
-          className={`toolbar-btn ${headingLevel ? "active" : ""}`}
-          title="标题 (点击循环 H1→H2→H3→H4→关闭)"
-          onClick={onCycleHeading}
-        >
-          {headingLevel ? `H${headingLevel}` : "H"}
-        </button>
+        <div className="cand-toggle">
+          <button
+            className={`toolbar-btn${openMenu === "md" ? " active" : ""}`}
+            title="格式"
+            onClick={(e) => { stop(e); toggle("md"); }}
+          >
+            {mdLabel} ▾
+          </button>
+          {openMenu === "md" && (
+            <div className="cand-toggle-menu" onClick={stop}>
+              <div
+                className={`cand-toggle-item${boldActive ? " active" : ""}`}
+                onClick={() => { close(); onToggleBold?.(); }}
+              >
+                粗体 <b>B</b>
+              </div>
+              <div
+                className={`cand-toggle-item${italicActive ? " active" : ""}`}
+                onClick={() => { close(); onToggleItalic?.(); }}
+              >
+                斜体 <i>I</i>
+              </div>
+              <div
+                className={`cand-toggle-item${headingLevel ? " active" : ""}`}
+                onClick={() => { close(); onCycleHeading?.(); }}
+              >
+                标题 {headingLevel ? `H${headingLevel} → ${headingLevel >= 4 ? "关" : "H" + (headingLevel + 1)}` : "H1"}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* 候选数据源开关 */}
@@ -129,14 +167,14 @@ function Toolbar({
         <div className="toolbar-group">
           <div className="cand-toggle">
             <button
-              className={`toolbar-btn wide${candMenuOpen ? " active" : ""}`}
+              className={`toolbar-btn wide${openMenu === "cand" ? " active" : ""}`}
               title="候选数据源开关"
-              onClick={(e) => { e.stopPropagation(); setCandMenuOpen((v) => !v); }}
+              onClick={(e) => { stop(e); toggle("cand"); }}
             >
               候选 ▾
             </button>
-            {candMenuOpen && (
-              <div className="cand-toggle-menu" onClick={(e) => e.stopPropagation()}>
+            {openMenu === "cand" && (
+              <div className="cand-toggle-menu" onClick={stop}>
                 {CAND_SOURCES.map((s) => (
                   <div
                     key={s.key}
@@ -152,23 +190,38 @@ function Toolbar({
         </div>
       )}
 
-      {/* IDS operators */}
+      {/* IDS 算符: 下拉宫格 (外观与候选菜单一致) */}
       <div className="toolbar-group">
-        {IDS_OPERATORS.map((op) => (
+        <div className="cand-toggle">
           <button
-            key={op.label}
-            className="toolbar-btn-idsop"
-            title={op.title}
-            onClick={() => onInsertText(op.label)}
+            className={`toolbar-btn${openMenu === "ids" ? " active" : ""}`}
+            title="IDS 组字算符"
+            onClick={(e) => { stop(e); toggle("ids"); }}
           >
-            {op.label}
+            ⿰ ▾
           </button>
-        ))}
+          {openMenu === "ids" && (
+            <div className="cand-toggle-menu ids-menu" onClick={stop}>
+              <div className="ids-menu-grid">
+                {IDS_OPERATORS.map((op) => (
+                  <button
+                    key={op.label}
+                    className="ids-menu-btn"
+                    title={op.title}
+                    onClick={() => { close(); onInsertText(op.label); }}
+                  >
+                    {op.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="toolbar-spacer" />
 
-      {/* Special modes */}
+      {/* 右侧面板按钮: 竖屏时自动换行, 不再被裁掉 */}
       <div className="toolbar-group">
         <button
           className={`toolbar-btn ${panelMode === "ruby" ? "active" : ""}`}
