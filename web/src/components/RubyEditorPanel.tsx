@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { panelKeyInsert, insertIntoField } from "../editor/panelKeys";
+import FieldCandidateInput from "./FieldCandidateInput";
 import type { RubyTarget } from "./Editor";
 
 interface Props {
@@ -39,11 +39,6 @@ export default function RubyEditorPanel({ target, onInsert, onUpdate }: Props) {
   };
 
 
-  // 面板输入框继承主编辑器的快捷键 (Alt+算符 / Alt+字母→IPA)
-  const onFieldKey = (e: React.KeyboardEvent<HTMLInputElement>, apply: (v: string) => void) => {
-    const ins = panelKeyInsert(e as unknown as KeyboardEvent);
-    if (ins) { e.preventDefault(); insertIntoField(e.currentTarget, ins, apply); }
-  };
 
   return (
     <>
@@ -53,21 +48,19 @@ export default function RubyEditorPanel({ target, onInsert, onUpdate }: Props) {
         <p className="form-hint">将光标移到需要加注音的位置（块会插入到光标处），输入文字与注音后点击插入。</p>
       )}
       <label className="form-label">文字</label>
-      <input
+      <FieldCandidateInput
         className="form-input"
         value={base}
         placeholder="請輸入文字"
-        onChange={(e) => onBaseChange(e.target.value)}
-        onKeyDown={(e) => onFieldKey(e, onBaseChange)}
+        onChange={onBaseChange}
         autoFocus
       />
       <label className="form-label">注音</label>
-      <input
+      <FieldCandidateInput
         className="form-input"
         value={rt}
         placeholder="請輸入Ruby"
-        onChange={(e) => onRtChange(e.target.value)}
-        onKeyDown={(e) => onFieldKey(e, onRtChange)}
+        onChange={onRtChange}
       />
       {!target && (
         <button className="form-btn primary" onClick={() => onInsert(base, rt)}>

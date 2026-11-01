@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { panelKeyInsert, insertIntoField } from "../editor/panelKeys";
+import FieldCandidateInput from "./FieldCandidateInput";
 import type { AnnotationTarget } from "./Editor";
 
 interface Props {
@@ -24,10 +24,6 @@ export default function AnnotationEditorPanel({ target, onInsert, onUpdate }: Pr
   };
 
 
-  const onFieldKey = (e: React.KeyboardEvent<HTMLInputElement>, apply: (v: string) => void) => {
-    const ins = panelKeyInsert(e as unknown as KeyboardEvent);
-    if (ins) { e.preventDefault(); insertIntoField(e.currentTarget, ins, apply); }
-  };
 
   return (
     <>
@@ -41,13 +37,12 @@ export default function AnnotationEditorPanel({ target, onInsert, onUpdate }: Pr
         </p>
       )}
       <label className="form-label">注释文字</label>
-      <input
+      <FieldCandidateInput
         className="form-input"
         value={text}
         placeholder="請輸入註釋"
         //這deepseek還挺有意思自己寫了個“唐音不响，春天已深”當示例文字。
-        onChange={(e) => onChange(e.target.value)}
-        onKeyDown={(e) => onFieldKey(e, onChange)}
+        onChange={onChange}
         autoFocus
       />
       {!target && (
