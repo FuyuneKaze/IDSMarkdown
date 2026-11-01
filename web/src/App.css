@@ -823,7 +823,9 @@
 }
 
 /* ===== 竖屏 / 窄屏适配 ===== */
-@media (max-width: 760px), (max-height: 500px) {
+/* 只有"真的窄"才折行 —— 之前把 (max-height:500px) 也列进来, 桌面端窗口一矮
+   （或页面缩放后高度变小）就会误触发折叠。横屏手机用 pointer:coarse 单独判定。 */
+@media (max-width: 760px) {
   .toolbar {
     flex-wrap: wrap;
     height: auto;
@@ -853,4 +855,17 @@
   .ids-menu { padding: 10px; }
   .ids-menu-btn { height: 48px; font-size: 26px; }
   .ids-menu-grid { gap: 6px; }
+}
+
+/* 横屏手机(触屏且矮)才折行, 桌面不受影响 */
+@media (hover: none) and (pointer: coarse) and (max-height: 520px) {
+  .toolbar {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: var(--toolbar-height);
+    row-gap: 2px;
+  }
+  .toolbar-spacer { display: none; }
+  .toolbar-group + .toolbar-group { border-left: none; }
+  .toolbar-btn { height: 40px; min-width: 40px; }
 }
