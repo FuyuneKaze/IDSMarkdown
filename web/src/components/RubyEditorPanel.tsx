@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { panelKeyInsert, insertIntoField } from "../editor/panelKeys";
 import type { RubyTarget } from "./Editor";
 
 interface Props {
@@ -35,6 +36,13 @@ export default function RubyEditorPanel({ target, onInsert, onUpdate }: Props) {
     } else {
       setRt(v);
     }
+  };
+
+
+  // 面板输入框继承主编辑器的快捷键 (Alt+算符 / Alt+字母→IPA)
+  const onFieldKey = (e: React.KeyboardEvent<HTMLInputElement>, apply: (v: string) => void) => {
+    const ins = panelKeyInsert(e as unknown as KeyboardEvent);
+    if (ins) { e.preventDefault(); insertIntoField(e.currentTarget, ins, apply); }
   };
 
   return (

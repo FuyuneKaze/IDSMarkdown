@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { panelKeyInsert, insertIntoField } from "../editor/panelKeys";
 import type { AnnotationTarget } from "./Editor";
 
 interface Props {
@@ -20,6 +21,12 @@ export default function AnnotationEditorPanel({ target, onInsert, onUpdate }: Pr
   const onChange = (v: string) => {
     setText(v);
     if (target) onUpdate(target.pos, v);
+  };
+
+
+  const onFieldKey = (e: React.KeyboardEvent<HTMLInputElement>, apply: (v: string) => void) => {
+    const ins = panelKeyInsert(e as unknown as KeyboardEvent);
+    if (ins) { e.preventDefault(); insertIntoField(e.currentTarget, ins, apply); }
   };
 
   return (
