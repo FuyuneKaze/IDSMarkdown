@@ -47,6 +47,7 @@ export default function AnnotationEditorPanel({ target, onInsert, onUpdate }: Pr
         placeholder="請輸入註釋"
         //這deepseek還挺有意思自己寫了個“唐音不响，春天已深”當示例文字。
         onChange={(e) => onChange(e.target.value)}
+        onKeyDown={(e) => onFieldKey(e, onChange)}
         autoFocus
       />
       {!target && (

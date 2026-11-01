@@ -58,6 +58,7 @@ export default function RubyEditorPanel({ target, onInsert, onUpdate }: Props) {
         value={base}
         placeholder="請輸入文字"
         onChange={(e) => onBaseChange(e.target.value)}
+        onKeyDown={(e) => onFieldKey(e, onBaseChange)}
         autoFocus
       />
       <label className="form-label">注音</label>
@@ -66,6 +67,7 @@ export default function RubyEditorPanel({ target, onInsert, onUpdate }: Props) {
         value={rt}
         placeholder="請輸入Ruby"
         onChange={(e) => onRtChange(e.target.value)}
+        onKeyDown={(e) => onFieldKey(e, onRtChange)}
       />
       {!target && (
         <button className="form-btn primary" onClick={() => onInsert(base, rt)}>
