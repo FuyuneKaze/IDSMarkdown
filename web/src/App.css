@@ -187,7 +187,7 @@
   min-height: 100%;
   padding: 32px 48px;
   outline: none;
-  font-family: 'Times New Roman',IDSGlyphFont, 'Noto Serif Tangut', 'Noto Serif SC', 'Noto Serif JP', 'MetaHan Myungjo', 'Malgun Gothic', 'OEOEBM+CMEXShuowenSeal', '宋体', serif;
+  font-family: "IDS Symbols", 'Times New Roman',IDSGlyphFont, 'Noto Serif Tangut', 'Noto Serif SC', 'Noto Serif JP', 'MetaHan Myungjo', 'Malgun Gothic', 'OEOEBM+CMEXShuowenSeal', '宋体', serif;
   font-size: 18px;
   line-height: 1.8;
   color: var(--text-primary);
@@ -218,7 +218,7 @@
   padding: 2px 6px;
   border-radius: 3px;
   font-size: 0.9em;
-  font-family: IDSGlyphFont, 'Courier New', 'Fira Code', monospace;
+  font-family: "IDS Symbols", IDSGlyphFont, 'Courier New', 'Fira Code', monospace;
 }
 
 /* ── Markdown 源码模式: 语法标记 ── */
@@ -240,7 +240,7 @@
 .md-style-italic { font-style: italic; }
 .md-style-bold-italic { font-weight: 700; font-style: italic; }
 .md-style-code {
-  font-family: IDSGlyphFont, 'Courier New', 'Fira Code', monospace;
+  font-family: "IDS Symbols", IDSGlyphFont, 'Courier New', 'Fira Code', monospace;
   font-size: 0.9em;
   background: rgba(0, 77, 8, 0.12);
   color: #00f000;
@@ -262,7 +262,7 @@
 
 /* IDS Glyph inline element */
 .ids-glyph {
-  font-family: IDSGlyphFont, "IDSGlyphFont-fallback";
+  font-family: "IDS Symbols", IDSGlyphFont, "IDSGlyphFont-fallback";
   vertical-align: bottom;
 }
 
@@ -663,7 +663,7 @@
   color: var(--text-primary);
   font-size: 14px;
   /* IDSGlyphFont 在前: 粘贴 PUA 合成字到基字输入框时可见 (Arial 无 PUA 字形) */
-  font-family: IDSGlyphFont, 'Noto Serif SC', 'Noto Serif JP', 'Malgun Gothic', 'Times New Roman', '宋体', sans-serif;
+  font-family: "IDS Symbols", IDSGlyphFont, 'Noto Serif SC', 'Noto Serif JP', 'Malgun Gothic', 'Times New Roman', '宋体', sans-serif;
   outline: none;
 }
 .form-input:focus {
@@ -778,7 +778,7 @@
   src: url("/fonts/ids-symbols.woff2") format("woff2"),
        url("/fonts/ids-symbols.woff") format("woff"),
        url("/fonts/ids-symbols.ttf") format("truetype");
-  unicode-range: U+2FF0-2FFF, U+31EF;
+  unicode-range: U+2FF0-2FFF, U+31EF, U+1F504;
   font-display: swap;
 }
 

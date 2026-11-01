@@ -26,7 +26,7 @@ html, body, #root {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  font-family: 'Noto Sans SC', 'Noto Serif SC', 'Noto Serif JP', serif;
+  font-family: "IDS Symbols", 'Noto Sans SC', 'Noto Serif SC', 'Noto Serif JP', serif;
   background: var(--bg-primary);
   color: var(--text-primary);
 }
