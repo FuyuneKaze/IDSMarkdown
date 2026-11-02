@@ -1,274 +1,218 @@
-/* 从旧构建产物还原的用户样式覆盖表 (kage-theme-restore.css)
- * 类名哈希已按当前构建重映射; 由 tools/restore_kage_theme.py 生成。
- * 为什么需要它: D:\kage-editor-master 是上游版本, 与产出旧 dist 的那份源码不同,
- * 直接重建会丢 11 处调色/边框/hover 等调整。 */
+/* 旧构建产物的样式覆盖表 (仅模块级; 全局规则已在 src/index.css 内) */
 
-:root {
-  --color-accent-yellow: #FACC15;
-  --color-accent-auxiline: #726100;
-}
-
-._gridLines_lrj3e_4 {
+._gridLines_5s0bf_4 {
   pointer-events:none;
 }
-
-._gridLines_lrj3e_4 path {
+._gridLines_5s0bf_4 path {
   fill:none;
   stroke:var(--color-grid);
   stroke-width:1px;
 }
-
-._strokesDeselected_oxawj_4 polygon {
+._strokesDeselected_r1ysd_4 polygon {
   fill:var(--color-fg);
   stroke:none;
 }
-
-._xormaskFill_oxawj_9 {
+._xormaskFill_r1ysd_9 {
   fill:var(--color-fg);
   pointer-events:none;
 }
-
-._xormaskFill_oxawj_9._translucent_oxawj_14 {
+._xormaskFill_r1ysd_9._translucent_r1ysd_14 {
   fill-opacity:.7;
 }
-
-._strokesInvert_oxawj_18 polygon {
+._strokesInvert_r1ysd_18 polygon {
   fill:var(--color-bg);
   stroke:none;
   pointer-events:none;
 }
-
-._strokesSelected_oxawj_24 polygon {
+._strokesSelected_r1ysd_24 polygon {
   fill:var(--color-accent-yellow);
   stroke:none;
 }
-
-._movableStroke_oxawj_29 {
+._movableStroke_r1ysd_29 {
   cursor:move;
 }
-
-._strokeCenterLine_1hf5z_4 {
+._strokeCenterLine_1q989_4 {
   fill:none;
   stroke:var(--color-centerline);
   stroke-width:1px;
   pointer-events:none;
 }
-
-._controlpointRect_z0r5k_4 {
+._controlpointRect_1fcei_4 {
   fill:var(--color-accent-auxiline);
   stroke:var(--color-accent-auxiline);
   stroke-width:1px;
 }
-
-._controlpointRect_z0r5k_4._online_z0r5k_10 {
+._controlpointRect_1fcei_4._online_1fcei_11 {
   fill:var(--color-accent-green);
   stroke:var(--color-accent-green);
 }
-
-._controlpointRect_z0r5k_4._match_z0r5k_15 {
+._controlpointRect_1fcei_4._match_1fcei_16 {
   fill:var(--color-accent-green);
   stroke:var(--color-accent-yellow);
 }
-
-._controlpointRect_z0r5k_4._move_z0r5k_20 {
+._controlpointRect_1fcei_4._move_1fcei_21 {
   cursor:move;
   color: var(--color-accent-green);
 }
-
-._controlpointRect_z0r5k_4._nsResize_z0r5k_23 {
+._controlpointRect_1fcei_4._nsResize_1fcei_24 {
   cursor:ns-resize;
 }
-
-._controlpointRect_z0r5k_4._ewResize_z0r5k_26 {
+._controlpointRect_1fcei_4._ewResize_1fcei_27 {
   cursor:ew-resize;
 }
-
-._controlpointRect_z0r5k_4._nwseResize_z0r5k_29 {
+._controlpointRect_1fcei_4._nwseResize_1fcei_30 {
   cursor:nwse-resize;
 }
-
-._controlpointRect_z0r5k_4._neswResize_z0r5k_32 {
+._controlpointRect_1fcei_4._neswResize_1fcei_33 {
   cursor:nesw-resize;
 }
-
-._selectionRect_jkl8l_4 {
+._selectionRect_qhl28_4 {
   fill:none;
   stroke:var(--color-accent-auxiline);
   stroke-width:1px;
   pointer-events:none;
 }
-
-._auxiliaryLines_jkl8l_11 {
+._auxiliaryLines_qhl28_11 {
   fill:none;
   stroke:var(--color-accent-auxiline);
   stroke-width:1px;
   pointer-events:none;
 }
-
-._areaSelectRect_15t7x_4 {
+._areaSelectRect_18ajm_4 {
   fill:none;
   stroke:var(--color-accent-auxiline);
   stroke-width:1px;
   pointer-events:none;
 }
-
-._glyphBoundary_1lsd4_4 {
+._glyphBoundary_rpfmh_4 {
   fill:none;
   stroke:var(--color-guide-strong);
   stroke-width:2;
 }
-
-._glyphGuide_1lsd4_10 {
+._glyphGuide_rpfmh_10 {
   fill:none;
   stroke:var(--color-guide-weak);
   stroke-width:1;
 }
-
-._glyphArea_p4jjr_32 svg._freehand_1lsd4_16 * {
+._glyphArea_vmwm6_32 svg._freehand_vmwm6_71 * {
   pointer-events:none;
 }
-
-._glyphArea_p4jjr_32 svg {
+._glyphArea_vmwm6_32 svg {
   stroke-linecap:round;
   stroke-linejoin:round;
 }
-
-._selectControl_wd1e3_9 {
+._selectControl_1bges_9 {
   display:flex;
   flex-flow:column;
 }
-
-._selectedInfo_e9qip_9 {
+._selectedInfo_1ev21_9 {
   flex:1;
   color:var(--color-fg);
 }
-
-._alert_e9qip_14 {
+._alert_1ev21_14 {
   color:var(--color-alert);
 }
-
-._selectionControl_e9qip_18 {
+._selectionControl_1ev21_18 {
   display:grid;
   grid-template-columns:auto auto auto;
   justify-content:center;
   align-items:center;
   gap:2px;
 }
-
-._buttonGroup_e9qip_26 {
+._buttonGroup_1ev21_26 {
   display:flex;
   flex-flow:column;
 }
-
-._buttonGroup_e9qip_26 button {
+._buttonGroup_1ev21_26 button {
   width:100%;
 }
-
-._selectPrevnextButton_e9qip_35 {
+._selectPrevnextButton_1ev21_35 {
   height:2.5em;
 }
-
-._selectionNum_e9qip_39 {
+._selectionNum_1ev21_39 {
   margin:0 1em;
   width:5em;
   text-align:center;
   align-self:center;
   color:var(--color-fg);
 }
-
-._editorControls_p4jjr_39 {
+._editorControls_vmwm6_39 {
   display:flex;
   padding:10px;
 }
-
-._selectControl_wd1e3_9 {
+._selectControl_1bges_9 {
   flex:1;
 }
-
-._controlButtons_wd1e3_13 {
+._controlButtons_1bges_13 {
   margin:0 1em;
   display:grid;
   grid-template-columns:repeat(2,5em);
   gap:3px;
 }
-
-._preview_wd1e3_19 {
+._preview_1bges_19 {
   display:flex;
   flex-flow:column;
   justify-content:space-evenly;
   width:7em;
 }
-
-._nameEdit_wd1e3_26 {
+._nameEdit_1bges_26 {
   display:flex;
   padding-bottom:10px;
   color:var(--color-fg);
 }
-
-._nameEdit_wd1e3_26 input {
+._nameEdit_1bges_26 input {
   flex:1;
   max-width:6em;
   color:var(--color-fg);
 }
-
-._previewThumbnail_wd1e3_37 {
+._previewThumbnail_1bges_37 {
   align-self:center;
   border:1px solid var(--color-border-mid);
 }
-
-._preview_wd1e3_19 button {
+._preview_1bges_19 button {
   font-weight:700;
 }
-
-._partsList_7pvik_4 {
+._partsList_1q6r5_4 {
   display:grid;
   grid-template-columns:repeat(auto-fill,60px);
 }
-
-._partsList_7pvik_4 img {
+._partsList_1q6r5_4 img {
   border:1px solid var(--color-border-mid);
   margin:4px;
   cursor:pointer;
   filter:invert(100%);
 }
-
-._partsList_7pvik_4 img:hover {
+._partsList_1q6r5_4 img:hover {
   border:5px solid var(--color-accent-red);
   margin:0;
 }
-
-._partsSearchArea_p4jjr_26 {
+._partsSearchArea_vmwm6_26 {
   display:flex;
   flex-flow:column;
   color:var(--color-fg);
 }
-
-._partsSearchBox_1c54f_10 {
+._partsSearchBox_mjntf_10 {
   display:flex;
   padding:10px;
   color:var(--color-fg);
 }
-
-._partsSearchBox_1c54f_10 input {
+._partsSearchBox_mjntf_10 input {
   flex:1;
   color:var(--color-fg);
 }
-
-._partsListArea_1c54f_21 {
+._partsListArea_mjntf_21 {
   border:1px solid var(--color-border-dark);
   flex:1 1;
   text-align:center;
   overflow-y:scroll;
   color:var(--color-fg);
 }
-
-._partsListArea_1c54f_21 div._message_1c54f_29 {
+._partsListArea_mjntf_21 div._message_mjntf_29 {
   margin:3em 0;
   width:240px;
   color:var(--color-fg);
 }
-
-._partsHoverName_1c54f_35 {
+._partsHoverName_mjntf_35 {
   width:240px;
   height:1.3em;
   line-height:1.3;
@@ -276,8 +220,7 @@
   white-space:nowrap;
   text-overflow:ellipsis;
 }
-
-._modalContent_1sbe4_4 {
+._modalContent_qj1th_4 {
   position:absolute;
   left:50%;
   transform:translate(-50%);
@@ -290,20 +233,17 @@
   outline:none;
   padding:20px;
 }
-
-._modalContent_1sbe4_4 input[type=number] {
+._modalContent_qj1th_4 input[type=number] {
   width:4em;
 }
-
-._gridOption_1sbe4_22 {
+._gridOption_qj1th_22 {
   display:grid;
   grid-template-columns:auto auto auto auto;
   grid-gap:4px;
   margin-top:4px;
   text-align:right;
 }
-
-._generalOption_1sbe4_30 {
+._generalOption_qj1th_30 {
   display:grid;
   grid-template-columns:auto auto;
   grid-gap:4px;
@@ -312,106 +252,31 @@
   width:max-content;
   margin:10px auto;
 }
-
-._closeOption_1sbe4_40 {
+._closeOption_qj1th_40 {
   display:grid;
   width:80%;
   margin:auto;
 }
-
-._App_p4jjr_4 {
+._App_vmwm6_4 {
   display:grid;
   grid-template-columns:minmax(200px,1fr);
   grid-template-rows:minmax(200px,2fr) 1fr 2fr;
   position:absolute;
   inset:0;
 }
-
-._partsSearchArea_p4jjr_26 {
+._partsSearchArea_vmwm6_26 {
   grid-column:1/2;
   grid-row:3/4;
   overflow:hidden;
 }
-
-._glyphArea_p4jjr_32 {
+._glyphArea_vmwm6_32 {
   grid-column:1/2;
   grid-row:1/2;
   border:1px solid var(--color-border-light);
   overflow:hidden;
 }
-
-._editorControls_p4jjr_39 {
+._editorControls_vmwm6_39 {
   grid-column:1/2;
   grid-row:2/3;
   overflow:hidden;
-}
-
-:root {
-  --color-bg: #1d1d1d;
-  --color-fg: #ffffff;
-  --color-accent-auxiline: #726100;
-  --color-accent-green: #73d216;
-  --color-accent-yellow: #FACC15;
-  --color-accent-red: #0019cc;
-  --color-border-light: color-mix(in srgb, var(--color-fg) 20%, var(--color-bg));
-  --color-border-mid: color-mix(in srgb, var(--color-fg) 33%, var(--color-bg));
-  --color-border-dark: color-mix(in srgb, var(--color-fg) 60%, var(--color-bg));
-  --color-guide-strong: color-mix(in srgb, var(--color-fg) 80%, var(--color-bg));
-  --color-guide-weak: color-mix(in srgb, var(--color-fg) 40%, var(--color-bg));
-  --color-grid: color-mix(in srgb, var(--color-fg) 7%, var(--color-bg));
-  --color-centerline: color-mix(in srgb, var(--color-fg) 11%, var(--color-bg));
-  --color-alert: red;
-}
-
-button,select,input {
-  box-shadow:none;
-  border:0px solid var(--color-border-mid);
-  border-radius:2px;
-  background-color:color-mix(in srgb,var(--color-fg) 12%,var(--color-bg));
-  color:var(--color-fg);
-  font-family:inherit;
-  font-size:inherit;
-  padding:0px 5px;
-  outline:none;
-}
-
-button {
-  cursor:pointer;
-}
-
-button:hover {
-  background-color: var(--color-accent-yellow);
-  color: #1d1d1d;
-}
-
-button:active {
-  background-color:var(--color-accent-yellow);
-  color:var(--color-bg);
-}
-
-button:disabled {
-  background-color:color-mix(in srgb,var(--color-fg) 8%,var(--color-bg));
-  color:color-mix(in srgb,var(--color-fg) 25%,var(--color-bg));
-  cursor:default;
-}
-
-select {
-  cursor:pointer;
-}
-
-input[type=range] {
-  border:none;
-  background:transparent;
-}
-
-body {
-  margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  background-color:var(--color-bg);
-}
-
-code {
-  font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
 }
