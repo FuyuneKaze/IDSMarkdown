@@ -52,6 +52,7 @@ const initialContent = [
   '<p>4. 点击右上角*“KAGE”*按钮可自定义字形与名称并插入文本，光标在合成字形附近右键亦可对其进行编辑</p>',
   '<p>5. 英文输入法下`alt+若干下主键盘字母/数字键`可输入IPA符号</p>',
   '<p>6. 下拉*“候选”*可点选四种候选框开启，使用英文输入法输入拉丁字母即可联想</p>',
+  '<p> LAST CHANGE:202611033353</p>',
 ].join('\n');
 
 const Editor = forwardRef<EditorHandle, EditorProps>(function Editor(
