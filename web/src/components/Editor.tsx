@@ -378,6 +378,65 @@ const Editor = forwardRef<EditorHandle, EditorProps>(function Editor(
     updateCandPos();
   }, [candState?.queryPos, candState?.rows, updateCandPos]);
 
+  // ── 移动端 IME 支持: 监听 composition* 事件 ──
+  // 手机输入法在英文模式下不产生 us 能用的 keydown (key 为 "Unidentified" / "Process"),
+  // 因此候选缓冲永远填不上。这里在合成结束/更新时, 直接从**文档里光标前的拉丁串**重建缓冲,
+  // 复用原有的 query / 接受 / 退格 / 定位逻辑 (位置都是文档位置, 与键盘路径一致)。
+  const syncCandidateFromDoc = useCallback((view: any) => {
+    try {
+      const buf = candBufRef.current;
+      const sel = view.state.selection;
+      if (!sel.empty) { buf.query = ""; buf.queryPos = -1; return; }
+      const pos: number = sel.from;
+      const start = Math.max(0, pos - 24);
+      const before: string = view.state.doc.textBetween(start, pos, "\n", "\n");
+      const m = /[A-Za-z]+$/.exec(before);
+      if (!m) {
+        buf.query = "";
+        buf.queryPos = -1;
+        setCandState(null);
+        return;
+      }
+      buf.query = m[0].toLowerCase();
+      buf.queryPos = pos - m[0].length;
+      updateCandidatePopup();
+    } catch (e) {
+      console.warn("[cand] composition sync failed:", e);
+    }
+  }, [updateCandidatePopup]);
+
+  useEffect(() => {
+    // 编辑器实例可能晚于本 effect 挂载: 轮询直到拿到 view 再绑定 (绑定后清除定时器)
+    let bound = false;
+    let timer = 0;
+    const bind = (): boolean => {
+      const ed = editorRef.current;
+      if (!ed) return false;
+      const dom: HTMLElement = ed.view.dom;
+      const onEnd = () => setTimeout(() => syncCandidateFromDoc(ed.view), 0);
+      const onUpdate = () => syncCandidateFromDoc(ed.view);
+      dom.addEventListener("compositionend", onEnd);
+      dom.addEventListener("compositionupdate", onUpdate);
+      cleanup = () => {
+        dom.removeEventListener("compositionend", onEnd);
+        dom.removeEventListener("compositionupdate", onUpdate);
+      };
+      return true;
+    };
+    let cleanup = () => {};
+    bound = bind();
+    if (!bound) {
+      timer = window.setInterval(() => {
+        if (bind()) { window.clearInterval(timer); timer = 0; }
+      }, 200);
+    }
+    return () => {
+      if (timer) window.clearInterval(timer);
+      cleanup();
+    };
+  }, [syncCandidateFromDoc]);
+
+
   // scroll/resize 重定位
   useEffect(() => {
     if (!candState) return;
