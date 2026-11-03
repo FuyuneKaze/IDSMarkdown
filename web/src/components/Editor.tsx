@@ -52,7 +52,7 @@ const initialContent = [
   '<p>4. 点击右上角*“KAGE”*按钮可自定义字形与名称并插入文本，光标在合成字形附近右键亦可对其进行编辑</p>',
   '<p>5. 英文输入法下`alt+若干下主键盘字母/数字键`可输入IPA符号</p>',
   '<p>6. 下拉*“候选”*可点选四种候选框开启，使用英文输入法输入拉丁字母即可联想</p>',
-  '<p> LAST CHANGE:202611033353</p>',
+  '<p> LAST CHANGE:202611032322</p>',
 ].join('\n');
 
 const Editor = forwardRef<EditorHandle, EditorProps>(function Editor(
@@ -407,26 +407,39 @@ const Editor = forwardRef<EditorHandle, EditorProps>(function Editor(
   }, [updateCandidatePopup]);
 
   useEffect(() => {
-    // 编辑器实例可能晚于本 effect 挂载: 轮询直到拿到 view 再绑定 (绑定后清除定时器)
-    let bound = false;
+    // 候选缓冲的同步源: **编辑器事务** (ed.on("update")/("selectionUpdate"))。
+    // 为什么不用 DOM 事件: 实测手机上百度/讯飞的英文模式不会按"整词"发 compositionend
+    // (逐字母直接插、或 composition 保持到空格), 只有搜狗会发 → 只有搜狗能弹候选。
+    // 改成盯文档后, 任何输入法只要把字母写进文档就会触发。
+    let cleanup = () => {};
     let timer = 0;
     const bind = (): boolean => {
       const ed = editorRef.current;
       if (!ed) return false;
       const dom: HTMLElement = ed.view.dom;
-      const onEnd = () => setTimeout(() => syncCandidateFromDoc(ed.view), 0);
-      const onUpdate = () => syncCandidateFromDoc(ed.view);
-      dom.addEventListener("compositionend", onEnd);
-      dom.addEventListener("compositionupdate", onUpdate);
+      let debounce = 0;
+      const sync = () => {
+        if (candBufRef.current.opInProgress) return;   // 采纳候选过程中的事务不重算
+        if (debounce) window.clearTimeout(debounce);
+        debounce = window.setTimeout(() => {
+          debounce = 0;
+          syncCandidateFromDoc(ed.view);
+        }, 30);
+      };
+      dom.addEventListener("compositionend", sync);
+      dom.addEventListener("compositionupdate", sync);
+      ed.on("update", sync);
+      ed.on("selectionUpdate", sync);
       cleanup = () => {
-        dom.removeEventListener("compositionend", onEnd);
-        dom.removeEventListener("compositionupdate", onUpdate);
+        dom.removeEventListener("compositionend", sync);
+        dom.removeEventListener("compositionupdate", sync);
+        ed.off("update", sync);
+        ed.off("selectionUpdate", sync);
+        if (debounce) window.clearTimeout(debounce);
       };
       return true;
     };
-    let cleanup = () => {};
-    bound = bind();
-    if (!bound) {
+    if (!bind()) {
       timer = window.setInterval(() => {
         if (bind()) { window.clearInterval(timer); timer = 0; }
       }, 200);
@@ -435,7 +448,7 @@ const Editor = forwardRef<EditorHandle, EditorProps>(function Editor(
       if (timer) window.clearInterval(timer);
       cleanup();
     };
-  }, [syncCandidateFromDoc]);
+  }, [syncCandidateFromDoc, candBufRef, editorRef]);
 
 
   // scroll/resize 重定位
