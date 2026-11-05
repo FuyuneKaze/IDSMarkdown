@@ -166,307 +166,307 @@
     },
     {
      "slogan": "p",
-     "name": "p",
+     "name": "清双唇塞音",
      "insert": "p"
     },
     {
      "slogan": "b",
-     "name": "b",
+     "name": "浊双唇塞音",
      "insert": "b"
     },
     {
      "slogan": "t",
-     "name": "t",
+     "name": "清齿龈塞音",
      "insert": "t"
     },
     {
      "slogan": "d",
-     "name": "d",
+     "name": "浊齿龈塞音",
      "insert": "d"
     },
     {
      "slogan": "ʈ",
-     "name": "t long",
+     "name": "清卷舌塞音",
      "insert": "ʈ"
     },
     {
      "slogan": "ɖ",
-     "name": "d hook low",
+     "name": "浊卷舌塞音",
      "insert": "ɖ"
     },
     {
      "slogan": "c",
-     "name": "c",
+     "name": "清硬腭塞音",
      "insert": "c"
     },
     {
      "slogan": "ɟ",
-     "name": "j barred",
+     "name": "浊硬腭塞音",
      "insert": "ɟ"
     },
     {
      "slogan": "k",
-     "name": "k",
+     "name": "清软腭塞音",
      "insert": "k"
     },
     {
      "slogan": "ɡ",
-     "name": "g script",
+     "name": "浊软腭塞音",
      "insert": "ɡ"
     },
     {
      "slogan": "q",
-     "name": "q",
+     "name": "清小舌塞音",
      "insert": "q"
     },
     {
      "slogan": "ɢ",
-     "name": "G small",
+     "name": "浊小舌塞音",
      "insert": "ɢ"
     },
     {
      "slogan": "ʡ",
-     "name": "glottal stop barred",
+     "name": "清会厌塞音",
      "insert": "ʡ"
     },
     {
      "slogan": "ʔ",
-     "name": "glottal stop",
+     "name": "声门清塞音",
      "insert": "ʔ"
     },
     {
      "slogan": "m",
-     "name": "m",
+     "name": "双唇鼻音",
      "insert": "m"
     },
     {
      "slogan": "ɱ",
-     "name": "m hook",
+     "name": "唇齿鼻音",
      "insert": "ɱ"
     },
     {
      "slogan": "n",
-     "name": "n",
+     "name": "齿龈鼻音",
      "insert": "n"
     },
     {
      "slogan": "ɳ",
-     "name": "n hook right",
+     "name": "卷舌鼻音",
      "insert": "ɳ"
     },
     {
      "slogan": "ɲ",
-     "name": "n hook left",
+     "name": "硬腭鼻音",
      "insert": "ɲ"
     },
     {
      "slogan": "ŋ",
-     "name": "ng",
+     "name": "软腭鼻音",
      "insert": "ŋ"
     },
     {
      "slogan": "ɴ",
-     "name": "N small",
+     "name": "小舌鼻音",
      "insert": "ɴ"
     },
     {
      "slogan": "ʙ",
-     "name": "B small",
+     "name": "浊双唇颤音",
      "insert": "ʙ"
     },
     {
      "slogan": "r",
-     "name": "r",
+     "name": "浊齿龈颤音",
      "insert": "r"
     },
     {
      "slogan": "ʀ",
-     "name": "R small",
+     "name": "浊小舌颤音",
      "insert": "ʀ"
     },
     {
      "slogan": "ⱱ",
-     "name": "v hook",
+     "name": "浊唇齿拍音",
      "insert": "ⱱ"
     },
     {
      "slogan": "ɾ",
-     "name": "r tap",
+     "name": "浊齿龈闪音",
      "insert": "ɾ"
     },
     {
      "slogan": "ɽ",
-     "name": "r hook",
+     "name": "浊卷舌拍音",
      "insert": "ɽ"
     },
     {
      "slogan": "ɸ",
-     "name": "phi ipa",
+     "name": "清双唇擦音",
      "insert": "ɸ"
     },
     {
      "slogan": "β",
-     "name": "beta ipa",
+     "name": "浊双唇擦音",
      "insert": "β"
     },
     {
      "slogan": "f",
-     "name": "f",
+     "name": "清唇齿擦音",
      "insert": "f"
     },
     {
      "slogan": "v",
-     "name": "v",
+     "name": "浊唇齿擦音",
      "insert": "v"
     },
     {
      "slogan": "θ",
-     "name": "theta ipa",
+     "name": "清齿擦音",
      "insert": "θ"
     },
     {
      "slogan": "ð",
-     "name": "eth ipa",
+     "name": "浊齿擦音",
      "insert": "ð"
     },
     {
      "slogan": "s",
-     "name": "s",
+     "name": "清齿龈擦音",
      "insert": "s"
     },
     {
      "slogan": "z",
-     "name": "z",
+     "name": "浊齿龈擦音",
      "insert": "z"
     },
     {
      "slogan": "ʃ",
-     "name": "sh",
+     "name": "清龈后擦音",
      "insert": "ʃ"
     },
     {
      "slogan": "ʒ",
-     "name": "zh",
+     "name": "浊龈后擦音",
      "insert": "ʒ"
     },
     {
      "slogan": "ʂ",
-     "name": "s hook",
+     "name": "清卷舌擦音",
      "insert": "ʂ"
     },
     {
      "slogan": "ʐ",
-     "name": "z hook",
+     "name": "浊卷舌擦音",
      "insert": "ʐ"
     },
     {
      "slogan": "ç",
-     "name": "c cedil ipa",
+     "name": "清硬腭擦音",
      "insert": "ç"
     },
     {
      "slogan": "ʝ",
-     "name": "j loop",
+     "name": "浊硬腭擦音",
      "insert": "ʝ"
     },
     {
      "slogan": "x",
-     "name": "x",
+     "name": "清软腭擦音",
      "insert": "x"
     },
     {
      "slogan": "ɣ",
-     "name": "gamma ipa",
+     "name": "浊软腭擦音",
      "insert": "ɣ"
     },
     {
      "slogan": "χ",
-     "name": "chi ipa",
+     "name": "清小舌擦音",
      "insert": "χ"
     },
     {
      "slogan": "ʁ",
-     "name": "R small upside",
+     "name": "浊小舌擦音",
      "insert": "ʁ"
     },
     {
      "slogan": "ħ",
-     "name": "h barred",
+     "name": "浊咽擦音",
      "insert": "ħ"
     },
     {
-     "slogan": "ʢ",
-     "name": "glottal stop flipped barred",
-     "insert": "ʢ"
-    },
-    {
      "slogan": "ʕ",
-     "name": "glottal stop flipped",
+     "name": "清咽擦音",
      "insert": "ʕ"
     },
     {
+     "slogan": "ʢ",
+     "name": "浊会厌擦音",
+     "insert": "ʢ"
+    },
+    {
      "slogan": "h",
-     "name": "h",
+     "name": "声门清擦音",
      "insert": "h"
     },
     {
      "slogan": "ɦ",
-     "name": "h hook",
+     "name": "声门浊擦音",
      "insert": "ɦ"
     },
     {
      "slogan": "ɬ",
-     "name": "l loop",
+     "name": "清齿龈边擦音",
      "insert": "ɬ"
     },
     {
      "slogan": "ɮ",
-     "name": "lzh",
+     "name": "浊齿龈边擦音",
      "insert": "ɮ"
     },
     {
      "slogan": "ʋ",
-     "name": "v smooth",
+     "name": "浊唇齿近音",
      "insert": "ʋ"
     },
     {
      "slogan": "ɹ",
-     "name": "r upside",
+     "name": "浊齿龈近音",
      "insert": "ɹ"
     },
     {
      "slogan": "ɻ",
-     "name": "r upside hook",
+     "name": "浊卷舌近音",
      "insert": "ɻ"
     },
     {
      "slogan": "j",
-     "name": "j",
+     "name": "浊硬腭近音",
      "insert": "j"
     },
     {
      "slogan": "ɰ",
-     "name": "u extra bowl hook",
+     "name": "浊软腭近音",
      "insert": "ɰ"
     },
     {
      "slogan": "l",
-     "name": "l",
+     "name": "齿龈边音",
      "insert": "l"
     },
     {
      "slogan": "ɭ",
-     "name": "l long",
+     "name": "卷舌边音",
      "insert": "ɭ"
     },
     {
      "slogan": "ʎ",
-     "name": "y upside",
+     "name": "硬腭边音",
      "insert": "ʎ"
     },
     {
      "slogan": "ʟ",
-     "name": "L small",
+     "name": "软腭边音",
      "insert": "ʟ"
     },
     {
@@ -496,92 +496,97 @@
     },
     {
      "slogan": "ɓ",
-     "name": "b hook",
+     "name": "双唇内爆音",
      "insert": "ɓ"
     },
     {
      "slogan": "ɗ",
-     "name": "d hook high",
+     "name": "齿龈内爆音",
      "insert": "ɗ"
     },
     {
      "slogan": "ʄ",
-     "name": "j mirrored",
+     "name": "硬腭内爆音",
      "insert": "ʄ"
     },
     {
      "slogan": "ɠ",
-     "name": "g hook",
+     "name": "软腭内爆音",
      "insert": "ɠ"
     },
     {
      "slogan": "ʛ",
-     "name": "G small hook",
+     "name": "小舌内爆音",
      "insert": "ʛ"
     },
     {
      "slogan": "◌ʼ",
-     "name": "◌ʼ",
+     "name": "喷音",
      "insert": "ʼ"
     },
     {
      "slogan": "pʼ",
-     "name": "pʼ",
+     "name": "清双唇喷音",
      "insert": "pʼ"
     },
     {
      "slogan": "tʼ",
-     "name": "tʼ",
+     "name": "清齿龈喷音",
      "insert": "tʼ"
     },
     {
      "slogan": "kʼ",
-     "name": "kʼ",
+     "name": "清软腭喷音",
      "insert": "kʼ"
     },
     {
      "slogan": "sʼ",
-     "name": "sʼ",
+     "name": "清齿龈擦喷音",
      "insert": "sʼ"
     },
     {
      "slogan": "ʍ",
-     "name": "w upside",
+     "name": "清双唇-软腭近音",
      "insert": "ʍ"
     },
     {
+        "slogan": "ɫ",
+        "name": "软腭-齿龈边音",
+        "insert": "ɫ"
+    },
+    {
      "slogan": "ɕ",
-     "name": "c loop",
+     "name": "清龈腭擦音",
      "insert": "ɕ"
     },
     {
      "slogan": "ʑ",
-     "name": "z loop",
+     "name": "浊龈腭擦音",
      "insert": "ʑ"
     },
     {
      "slogan": "w",
-     "name": "w",
+     "name": "浊双唇-软腭近音",
      "insert": "w"
     },
     {
      "slogan": "ɺ",
-     "name": "r upside long",
+     "name": "浊卷舌近音",
      "insert": "ɺ"
     },
     {
      "slogan": "ɥ",
-     "name": "h upside",
+     "name": "浊双唇-硬腭近音",
      "insert": "ɥ"
     },
     {
      "slogan": "ɧ",
-     "name": "h low hook",
+     "name": "清龈后-软腭擦音协同",
      "insert": "ɧ"
     },
     {
      "slogan": "ʜ",
-     "name": "H small",
+     "name": "清会厌擦音",
      "insert": "ʜ"
     },
     {
@@ -601,7 +606,7 @@
     },
     {
      "slogan": "ꞎ",
-     "name": "voiceless retroflex lateral fricative",
+     "name": "浊卷舌边擦音",
      "insert": "ꞎ"
     },
     {
@@ -615,358 +620,363 @@
      "insert": "ʭ"
     },
     {
+     "slogan": "¡",
+     "name": "subligual percussive",
+     "insert": "¡"
+    },
+    {
      "slogan": "◌͜◌",
-     "name": "◌͜◌",
+     "name": "下协同发音",
      "insert": "͜"
     },
     {
      "slogan": "◌͡◌",
-     "name": "◌͡◌",
+     "name": "上协同发音",
      "insert": "͡"
     },
     {
      "slogan": "◌ˈ",
-     "name": "◌ˈ",
+     "name": "主重音",
      "insert": "ˈ"
     },
     {
      "slogan": "◌ˌ",
-     "name": "◌ˌ",
+     "name": "次重音",
      "insert": "ˌ"
     },
     {
      "slogan": "ː",
-     "name": "length mark",
+     "name": "长音",
      "insert": "ː"
     },
     {
      "slogan": "ˑ",
-     "name": "half length mark",
+     "name": "半长音",
      "insert": "ˑ"
     },
     {
      "slogan": "◌̆",
-     "name": "◌̆",
+     "name": "超短音",
      "insert": "̆"
     },
     {
      "slogan": "|",
-     "name": "minor group",
+     "name": "小音步组",
      "insert": "|"
     },
     {
      "slogan": "‖",
-     "name": "major group",
+     "name": "大语调组",
      "insert": "‖"
     },
     {
      "slogan": ".",
-     "name": ".",
+     "name": "音节间隔",
      "insert": "."
     },
     {
      "slogan": "◌‿◌",
-     "name": "◌‿◌",
+     "name": "连接",
      "insert": "‿"
     },
     {
      "slogan": "◌̥",
-     "name": "◌̥",
+     "name": "下清化",
      "insert": "̥"
     },
     {
      "slogan": "◌̊",
-     "name": "◌̊",
+     "name": "上清化",
      "insert": "̊"
     },
     {
-     "slogan": "◌̤",
-     "name": "◌̤",
-     "insert": "̤"
+     "slogan": "◌̬",
+     "name": "浊化",
+     "insert": "̬"
     },
     {
      "slogan": "◌̪",
-     "name": "◌̪",
+     "name": "齿化",
      "insert": "̪"
     },
     {
      "slogan": "◌̺",
-     "name": "◌̺",
+     "name": "舌尖性",
      "insert": "̺"
     },
     {
-     "slogan": "◌̬",
-     "name": "◌̬",
-     "insert": "̬"
+     "slogan": "◌̻",
+     "name": "舌叶性",
+     "insert": "̻"
+    },
+    {
+     "slogan": "◌̤",
+     "name": "气声性",
+     "insert": "̤"
     },
     {
      "slogan": "◌̰",
-     "name": "◌̰",
+     "name": "嘎裂声性",
      "insert": "̰"
     },
     {
      "slogan": "◌̼",
-     "name": "◌̼",
+     "name": "舌唇音",
      "insert": "̼"
     },
     {
-     "slogan": "◌̻",
-     "name": "◌̻",
-     "insert": "̻"
-    },
-    {
      "slogan": "◌̹",
-     "name": "◌̹",
+     "name": "更圆",
      "insert": "̹"
     },
     {
      "slogan": "◌̜",
-     "name": "◌̜",
+     "name": "略展",
      "insert": "̜"
     },
     {
      "slogan": "◌ʷ",
-     "name": "◌ʷ",
+     "name": "唇-软腭化",
      "insert": "ʷ"
     },
     {
      "slogan": "◌ʲ",
-     "name": "◌ʲ",
+     "name": "硬腭化",
      "insert": "ʲ"
     },
     {
      "slogan": "◌̃",
-     "name": "◌̃",
+     "name": "鼻化",
      "insert": "̃"
     },
     {
      "slogan": "◌ⁿ",
-     "name": "◌ⁿ",
+     "name": "鼻除阻",
      "insert": "ⁿ"
     },
     {
      "slogan": "◌ˡ",
-     "name": "◌ˡ",
+     "name": "边除阻",
      "insert": "ˡ"
     },
     {
      "slogan": "◌ʳ",
-     "name": "◌ʳ",
+     "name": "optional r",
      "insert": "ʳ"
     },
     {
      "slogan": "◌ˠ",
-     "name": "◌ˠ",
+     "name": "软腭化",
      "insert": "ˠ"
     },
     {
      "slogan": "◌ˤ",
-     "name": "◌ˤ",
+     "name": "咽化",
      "insert": "ˤ"
     },
     {
+     "slogan": "◌̴",
+     "name": "软腭化/咽化",
+     "insert": "̴"
+    },
+    {
      "slogan": "◌ˀ",
-     "name": "◌ˀ",
+     "name": "stod",
      "insert": "ˀ"
     },
     {
      "slogan": "◌ʶ",
-     "name": "◌ʶ",
+     "name": "小舌化",
      "insert": "ʶ"
     },
     {
      "slogan": "◌ʰ",
-     "name": "◌ʰ",
+     "name": "清送气",
      "insert": "ʰ"
     },
     {
      "slogan": "◌ʱ",
-     "name": "◌ʱ",
+     "name": "浊送气",
      "insert": "ʱ"
     },
     {
      "slogan": "◌̟",
-     "name": "◌̟",
+     "name": "偏前",
      "insert": "̟"
     },
     {
      "slogan": "◌̠",
-     "name": "◌̠",
+     "name": "偏后",
      "insert": "̠"
     },
     {
      "slogan": "◌̚",
-     "name": "◌̚",
+     "name": "无听感除阻",
      "insert": "̚"
     },
     {
      "slogan": "◌̈",
-     "name": "◌̈",
+     "name": "央化",
      "insert": "̈"
     },
     {
-     "slogan": "◌̴",
-     "name": "◌̴",
-     "insert": "̴"
-    },
-    {
      "slogan": "◌̽",
-     "name": "◌̽",
+     "name": "中-央化",
      "insert": "̽"
     },
     {
      "slogan": "◌̝",
-     "name": "◌̝",
+     "name": "偏高",
      "insert": "̝"
     },
     {
      "slogan": "◌̞",
-     "name": "◌̞",
+     "name": "偏低",
      "insert": "̞"
     },
     {
      "slogan": "◌̩",
-     "name": "◌̩",
+     "name": "成音节",
      "insert": "̩"
     },
     {
      "slogan": "◌̯",
-     "name": "◌̯",
+     "name": "不成音节",
      "insert": "̯"
     },
     {
      "slogan": "◌̘",
-     "name": "◌̘",
+     "name": "舌根偏前",
      "insert": "̘"
     },
     {
      "slogan": "◌̙",
-     "name": "◌̙",
+     "name": "舌根偏后",
      "insert": "̙"
     },
     {
      "slogan": "◌˞",
-     "name": "◌˞",
+     "name": "r音色",
      "insert": "˞"
     },
     {
      "slogan": "◌̋",
-     "name": "◌̋",
+     "name": "超高",
      "insert": "̋"
     },
     {
-     "slogan": "◌̌",
-     "name": "◌̌",
-     "insert": "̌"
-    },
-    {
      "slogan": "◌́",
-     "name": "◌́",
+     "name": "高",
      "insert": "́"
     },
     {
-     "slogan": "◌̂",
-     "name": "◌̂",
-     "insert": "̂"
-    },
-    {
      "slogan": "◌̄",
-     "name": "◌̄",
+     "name": "中",
      "insert": "̄"
     },
     {
-     "slogan": "◌᷄",
-     "name": "◌᷄",
-     "insert": "᷄"
-    },
-    {
      "slogan": "◌̀",
-     "name": "◌̀",
+     "name": "低",
      "insert": "̀"
     },
     {
-     "slogan": "◌᷅",
-     "name": "◌᷅",
-     "insert": "᷅"
-    },
-    {
      "slogan": "◌̏",
-     "name": "◌̏",
+     "name": "超低",
      "insert": "̏"
     },
     {
+     "slogan": "◌̌",
+     "name": "升",
+     "insert": "̌"
+    },
+    {
+     "slogan": "◌̂",
+     "name": "降",
+     "insert": "̂"
+    },
+    {
+     "slogan": "◌᷄",
+     "name": "高升",
+     "insert": "᷄"
+    },
+    {
+     "slogan": "◌᷅",
+     "name": "低升",
+     "insert": "᷅"
+    },
+    {
      "slogan": "◌᷈",
-     "name": "◌᷈",
+     "name": "升降",
      "insert": "᷈"
     },
     {
      "slogan": "˥",
-     "name": "extra high alt",
+     "name": "超高",
      "insert": "˥"
     },
     {
-     "slogan": "˩˥",
-     "name": "rising alt",
-     "insert": "˩˥"
-    },
-    {
      "slogan": "˦",
-     "name": "high alt",
+     "name": "高",
      "insert": "˦"
     },
     {
-     "slogan": "˥˩",
-     "name": "falling alt",
-     "insert": "˥˩"
-    },
-    {
      "slogan": "˧",
-     "name": "mid alt",
+     "name": "中",
      "insert": "˧"
     },
     {
-     "slogan": "˧˥",
-     "name": "˧˥",
-     "insert": "˧˥"
-    },
-    {
      "slogan": "˨",
-     "name": "low alt",
+     "name": "低",
      "insert": "˨"
     },
     {
-     "slogan": "˩˧",
-     "name": "˩˧",
-     "insert": "˩˧"
-    },
-    {
      "slogan": "˩",
-     "name": "extra low alt",
+     "name": "超低",
      "insert": "˩"
     },
     {
+     "slogan": "˩˥",
+     "name": "升",
+     "insert": "˩˥"
+    },
+    {
+     "slogan": "˥˩",
+     "name": "降",
+     "insert": "˥˩"
+    },
+    {
+     "slogan": "˧˥",
+     "name": "高升",
+     "insert": "˧˥"
+    },
+    {
+     "slogan": "˩˧",
+     "name": "低升",
+     "insert": "˩˧"
+    },
+    {
      "slogan": "˧˦˨",
-     "name": "˧˦˨",
+     "name": "升降",
      "insert": "˧˦˨"
     },
     {
      "slogan": "↗",
-     "name": "↗",
+     "name": "整体上升",
      "insert": "↗"
     },
     {
      "slogan": "↘",
-     "name": "↘",
+     "name": "整体下降",
      "insert": "↘"
     },
     {
      "slogan": "ꜛ",
-     "name": "upstep",
+     "name": "升阶",
      "insert": "ꜛ"
     },
     {
      "slogan": "ꜜ",
-     "name": "downstep",
+     "name": "降阶",
      "insert": "ꜜ"
     },
     {
@@ -980,6 +990,16 @@
      "insert": "b͡v"
     },
     {
+     "slogan": "t͡θ",
+     "name": "清齿塞擦音",
+     "insert": "t͡θ"
+    },
+    {
+     "slogan": "d͡ð",
+     "name": "浊齿塞擦音",
+     "insert": "d͡ð"
+    },
+    {
      "slogan": "t͡s",
      "name": "清齿龈塞擦音",
      "insert": "t͡s"
@@ -988,6 +1008,17 @@
      "slogan": "d͡z",
      "name": "浊齿龈塞擦音",
      "insert": "d͡z"
+    },
+    
+    {
+     "slogan": "t͡ɬ",
+     "name": "清齿龈边塞擦音",
+     "insert": "t͡ɬ"
+    },
+    {
+     "slogan": "d͡zˡ",
+     "name": "浊齿龈边塞擦音",
+     "insert": "d͡zˡ"
     },
     {
      "slogan": "ʈ͡ʂ",
@@ -1008,6 +1039,16 @@
      "slogan": "d͡ʑ",
      "name": "浊龈腭塞擦音",
      "insert": "d͡ʑ"
+    },
+    {
+    "slogan": "t͡ʃ",
+    "name": "清龈后塞擦音",
+    "insert": "t͡ʃ"
+    },
+    {
+    "slogan": "d͡ʒ",
+    "name": "浊龈后塞擦音",
+    "insert": "d͡ʒ"
     },
     {
      "slogan": "c͡ç",
@@ -1041,12 +1082,12 @@
     },
     {
      "slogan": "t͡ʙ̥",
-     "name": "清齿龈塞颤音",
+     "name": "清齿龈-双唇颤音",
      "insert": "t͡ʙ̥"
     },
     {
      "slogan": "d͡ʙ",
-     "name": "浊齿龈塞颤音",
+     "name": "浊齿龈-双唇颤音",
      "insert": "d͡ʙ"
     },
     {
@@ -1071,12 +1112,12 @@
     },
     {
      "slogan": "k͡p",
-     "name": "清软腭-唇双塞音",
+     "name": "清软腭-双唇塞音协同",
      "insert": "k͡p"
     },
     {
      "slogan": "g͡b",
-     "name": "浊软腭-唇双塞音",
+     "name": "浊软腭-双唇塞音协同",
      "insert": "g͡b"
     }
    ]
