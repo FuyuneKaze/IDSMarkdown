@@ -393,7 +393,6 @@ const Editor = forwardRef<EditorHandle, EditorProps>(function Editor(
       const before: string = view.state.doc.textBetween(start, pos, "\n", "\n");
       const m = /[A-Za-z]+$/.exec(before);
       if (!m) {
-        console.log("[cand] sync: 光标前没有拉丁串 -> 关闭候选. before=", JSON.stringify(before));
         buf.query = "";
         buf.queryPos = -1;
         setCandState(null);
@@ -401,7 +400,6 @@ const Editor = forwardRef<EditorHandle, EditorProps>(function Editor(
       }
       buf.query = m[0].toLowerCase();
       buf.queryPos = pos - m[0].length;
-      console.log("[cand] sync:", buf.query, "queryPos:", buf.queryPos, "pos:", pos);
       updateCandidatePopup();
     } catch (e) {
       console.warn("[cand] composition sync failed:", e);

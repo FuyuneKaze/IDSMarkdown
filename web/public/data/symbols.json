@@ -1,0 +1,3801 @@
+{
+ "groups": [
+  {
+   "id": "ipa",
+   "title": "IPA",
+   "items": [
+    {
+     "slogan": "i",
+     "name": "闭前不圆唇元音",
+     "insert": "i"
+    },
+    {
+     "slogan": "y",
+     "name": "闭前圆唇元音",
+     "insert": "y"
+    },
+    {
+     "slogan": "ɨ",
+     "name": "闭央不圆唇元音",
+     "insert": "ɨ"
+    },
+    {
+     "slogan": "ʉ",
+     "name": "闭央圆唇元音",
+     "insert": "ʉ"
+    },
+    {
+     "slogan": "ɯ",
+     "name": "闭后不圆唇元音",
+     "insert": "ɯ"
+    },
+    {
+     "slogan": "u",
+     "name": "闭后圆唇元音",
+     "insert": "u"
+    },
+    {
+     "slogan": "ɪ",
+     "name": "近闭前不圆唇元音",
+     "insert": "ɪ"
+    },
+    {
+     "slogan": "ʏ",
+     "name": "近闭前圆唇元音",
+     "insert": "ʏ"
+    },
+    {
+     "slogan": "ʊ",
+     "name": "近闭后元音",
+     "insert": "ʊ"
+    },
+    {
+     "slogan": "e",
+     "name": "半闭前不圆唇元音",
+     "insert": "e"
+    },
+    {
+     "slogan": "ø",
+     "name": "半闭前圆唇元音",
+     "insert": "ø"
+    },
+    {
+     "slogan": "ɘ",
+     "name": "半闭央不圆唇元音",
+     "insert": "ɘ"
+    },
+    {
+     "slogan": "ɵ",
+     "name": "半闭央圆唇元音",
+     "insert": "ɵ"
+    },
+    {
+     "slogan": "ɤ",
+     "name": "半闭后不圆唇元音",
+     "insert": "ɤ"
+    },
+    {
+     "slogan": "o",
+     "name": "半闭后圆唇元音",
+     "insert": "o"
+    },
+    {
+     "slogan": "ə",
+     "name": "中央元音",
+     "insert": "ə"
+    },
+    {
+     "slogan": "ɛ",
+     "name": "半开前不圆唇元音",
+     "insert": "ɛ"
+    },
+    {
+     "slogan": "œ",
+     "name": "半开前圆唇元音",
+     "insert": "œ"
+    },
+    {
+     "slogan": "ɜ",
+     "name": "半开央不圆唇元音",
+     "insert": "ɜ"
+    },
+    {
+     "slogan": "ɞ",
+     "name": "半开央圆唇元音",
+     "insert": "ɞ"
+    },
+    {
+     "slogan": "ʌ",
+     "name": "半开后不圆唇元音",
+     "insert": "ʌ"
+    },
+    {
+     "slogan": "ɔ",
+     "name": "半开后圆唇元音",
+     "insert": "ɔ"
+    },
+    {
+     "slogan": "æ",
+     "name": "近开前元音",
+     "insert": "æ"
+    },
+    {
+     "slogan": "ɐ",
+     "name": "近开央元音",
+     "insert": "ɐ"
+    },
+    {
+     "slogan": "a",
+     "name": "开前不圆唇元音",
+     "insert": "a"
+    },
+    {
+     "slogan": "ɶ",
+     "name": "开前圆唇元音",
+     "insert": "ɶ"
+    },
+    {
+     "slogan": "ɑ",
+     "name": "开后不圆唇元音",
+     "insert": "ɑ"
+    },
+    {
+     "slogan": "ɒ",
+     "name": "开后圆唇元音",
+     "insert": "ɒ"
+    },
+    {
+     "slogan": "ɿ",
+     "name": "舌尖前不圆唇元音（已废弃）",
+     "insert": "ɿ"
+    },
+    {
+     "slogan": "ʅ",
+     "name": "舌尖后不圆唇元音（已废弃）",
+     "insert": "ʅ"
+    },
+    {
+     "slogan": "ʮ",
+     "name": "舌尖前圆唇元音（已废弃）",
+     "insert": "ʮ"
+    },
+    {
+     "slogan": "ʯ",
+     "name": "舌尖后圆唇元音（已废弃）",
+     "insert": "ʯ"
+    },
+    {
+     "slogan": "p",
+     "name": "p",
+     "insert": "p"
+    },
+    {
+     "slogan": "b",
+     "name": "b",
+     "insert": "b"
+    },
+    {
+     "slogan": "t",
+     "name": "t",
+     "insert": "t"
+    },
+    {
+     "slogan": "d",
+     "name": "d",
+     "insert": "d"
+    },
+    {
+     "slogan": "ʈ",
+     "name": "t long",
+     "insert": "ʈ"
+    },
+    {
+     "slogan": "ɖ",
+     "name": "d hook low",
+     "insert": "ɖ"
+    },
+    {
+     "slogan": "c",
+     "name": "c",
+     "insert": "c"
+    },
+    {
+     "slogan": "ɟ",
+     "name": "j barred",
+     "insert": "ɟ"
+    },
+    {
+     "slogan": "k",
+     "name": "k",
+     "insert": "k"
+    },
+    {
+     "slogan": "ɡ",
+     "name": "g script",
+     "insert": "ɡ"
+    },
+    {
+     "slogan": "q",
+     "name": "q",
+     "insert": "q"
+    },
+    {
+     "slogan": "ɢ",
+     "name": "G small",
+     "insert": "ɢ"
+    },
+    {
+     "slogan": "ʡ",
+     "name": "glottal stop barred",
+     "insert": "ʡ"
+    },
+    {
+     "slogan": "ʔ",
+     "name": "glottal stop",
+     "insert": "ʔ"
+    },
+    {
+     "slogan": "m",
+     "name": "m",
+     "insert": "m"
+    },
+    {
+     "slogan": "ɱ",
+     "name": "m hook",
+     "insert": "ɱ"
+    },
+    {
+     "slogan": "n",
+     "name": "n",
+     "insert": "n"
+    },
+    {
+     "slogan": "ɳ",
+     "name": "n hook right",
+     "insert": "ɳ"
+    },
+    {
+     "slogan": "ɲ",
+     "name": "n hook left",
+     "insert": "ɲ"
+    },
+    {
+     "slogan": "ŋ",
+     "name": "ng",
+     "insert": "ŋ"
+    },
+    {
+     "slogan": "ɴ",
+     "name": "N small",
+     "insert": "ɴ"
+    },
+    {
+     "slogan": "ʙ",
+     "name": "B small",
+     "insert": "ʙ"
+    },
+    {
+     "slogan": "r",
+     "name": "r",
+     "insert": "r"
+    },
+    {
+     "slogan": "ʀ",
+     "name": "R small",
+     "insert": "ʀ"
+    },
+    {
+     "slogan": "ⱱ",
+     "name": "v hook",
+     "insert": "ⱱ"
+    },
+    {
+     "slogan": "ɾ",
+     "name": "r tap",
+     "insert": "ɾ"
+    },
+    {
+     "slogan": "ɽ",
+     "name": "r hook",
+     "insert": "ɽ"
+    },
+    {
+     "slogan": "ɸ",
+     "name": "phi ipa",
+     "insert": "ɸ"
+    },
+    {
+     "slogan": "β",
+     "name": "beta ipa",
+     "insert": "β"
+    },
+    {
+     "slogan": "f",
+     "name": "f",
+     "insert": "f"
+    },
+    {
+     "slogan": "v",
+     "name": "v",
+     "insert": "v"
+    },
+    {
+     "slogan": "θ",
+     "name": "theta ipa",
+     "insert": "θ"
+    },
+    {
+     "slogan": "ð",
+     "name": "eth ipa",
+     "insert": "ð"
+    },
+    {
+     "slogan": "s",
+     "name": "s",
+     "insert": "s"
+    },
+    {
+     "slogan": "z",
+     "name": "z",
+     "insert": "z"
+    },
+    {
+     "slogan": "ʃ",
+     "name": "sh",
+     "insert": "ʃ"
+    },
+    {
+     "slogan": "ʒ",
+     "name": "zh",
+     "insert": "ʒ"
+    },
+    {
+     "slogan": "ʂ",
+     "name": "s hook",
+     "insert": "ʂ"
+    },
+    {
+     "slogan": "ʐ",
+     "name": "z hook",
+     "insert": "ʐ"
+    },
+    {
+     "slogan": "ç",
+     "name": "c cedil ipa",
+     "insert": "ç"
+    },
+    {
+     "slogan": "ʝ",
+     "name": "j loop",
+     "insert": "ʝ"
+    },
+    {
+     "slogan": "x",
+     "name": "x",
+     "insert": "x"
+    },
+    {
+     "slogan": "ɣ",
+     "name": "gamma ipa",
+     "insert": "ɣ"
+    },
+    {
+     "slogan": "χ",
+     "name": "chi ipa",
+     "insert": "χ"
+    },
+    {
+     "slogan": "ʁ",
+     "name": "R small upside",
+     "insert": "ʁ"
+    },
+    {
+     "slogan": "ħ",
+     "name": "h barred",
+     "insert": "ħ"
+    },
+    {
+     "slogan": "ʢ",
+     "name": "glottal stop flipped barred",
+     "insert": "ʢ"
+    },
+    {
+     "slogan": "ʕ",
+     "name": "glottal stop flipped",
+     "insert": "ʕ"
+    },
+    {
+     "slogan": "h",
+     "name": "h",
+     "insert": "h"
+    },
+    {
+     "slogan": "ɦ",
+     "name": "h hook",
+     "insert": "ɦ"
+    },
+    {
+     "slogan": "ɬ",
+     "name": "l loop",
+     "insert": "ɬ"
+    },
+    {
+     "slogan": "ɮ",
+     "name": "lzh",
+     "insert": "ɮ"
+    },
+    {
+     "slogan": "ʋ",
+     "name": "v smooth",
+     "insert": "ʋ"
+    },
+    {
+     "slogan": "ɹ",
+     "name": "r upside",
+     "insert": "ɹ"
+    },
+    {
+     "slogan": "ɻ",
+     "name": "r upside hook",
+     "insert": "ɻ"
+    },
+    {
+     "slogan": "j",
+     "name": "j",
+     "insert": "j"
+    },
+    {
+     "slogan": "ɰ",
+     "name": "u extra bowl hook",
+     "insert": "ɰ"
+    },
+    {
+     "slogan": "l",
+     "name": "l",
+     "insert": "l"
+    },
+    {
+     "slogan": "ɭ",
+     "name": "l long",
+     "insert": "ɭ"
+    },
+    {
+     "slogan": "ʎ",
+     "name": "y upside",
+     "insert": "ʎ"
+    },
+    {
+     "slogan": "ʟ",
+     "name": "L small",
+     "insert": "ʟ"
+    },
+    {
+     "slogan": "ʘ",
+     "name": "bilabial click",
+     "insert": "ʘ"
+    },
+    {
+     "slogan": "ǀ",
+     "name": "dental click",
+     "insert": "ǀ"
+    },
+    {
+     "slogan": "ǃ",
+     "name": "(post-)alveolar click",
+     "insert": "ǃ"
+    },
+    {
+     "slogan": "ǂ",
+     "name": "palatal click",
+     "insert": "ǂ"
+    },
+    {
+     "slogan": "ǁ",
+     "name": "lateral click",
+     "insert": "ǁ"
+    },
+    {
+     "slogan": "ɓ",
+     "name": "b hook",
+     "insert": "ɓ"
+    },
+    {
+     "slogan": "ɗ",
+     "name": "d hook high",
+     "insert": "ɗ"
+    },
+    {
+     "slogan": "ʄ",
+     "name": "j mirrored",
+     "insert": "ʄ"
+    },
+    {
+     "slogan": "ɠ",
+     "name": "g hook",
+     "insert": "ɠ"
+    },
+    {
+     "slogan": "ʛ",
+     "name": "G small hook",
+     "insert": "ʛ"
+    },
+    {
+     "slogan": "◌ʼ",
+     "name": "◌ʼ",
+     "insert": "ʼ"
+    },
+    {
+     "slogan": "pʼ",
+     "name": "pʼ",
+     "insert": "pʼ"
+    },
+    {
+     "slogan": "tʼ",
+     "name": "tʼ",
+     "insert": "tʼ"
+    },
+    {
+     "slogan": "kʼ",
+     "name": "kʼ",
+     "insert": "kʼ"
+    },
+    {
+     "slogan": "sʼ",
+     "name": "sʼ",
+     "insert": "sʼ"
+    },
+    {
+     "slogan": "ʍ",
+     "name": "w upside",
+     "insert": "ʍ"
+    },
+    {
+     "slogan": "ɕ",
+     "name": "c loop",
+     "insert": "ɕ"
+    },
+    {
+     "slogan": "ʑ",
+     "name": "z loop",
+     "insert": "ʑ"
+    },
+    {
+     "slogan": "w",
+     "name": "w",
+     "insert": "w"
+    },
+    {
+     "slogan": "ɺ",
+     "name": "r upside long",
+     "insert": "ɺ"
+    },
+    {
+     "slogan": "ɥ",
+     "name": "h upside",
+     "insert": "ɥ"
+    },
+    {
+     "slogan": "ɧ",
+     "name": "h low hook",
+     "insert": "ɧ"
+    },
+    {
+     "slogan": "ʜ",
+     "name": "H small",
+     "insert": "ʜ"
+    },
+    {
+     "slogan": "ʩ",
+     "name": "velopharyngeal fricative",
+     "insert": "ʩ"
+    },
+    {
+     "slogan": "ʪ",
+     "name": "voiceless grooved lateral alveolar fricative",
+     "insert": "ʪ"
+    },
+    {
+     "slogan": "ʫ",
+     "name": "voiced grooved lateral alveolar fricative",
+     "insert": "ʫ"
+    },
+    {
+     "slogan": "ꞎ",
+     "name": "voiceless retroflex lateral fricative",
+     "insert": "ꞎ"
+    },
+    {
+     "slogan": "ʬ",
+     "name": "bilabial percussive",
+     "insert": "ʬ"
+    },
+    {
+     "slogan": "ʭ",
+     "name": "bidental percussive",
+     "insert": "ʭ"
+    },
+    {
+     "slogan": "◌͜◌",
+     "name": "◌͜◌",
+     "insert": "͜"
+    },
+    {
+     "slogan": "◌͡◌",
+     "name": "◌͡◌",
+     "insert": "͡"
+    },
+    {
+     "slogan": "◌ˈ",
+     "name": "◌ˈ",
+     "insert": "ˈ"
+    },
+    {
+     "slogan": "◌ˌ",
+     "name": "◌ˌ",
+     "insert": "ˌ"
+    },
+    {
+     "slogan": "ː",
+     "name": "length mark",
+     "insert": "ː"
+    },
+    {
+     "slogan": "ˑ",
+     "name": "half length mark",
+     "insert": "ˑ"
+    },
+    {
+     "slogan": "◌̆",
+     "name": "◌̆",
+     "insert": "̆"
+    },
+    {
+     "slogan": "|",
+     "name": "minor group",
+     "insert": "|"
+    },
+    {
+     "slogan": "‖",
+     "name": "major group",
+     "insert": "‖"
+    },
+    {
+     "slogan": ".",
+     "name": ".",
+     "insert": "."
+    },
+    {
+     "slogan": "◌‿◌",
+     "name": "◌‿◌",
+     "insert": "‿"
+    },
+    {
+     "slogan": "◌̥",
+     "name": "◌̥",
+     "insert": "̥"
+    },
+    {
+     "slogan": "◌̊",
+     "name": "◌̊",
+     "insert": "̊"
+    },
+    {
+     "slogan": "◌̤",
+     "name": "◌̤",
+     "insert": "̤"
+    },
+    {
+     "slogan": "◌̪",
+     "name": "◌̪",
+     "insert": "̪"
+    },
+    {
+     "slogan": "◌̺",
+     "name": "◌̺",
+     "insert": "̺"
+    },
+    {
+     "slogan": "◌̬",
+     "name": "◌̬",
+     "insert": "̬"
+    },
+    {
+     "slogan": "◌̰",
+     "name": "◌̰",
+     "insert": "̰"
+    },
+    {
+     "slogan": "◌̼",
+     "name": "◌̼",
+     "insert": "̼"
+    },
+    {
+     "slogan": "◌̻",
+     "name": "◌̻",
+     "insert": "̻"
+    },
+    {
+     "slogan": "◌̹",
+     "name": "◌̹",
+     "insert": "̹"
+    },
+    {
+     "slogan": "◌̜",
+     "name": "◌̜",
+     "insert": "̜"
+    },
+    {
+     "slogan": "◌ʷ",
+     "name": "◌ʷ",
+     "insert": "ʷ"
+    },
+    {
+     "slogan": "◌ʲ",
+     "name": "◌ʲ",
+     "insert": "ʲ"
+    },
+    {
+     "slogan": "◌̃",
+     "name": "◌̃",
+     "insert": "̃"
+    },
+    {
+     "slogan": "◌ⁿ",
+     "name": "◌ⁿ",
+     "insert": "ⁿ"
+    },
+    {
+     "slogan": "◌ˡ",
+     "name": "◌ˡ",
+     "insert": "ˡ"
+    },
+    {
+     "slogan": "◌ʳ",
+     "name": "◌ʳ",
+     "insert": "ʳ"
+    },
+    {
+     "slogan": "◌ˠ",
+     "name": "◌ˠ",
+     "insert": "ˠ"
+    },
+    {
+     "slogan": "◌ˤ",
+     "name": "◌ˤ",
+     "insert": "ˤ"
+    },
+    {
+     "slogan": "◌ˀ",
+     "name": "◌ˀ",
+     "insert": "ˀ"
+    },
+    {
+     "slogan": "◌ʶ",
+     "name": "◌ʶ",
+     "insert": "ʶ"
+    },
+    {
+     "slogan": "◌ʰ",
+     "name": "◌ʰ",
+     "insert": "ʰ"
+    },
+    {
+     "slogan": "◌ʱ",
+     "name": "◌ʱ",
+     "insert": "ʱ"
+    },
+    {
+     "slogan": "◌̟",
+     "name": "◌̟",
+     "insert": "̟"
+    },
+    {
+     "slogan": "◌̠",
+     "name": "◌̠",
+     "insert": "̠"
+    },
+    {
+     "slogan": "◌̚",
+     "name": "◌̚",
+     "insert": "̚"
+    },
+    {
+     "slogan": "◌̈",
+     "name": "◌̈",
+     "insert": "̈"
+    },
+    {
+     "slogan": "◌̴",
+     "name": "◌̴",
+     "insert": "̴"
+    },
+    {
+     "slogan": "◌̽",
+     "name": "◌̽",
+     "insert": "̽"
+    },
+    {
+     "slogan": "◌̝",
+     "name": "◌̝",
+     "insert": "̝"
+    },
+    {
+     "slogan": "◌̞",
+     "name": "◌̞",
+     "insert": "̞"
+    },
+    {
+     "slogan": "◌̩",
+     "name": "◌̩",
+     "insert": "̩"
+    },
+    {
+     "slogan": "◌̯",
+     "name": "◌̯",
+     "insert": "̯"
+    },
+    {
+     "slogan": "◌̘",
+     "name": "◌̘",
+     "insert": "̘"
+    },
+    {
+     "slogan": "◌̙",
+     "name": "◌̙",
+     "insert": "̙"
+    },
+    {
+     "slogan": "◌˞",
+     "name": "◌˞",
+     "insert": "˞"
+    },
+    {
+     "slogan": "◌̋",
+     "name": "◌̋",
+     "insert": "̋"
+    },
+    {
+     "slogan": "◌̌",
+     "name": "◌̌",
+     "insert": "̌"
+    },
+    {
+     "slogan": "◌́",
+     "name": "◌́",
+     "insert": "́"
+    },
+    {
+     "slogan": "◌̂",
+     "name": "◌̂",
+     "insert": "̂"
+    },
+    {
+     "slogan": "◌̄",
+     "name": "◌̄",
+     "insert": "̄"
+    },
+    {
+     "slogan": "◌᷄",
+     "name": "◌᷄",
+     "insert": "᷄"
+    },
+    {
+     "slogan": "◌̀",
+     "name": "◌̀",
+     "insert": "̀"
+    },
+    {
+     "slogan": "◌᷅",
+     "name": "◌᷅",
+     "insert": "᷅"
+    },
+    {
+     "slogan": "◌̏",
+     "name": "◌̏",
+     "insert": "̏"
+    },
+    {
+     "slogan": "◌᷈",
+     "name": "◌᷈",
+     "insert": "᷈"
+    },
+    {
+     "slogan": "˥",
+     "name": "extra high alt",
+     "insert": "˥"
+    },
+    {
+     "slogan": "˩˥",
+     "name": "rising alt",
+     "insert": "˩˥"
+    },
+    {
+     "slogan": "˦",
+     "name": "high alt",
+     "insert": "˦"
+    },
+    {
+     "slogan": "˥˩",
+     "name": "falling alt",
+     "insert": "˥˩"
+    },
+    {
+     "slogan": "˧",
+     "name": "mid alt",
+     "insert": "˧"
+    },
+    {
+     "slogan": "˧˥",
+     "name": "˧˥",
+     "insert": "˧˥"
+    },
+    {
+     "slogan": "˨",
+     "name": "low alt",
+     "insert": "˨"
+    },
+    {
+     "slogan": "˩˧",
+     "name": "˩˧",
+     "insert": "˩˧"
+    },
+    {
+     "slogan": "˩",
+     "name": "extra low alt",
+     "insert": "˩"
+    },
+    {
+     "slogan": "˧˦˨",
+     "name": "˧˦˨",
+     "insert": "˧˦˨"
+    },
+    {
+     "slogan": "↗",
+     "name": "↗",
+     "insert": "↗"
+    },
+    {
+     "slogan": "↘",
+     "name": "↘",
+     "insert": "↘"
+    },
+    {
+     "slogan": "ꜛ",
+     "name": "upstep",
+     "insert": "ꜛ"
+    },
+    {
+     "slogan": "ꜜ",
+     "name": "downstep",
+     "insert": "ꜜ"
+    },
+    {
+     "slogan": "p͡f",
+     "name": "清唇齿塞擦音",
+     "insert": "p͡f"
+    },
+    {
+     "slogan": "b͡v",
+     "name": "浊唇齿塞擦音",
+     "insert": "b͡v"
+    },
+    {
+     "slogan": "t͡s",
+     "name": "清齿龈塞擦音",
+     "insert": "t͡s"
+    },
+    {
+     "slogan": "d͡z",
+     "name": "浊齿龈塞擦音",
+     "insert": "d͡z"
+    },
+    {
+     "slogan": "ʈ͡ʂ",
+     "name": "清卷舌塞擦音",
+     "insert": "ʈ͡ʂ"
+    },
+    {
+     "slogan": "ɖ͡ʐ",
+     "name": "浊卷舌塞擦音",
+     "insert": "ɖ͡ʐ"
+    },
+    {
+     "slogan": "t͡ɕ",
+     "name": "清龈腭塞擦音",
+     "insert": "t͡ɕ"
+    },
+    {
+     "slogan": "d͡ʑ",
+     "name": "浊龈腭塞擦音",
+     "insert": "d͡ʑ"
+    },
+    {
+     "slogan": "c͡ç",
+     "name": "清硬腭塞擦音",
+     "insert": "c͡ç"
+    },
+    {
+     "slogan": "ɟ͡ʝ",
+     "name": "浊硬腭塞擦音",
+     "insert": "ɟ͡ʝ"
+    },
+    {
+     "slogan": "k͡x",
+     "name": "清软腭塞擦音",
+     "insert": "k͡x"
+    },
+    {
+     "slogan": "g͡ɣ",
+     "name": "浊软腭塞擦音",
+     "insert": "g͡ɣ"
+    },
+    {
+     "slogan": "q͡χ",
+     "name": "清小舌塞擦音",
+     "insert": "q͡χ"
+    },
+    {
+     "slogan": "ɢ͡ʁ",
+     "name": "浊小舌塞擦音",
+     "insert": "ɢ͡ʁ"
+    },
+    {
+     "slogan": "t͡ʙ̥",
+     "name": "清齿龈塞颤音",
+     "insert": "t͡ʙ̥"
+    },
+    {
+     "slogan": "d͡ʙ",
+     "name": "浊齿龈塞颤音",
+     "insert": "d͡ʙ"
+    },
+    {
+     "slogan": "p͡s",
+     "name": "清唇-齿龈塞擦音",
+     "insert": "p͡s"
+    },
+    {
+     "slogan": "b͡z",
+     "name": "浊唇-齿龈塞擦音",
+     "insert": "b͡z"
+    },
+    {
+     "slogan": "k͡s",
+     "name": "清软腭-齿龈塞擦音",
+     "insert": "k͡s"
+    },
+    {
+     "slogan": "g͡z",
+     "name": "浊软腭-齿龈塞擦音",
+     "insert": "g͡z"
+    },
+    {
+     "slogan": "k͡p",
+     "name": "清软腭-唇双塞音",
+     "insert": "k͡p"
+    },
+    {
+     "slogan": "g͡b",
+     "name": "浊软腭-唇双塞音",
+     "insert": "g͡b"
+    }
+   ]
+  },
+  {
+   "id": "component",
+   "title": "难输入部件",
+   "items": [
+    {
+     "slogan": "一",
+     "name": "u4e00",
+     "insert": "一"
+    },
+    {
+     "slogan": "丨",
+     "name": "u4e28",
+     "insert": "丨"
+    },
+    {
+     "slogan": "丿",
+     "name": "u4e3f",
+     "insert": "丿"
+    },
+    {
+     "slogan": "丶",
+     "name": "u4e36",
+     "insert": "丶"
+    },
+    {
+     "slogan": "乀",
+     "name": "u4e40",
+     "insert": "乀"
+    },
+    {
+     "slogan": "乛",
+     "name": "u4e5b",
+     "insert": "乛"
+    },
+    {
+     "slogan": "𠃍",
+     "name": "u200cd",
+     "insert": "𠃍"
+    },
+    {
+     "slogan": "𠃌",
+     "name": "u200cc",
+     "insert": "𠃌"
+    },
+    {
+     "slogan": "㇇",
+     "name": "u31c7",
+     "insert": "㇇"
+    },
+    {
+     "slogan": "乙",
+     "name": "u4e59",
+     "insert": "乙"
+    },
+    {
+     "slogan": "㇈",
+     "name": "u31c8",
+     "insert": "㇈"
+    },
+    {
+     "slogan": "𠄎",
+     "name": "u2010e",
+     "insert": "𠄎"
+    },
+    {
+     "slogan": "亅",
+     "name": "u4e85",
+     "insert": "亅"
+    },
+    {
+     "slogan": "㇁",
+     "name": "u31c1",
+     "insert": "㇁"
+    },
+    {
+     "slogan": "乚",
+     "name": "u4e5a",
+     "insert": "乚"
+    },
+    {
+     "slogan": "𠃊",
+     "name": "u200ca",
+     "insert": "𠃊"
+    },
+    {
+     "slogan": "㇄",
+     "name": "u31c4",
+     "insert": "㇄"
+    },
+    {
+     "slogan": "𠄌",
+     "name": "u2010c",
+     "insert": "𠄌"
+    },
+    {
+     "slogan": "𠃑",
+     "name": "u200d1",
+     "insert": "𠃑"
+    },
+    {
+     "slogan": "㇉",
+     "name": "u31c9",
+     "insert": "㇉"
+    },
+    {
+     "slogan": "𠃋",
+     "name": "u200cb",
+     "insert": "𠃋"
+    },
+    {
+     "slogan": "𡿨",
+     "name": "u21fe8",
+     "insert": "𡿨"
+    },
+    {
+     "slogan": "㇂",
+     "name": "u31c2",
+     "insert": "㇂"
+    },
+    {
+     "slogan": "匚",
+     "name": "u531a",
+     "insert": "匚"
+    },
+    {
+     "slogan": "丅",
+     "name": "u4e05",
+     "insert": "丅"
+    },
+    {
+     "slogan": "丆",
+     "name": "u4e06",
+     "insert": "丆"
+    },
+    {
+     "slogan": "丂",
+     "name": "u4e02",
+     "insert": "丂"
+    },
+    {
+     "slogan": "𠂇",
+     "name": "u20087",
+     "insert": "𠂇"
+    },
+    {
+     "slogan": "匸",
+     "name": "u5338",
+     "insert": "匸"
+    },
+    {
+     "slogan": "𬺰",
+     "name": "u2ceb0",
+     "insert": "𬺰"
+    },
+    {
+     "slogan": "𠀁",
+     "name": "u20001",
+     "insert": "𠀁"
+    },
+    {
+     "slogan": "𫠠",
+     "name": "u2b820",
+     "insert": "𫠠"
+    },
+    {
+     "slogan": "刂",
+     "name": "u5202",
+     "insert": "刂"
+    },
+    {
+     "slogan": "冂",
+     "name": "u5182",
+     "insert": "冂"
+    },
+    {
+     "slogan": "⺊",
+     "name": "u2e8a",
+     "insert": "⺊"
+    },
+    {
+     "slogan": "〢",
+     "name": "u3022",
+     "insert": "〢"
+    },
+    {
+     "slogan": "丄",
+     "name": "u4e04",
+     "insert": "丄"
+    },
+    {
+     "slogan": "𠃎",
+     "name": "u200ce",
+     "insert": "𠃎"
+    },
+    {
+     "slogan": "亻",
+     "name": "u4ebb",
+     "insert": "亻"
+    },
+    {
+     "slogan": "𠂉",
+     "name": "u20089",
+     "insert": "𠂉"
+    },
+    {
+     "slogan": "勹",
+     "name": "u52f9",
+     "insert": "勹"
+    },
+    {
+     "slogan": "⺈",
+     "name": "u2e88",
+     "insert": "⺈"
+    },
+    {
+     "slogan": "乂",
+     "name": "u4e42",
+     "insert": "乂"
+    },
+    {
+     "slogan": "㐅",
+     "name": "u3405",
+     "insert": "㐅"
+    },
+    {
+     "slogan": "𠂊",
+     "name": "u2008a",
+     "insert": "𠂊"
+    },
+    {
+     "slogan": "𰀪",
+     "name": "u3002a",
+     "insert": "𰀪"
+    },
+    {
+     "slogan": "𠂆",
+     "name": "u20086",
+     "insert": "𠂆"
+    },
+    {
+     "slogan": "𠤎",
+     "name": "u2090e",
+     "insert": "𠤎"
+    },
+    {
+     "slogan": "⺆",
+     "name": "u2e86",
+     "insert": "⺆"
+    },
+    {
+     "slogan": "冖",
+     "name": "u5196",
+     "insert": "冖"
+    },
+    {
+     "slogan": "亠",
+     "name": "u4ea0",
+     "insert": "亠"
+    },
+    {
+     "slogan": "冫",
+     "name": "u51ab",
+     "insert": "冫"
+    },
+    {
+     "slogan": "讠",
+     "name": "u8ba0",
+     "insert": "讠"
+    },
+    {
+     "slogan": "丷",
+     "name": "u4e37",
+     "insert": "丷"
+    },
+    {
+     "slogan": "⺀",
+     "name": "u2e80",
+     "insert": "⺀"
+    },
+    {
+     "slogan": "𬼀",
+     "name": "u2cf00",
+     "insert": "𬼀"
+    },
+    {
+     "slogan": "コ",
+     "name": "u30b3",
+     "insert": "コ"
+    },
+    {
+     "slogan": "卩",
+     "name": "u5369",
+     "insert": "卩"
+    },
+    {
+     "slogan": "㔾",
+     "name": "u353e",
+     "insert": "㔾"
+    },
+    {
+     "slogan": "龴",
+     "name": "u9fb4",
+     "insert": "龴"
+    },
+    {
+     "slogan": "ユ",
+     "name": "u30e6",
+     "insert": "ユ"
+    },
+    {
+     "slogan": "𰆊",
+     "name": "u3018a",
+     "insert": "𰆊"
+    },
+    {
+     "slogan": "阝",
+     "name": "u961d",
+     "insert": "阝"
+    },
+    {
+     "slogan": "廴",
+     "name": "u5ef4",
+     "insert": "廴"
+    },
+    {
+     "slogan": "凵",
+     "name": "u51f5",
+     "insert": "凵"
+    },
+    {
+     "slogan": "丩",
+     "name": "u4e29",
+     "insert": "丩"
+    },
+    {
+     "slogan": "𠂈",
+     "name": "u20088",
+     "insert": "𠂈"
+    },
+    {
+     "slogan": "厶",
+     "name": "u53b6",
+     "insert": "厶"
+    },
+    {
+     "slogan": "巜",
+     "name": "u5ddc",
+     "insert": "巜"
+    },
+    {
+     "slogan": "𢎘",
+     "name": "u22398",
+     "insert": "𢎘"
+    },
+    {
+     "slogan": "艹",
+     "name": "u8279",
+     "insert": "艹"
+    },
+    {
+     "slogan": "扌",
+     "name": "u624c",
+     "insert": "扌"
+    },
+    {
+     "slogan": "廾",
+     "name": "u5efe",
+     "insert": "廾"
+    },
+    {
+     "slogan": "亍",
+     "name": "u4e8d",
+     "insert": "亍"
+    },
+    {
+     "slogan": "𰀁",
+     "name": "u30001",
+     "insert": "𰀁"
+    },
+    {
+     "slogan": "尢",
+     "name": "u5c22",
+     "insert": "尢"
+    },
+    {
+     "slogan": "卄",
+     "name": "u5344",
+     "insert": "卄"
+    },
+    {
+     "slogan": "𰀄",
+     "name": "u30004",
+     "insert": "𰀄"
+    },
+    {
+     "slogan": "亐",
+     "name": "u4e90",
+     "insert": "亐"
+    },
+    {
+     "slogan": "㐄",
+     "name": "u3404",
+     "insert": "㐄"
+    },
+    {
+     "slogan": "𠫓",
+     "name": "u20ad3",
+     "insert": "𠫓"
+    },
+    {
+     "slogan": "𠫔",
+     "name": "u20ad4",
+     "insert": "𠫔"
+    },
+    {
+     "slogan": "𠆣",
+     "name": "u201a3",
+     "insert": "𠆣"
+    },
+    {
+     "slogan": "𰀃",
+     "name": "u30003",
+     "insert": "𰀃"
+    },
+    {
+     "slogan": "𡕒",
+     "name": "u21552",
+     "insert": "𡕒"
+    },
+    {
+     "slogan": "夨",
+     "name": "u5928",
+     "insert": "夨"
+    },
+    {
+     "slogan": "囗",
+     "name": "u56d7",
+     "insert": "囗"
+    },
+    {
+     "slogan": "𡭔",
+     "name": "u21b54",
+     "insert": "𡭔"
+    },
+    {
+     "slogan": "⺌",
+     "name": "u2e8c",
+     "insert": "⺌"
+    },
+    {
+     "slogan": "𰀠",
+     "name": "u30020",
+     "insert": "𰀠"
+    },
+    {
+     "slogan": "𠔼",
+     "name": "u2053c",
+     "insert": "𠔼"
+    },
+    {
+     "slogan": "〣",
+     "name": "u3023",
+     "insert": "〣"
+    },
+    {
+     "slogan": "𣥂",
+     "name": "u23942",
+     "insert": "𣥂"
+    },
+    {
+     "slogan": "𠀃",
+     "name": "u20003",
+     "insert": "𠀃"
+    },
+    {
+     "slogan": "犭",
+     "name": "u72ad",
+     "insert": "犭"
+    },
+    {
+     "slogan": "彳",
+     "name": "u5f73",
+     "insert": "彳"
+    },
+    {
+     "slogan": "夂",
+     "name": "u5902",
+     "insert": "夂"
+    },
+    {
+     "slogan": "彡",
+     "name": "u5f61",
+     "insert": "彡"
+    },
+    {
+     "slogan": "饣",
+     "name": "u9963",
+     "insert": "饣"
+    },
+    {
+     "slogan": "夊",
+     "name": "u590a",
+     "insert": "夊"
+    },
+    {
+     "slogan": "亼",
+     "name": "u4ebc",
+     "insert": "亼"
+    },
+    {
+     "slogan": "亇",
+     "name": "u4e87",
+     "insert": "亇"
+    },
+    {
+     "slogan": "乇",
+     "name": "u4e47",
+     "insert": "乇"
+    },
+    {
+     "slogan": "𫶧",
+     "name": "u2bda7",
+     "insert": "𫶧"
+    },
+    {
+     "slogan": "𰃦",
+     "name": "u300e6",
+     "insert": "𰃦"
+    },
+    {
+     "slogan": "𠂋",
+     "name": "u2008b",
+     "insert": "𠂋"
+    },
+    {
+     "slogan": "𠂎",
+     "name": "u2008e",
+     "insert": "𠂎"
+    },
+    {
+     "slogan": "亽",
+     "name": "u4ebd",
+     "insert": "亽"
+    },
+    {
+     "slogan": "𠓛",
+     "name": "u204db",
+     "insert": "𠓛"
+    },
+    {
+     "slogan": "𠚤",
+     "name": "u206a4",
+     "insert": "𠚤"
+    },
+    {
+     "slogan": "𱍸",
+     "name": "u31378",
+     "insert": "𱍸"
+    },
+    {
+     "slogan": "氵",
+     "name": "u6c35",
+     "insert": "氵"
+    },
+    {
+     "slogan": "忄",
+     "name": "u5fc4",
+     "insert": "忄"
+    },
+    {
+     "slogan": "辶",
+     "name": "u8fb6",
+     "insert": "辶"
+    },
+    {
+     "slogan": "宀",
+     "name": "u5b80",
+     "insert": "宀"
+    },
+    {
+     "slogan": "䒑",
+     "name": "u4491",
+     "insert": "䒑"
+    },
+    {
+     "slogan": "丬",
+     "name": "u4e2c",
+     "insert": "丬"
+    },
+    {
+     "slogan": "𭕄",
+     "name": "u2d544",
+     "insert": "𭕄"
+    },
+    {
+     "slogan": "𫜹",
+     "name": "u2b739",
+     "insert": "𫜹"
+    },
+    {
+     "slogan": "⺕",
+     "name": "u2e95",
+     "insert": "⺕"
+    },
+    {
+     "slogan": "彐",
+     "name": "u5f50",
+     "insert": "彐"
+    },
+    {
+     "slogan": "卪",
+     "name": "u536a",
+     "insert": "卪"
+    },
+    {
+     "slogan": "卂",
+     "name": "u5342",
+     "insert": "卂"
+    },
+    {
+     "slogan": "𠃓",
+     "name": "u200d3",
+     "insert": "𠃓"
+    },
+    {
+     "slogan": "屮",
+     "name": "u5c6e",
+     "insert": "屮"
+    },
+    {
+     "slogan": "彑",
+     "name": "u5f51",
+     "insert": "彑"
+    },
+    {
+     "slogan": "𫝀",
+     "name": "u2b740",
+     "insert": "𫝀"
+    },
+    {
+     "slogan": "亾",
+     "name": "u4ebe",
+     "insert": "亾"
+    },
+    {
+     "slogan": "乆",
+     "name": "u4e46",
+     "insert": "乆"
+    },
+    {
+     "slogan": "纟",
+     "name": "u7e9f",
+     "insert": "纟"
+    },
+    {
+     "slogan": "巛",
+     "name": "u5ddb",
+     "insert": "巛"
+    },
+    {
+     "slogan": "龷",
+     "name": "u9fb7",
+     "insert": "龷"
+    },
+    {
+     "slogan": "卝",
+     "name": "u535d",
+     "insert": "卝"
+    },
+    {
+     "slogan": "廿",
+     "name": "u5eff",
+     "insert": "廿"
+    },
+    {
+     "slogan": "𠮛",
+     "name": "u20b9b",
+     "insert": "𠮛"
+    },
+    {
+     "slogan": "帀",
+     "name": "u5e00",
+     "insert": "帀"
+    },
+    {
+     "slogan": "旡",
+     "name": "u65e1",
+     "insert": "旡"
+    },
+    {
+     "slogan": "厷",
+     "name": "u53b7",
+     "insert": "厷"
+    },
+    {
+     "slogan": "龶",
+     "name": "u9fb6",
+     "insert": "龶"
+    },
+    {
+     "slogan": "𢆰",
+     "name": "u221b0",
+     "insert": "𢆰"
+    },
+    {
+     "slogan": "耂",
+     "name": "u8002",
+     "insert": "耂"
+    },
+    {
+     "slogan": "朩",
+     "name": "u6729",
+     "insert": "朩"
+    },
+    {
+     "slogan": "丏",
+     "name": "u4e0f",
+     "insert": "丏"
+    },
+    {
+     "slogan": "攴",
+     "name": "u6534",
+     "insert": "攴"
+    },
+    {
+     "slogan": "𠔿",
+     "name": "u2053f",
+     "insert": "𠔿"
+    },
+    {
+     "slogan": "龰",
+     "name": "u9fb0",
+     "insert": "龰"
+    },
+    {
+     "slogan": "⺝",
+     "name": "u2e9d",
+     "insert": "⺝"
+    },
+    {
+     "slogan": "冄",
+     "name": "u5184",
+     "insert": "冄"
+    },
+    {
+     "slogan": "冃",
+     "name": "u5183",
+     "insert": "冃"
+    },
+    {
+     "slogan": "𫩏",
+     "name": "u2ba4f",
+     "insert": "𫩏"
+    },
+    {
+     "slogan": "𦉪",
+     "name": "u2626a",
+     "insert": "𦉪"
+    },
+    {
+     "slogan": "禸",
+     "name": "u79b8",
+     "insert": "禸"
+    },
+    {
+     "slogan": "𰀡",
+     "name": "u30021",
+     "insert": "𰀡"
+    },
+    {
+     "slogan": "𦉫",
+     "name": "u2626b",
+     "insert": "𦉫"
+    },
+    {
+     "slogan": "𠁣",
+     "name": "u20063",
+     "insert": "𠁣"
+    },
+    {
+     "slogan": "⺼",
+     "name": "u2ebc",
+     "insert": "⺼"
+    },
+    {
+     "slogan": "攵",
+     "name": "u6535",
+     "insert": "攵"
+    },
+    {
+     "slogan": "殳",
+     "name": "u6bb3",
+     "insert": "殳"
+    },
+    {
+     "slogan": "爫",
+     "name": "u722b",
+     "insert": "爫"
+    },
+    {
+     "slogan": "𧘇",
+     "name": "u27607",
+     "insert": "𧘇"
+    },
+    {
+     "slogan": "爻",
+     "name": "u723b",
+     "insert": "爻"
+    },
+    {
+     "slogan": "仌",
+     "name": "u4ecc",
+     "insert": "仌"
+    },
+    {
+     "slogan": "壬",
+     "name": "u58ec",
+     "insert": "壬"
+    },
+    {
+     "slogan": "𡈼",
+     "name": "u2123c",
+     "insert": "𡈼"
+    },
+    {
+     "slogan": "𠂔",
+     "name": "u20094",
+     "insert": "𠂔"
+    },
+    {
+     "slogan": "龵",
+     "name": "u9fb5",
+     "insert": "龵"
+    },
+    {
+     "slogan": "厃",
+     "name": "u5383",
+     "insert": "厃"
+    },
+    {
+     "slogan": "尣",
+     "name": "u5c23",
+     "insert": "尣"
+    },
+    {
+     "slogan": "卬",
+     "name": "u536c",
+     "insert": "卬"
+    },
+    {
+     "slogan": "卆",
+     "name": "u5346",
+     "insert": "卆"
+    },
+    {
+     "slogan": "仒",
+     "name": "u4ed2",
+     "insert": "仒"
+    },
+    {
+     "slogan": "𠂒",
+     "name": "u20092",
+     "insert": "𠂒"
+    },
+    {
+     "slogan": "丯",
+     "name": "u4e2f",
+     "insert": "丯"
+    },
+    {
+     "slogan": "𱼀",
+     "name": "u31f00",
+     "insert": "𱼀"
+    },
+    {
+     "slogan": "灬",
+     "name": "u706c",
+     "insert": "灬"
+    },
+    {
+     "slogan": "冘",
+     "name": "u5198",
+     "insert": "冘"
+    },
+    {
+     "slogan": "㓁",
+     "name": "u34c1",
+     "insert": "㓁"
+    },
+    {
+     "slogan": "折",
+     "name": "u6298",
+     "insert": "折"
+    },
+    {
+     "slogan": "夬",
+     "name": "u592c",
+     "insert": "夬"
+    },
+    {
+     "slogan": "肀",
+     "name": "u8080",
+     "insert": "肀"
+    },
+    {
+     "slogan": "弔",
+     "name": "u5f14",
+     "insert": "弔"
+    },
+    {
+     "slogan": "𠬝",
+     "name": "u20b1d",
+     "insert": "𠬝"
+    },
+    {
+     "slogan": "刅",
+     "name": "u5205",
+     "insert": "刅"
+    },
+    {
+     "slogan": "𢀳",
+     "name": "u22033",
+     "insert": "𢀳"
+    },
+    {
+     "slogan": "𠃜",
+     "name": "u200dc",
+     "insert": "𠃜"
+    },
+    {
+     "slogan": "丮",
+     "name": "u4e2e",
+     "insert": "丮"
+    },
+    {
+     "slogan": "㣺",
+     "name": "u38fa",
+     "insert": "㣺"
+    },
+    {
+     "slogan": "爿",
+     "name": "u723f",
+     "insert": "爿"
+    },
+    {
+     "slogan": "𠬞",
+     "name": "u20b1e",
+     "insert": "𠬞"
+    },
+    {
+     "slogan": "㞢",
+     "name": "u37a2",
+     "insert": "㞢"
+    },
+    {
+     "slogan": "毋",
+     "name": "u6bcb",
+     "insert": "毋"
+    },
+    {
+     "slogan": "丱",
+     "name": "u4e31",
+     "insert": "丱"
+    },
+    {
+     "slogan": "厸",
+     "name": "u53b8",
+     "insert": "厸"
+    },
+    {
+     "slogan": "犮",
+     "name": "u72ae",
+     "insert": "犮"
+    },
+    {
+     "slogan": "戊",
+     "name": "u620a",
+     "insert": "戊"
+    },
+    {
+     "slogan": "𰀉",
+     "name": "u30009",
+     "insert": "𰀉"
+    },
+    {
+     "slogan": "𡗜",
+     "name": "u215dc",
+     "insert": "𡗜"
+    },
+    {
+     "slogan": "𠀎",
+     "name": "u2000e",
+     "insert": "𠀎"
+    },
+    {
+     "slogan": "𡗗",
+     "name": "u215d7",
+     "insert": "𡗗"
+    },
+    {
+     "slogan": "𫇦",
+     "name": "u2b1e6",
+     "insert": "𫇦"
+    },
+    {
+     "slogan": "戉",
+     "name": "u6209",
+     "insert": "戉"
+    },
+    {
+     "slogan": "𣄼",
+     "name": "u2313c",
+     "insert": "𣄼"
+    },
+    {
+     "slogan": "圥",
+     "name": "u5725",
+     "insert": "圥"
+    },
+    {
+     "slogan": "戋",
+     "name": "u620b",
+     "insert": "戋"
+    },
+    {
+     "slogan": "朮",
+     "name": "u672e",
+     "insert": "朮"
+    },
+    {
+     "slogan": "𤴓",
+     "name": "u24d13",
+     "insert": "𤴓"
+    },
+    {
+     "slogan": "卌",
+     "name": "u534c",
+     "insert": "卌"
+    },
+    {
+     "slogan": "𬺻",
+     "name": "u2cebb",
+     "insert": "𬺻"
+    },
+    {
+     "slogan": "𪩲",
+     "name": "u2aa72",
+     "insert": "𪩲"
+    },
+    {
+     "slogan": "罒",
+     "name": "u7f52",
+     "insert": "罒"
+    },
+    {
+     "slogan": "冋",
+     "name": "u518b",
+     "insert": "冋"
+    },
+    {
+     "slogan": "曳",
+     "name": "u66f3",
+     "insert": "曳"
+    },
+    {
+     "slogan": "𠕁",
+     "name": "u20541",
+     "insert": "𠕁"
+    },
+    {
+     "slogan": "歺",
+     "name": "u6b7a",
+     "insert": "歺"
+    },
+    {
+     "slogan": "龱",
+     "name": "u9fb1",
+     "insert": "龱"
+    },
+    {
+     "slogan": "𪠲",
+     "name": "u2a832",
+     "insert": "𪠲"
+    },
+    {
+     "slogan": "龸",
+     "name": "u9fb8",
+     "insert": "龸"
+    },
+    {
+     "slogan": "𠀐",
+     "name": "u20010",
+     "insert": "𠀐"
+    },
+    {
+     "slogan": "𦉰",
+     "name": "u26270",
+     "insert": "𦉰"
+    },
+    {
+     "slogan": "囙",
+     "name": "u56d9",
+     "insert": "囙"
+    },
+    {
+     "slogan": "丗",
+     "name": "u4e17",
+     "insert": "丗"
+    },
+    {
+     "slogan": "𮍌",
+     "name": "u2e34c",
+     "insert": "𮍌"
+    },
+    {
+     "slogan": "钅",
+     "name": "u9485",
+     "insert": "钅"
+    },
+    {
+     "slogan": "氐",
+     "name": "u6c10",
+     "insert": "氐"
+    },
+    {
+     "slogan": "卯",
+     "name": "u536f",
+     "insert": "卯"
+    },
+    {
+     "slogan": "㐱",
+     "name": "u3431",
+     "insert": "㐱"
+    },
+    {
+     "slogan": "㐌",
+     "name": "u340c",
+     "insert": "㐌"
+    },
+    {
+     "slogan": "尒",
+     "name": "u5c12",
+     "insert": "尒"
+    },
+    {
+     "slogan": "夗",
+     "name": "u5917",
+     "insert": "夗"
+    },
+    {
+     "slogan": "刍",
+     "name": "u520d",
+     "insert": "刍"
+    },
+    {
+     "slogan": "㕣",
+     "name": "u3563",
+     "insert": "㕣"
+    },
+    {
+     "slogan": "𠂡",
+     "name": "u200a1",
+     "insert": "𠂡"
+    },
+    {
+     "slogan": "夘",
+     "name": "u5918",
+     "insert": "夘"
+    },
+    {
+     "slogan": "𬼉",
+     "name": "u2cf09",
+     "insert": "𬼉"
+    },
+    {
+     "slogan": "疒",
+     "name": "u7592",
+     "insert": "疒"
+    },
+    {
+     "slogan": "衤",
+     "name": "u8864",
+     "insert": "衤"
+    },
+    {
+     "slogan": "𢆉",
+     "name": "u22189",
+     "insert": "𢆉"
+    },
+    {
+     "slogan": "宂",
+     "name": "u5b82",
+     "insert": "宂"
+    },
+    {
+     "slogan": "𰃮",
+     "name": "u300ee",
+     "insert": "𰃮"
+    },
+    {
+     "slogan": "癶",
+     "name": "u7676",
+     "insert": "癶"
+    },
+    {
+     "slogan": "㠯",
+     "name": "u382f",
+     "insert": "㠯"
+    },
+    {
+     "slogan": "疋",
+     "name": "u758b",
+     "insert": "疋"
+    },
+    {
+     "slogan": "𢀖",
+     "name": "u22016",
+     "insert": "𢀖"
+    },
+    {
+     "slogan": "𠬤",
+     "name": "u20b24",
+     "insert": "𠬤"
+    },
+    {
+     "slogan": "氶",
+     "name": "u6c36",
+     "insert": "氶"
+    },
+    {
+     "slogan": "㞋",
+     "name": "u378b",
+     "insert": "㞋"
+    },
+    {
+     "slogan": "𡰪",
+     "name": "u21c2a",
+     "insert": "𡰪"
+    },
+    {
+     "slogan": "𤴔",
+     "name": "u24d14",
+     "insert": "𤴔"
+    },
+    {
+     "slogan": "氺",
+     "name": "u6c3a",
+     "insert": "氺"
+    },
+    {
+     "slogan": "弁",
+     "name": "u5f01",
+     "insert": "弁"
+    },
+    {
+     "slogan": "耒",
+     "name": "u8012",
+     "insert": "耒"
+    },
+    {
+     "slogan": "覀",
+     "name": "u8980",
+     "insert": "覀"
+    },
+    {
+     "slogan": "𢦏",
+     "name": "u2298f",
+     "insert": "𢦏"
+    },
+    {
+     "slogan": "朿",
+     "name": "u673f",
+     "insert": "朿"
+    },
+    {
+     "slogan": "幵",
+     "name": "u5e75",
+     "insert": "幵"
+    },
+    {
+     "slogan": "㓞",
+     "name": "u34de",
+     "insert": "㓞"
+    },
+    {
+     "slogan": "襾",
+     "name": "u897e",
+     "insert": "襾"
+    },
+    {
+     "slogan": "巩",
+     "name": "u5de9",
+     "insert": "巩"
+    },
+    {
+     "slogan": "𤰔",
+     "name": "u24c14",
+     "insert": "𤰔"
+    },
+    {
+     "slogan": "㐁",
+     "name": "u3401",
+     "insert": "㐁"
+    },
+    {
+     "slogan": "𠀠",
+     "name": "u20020",
+     "insert": "𠀠"
+    },
+    {
+     "slogan": "吅",
+     "name": "u5405",
+     "insert": "吅"
+    },
+    {
+     "slogan": "虍",
+     "name": "u864d",
+     "insert": "虍"
+    },
+    {
+     "slogan": "尗",
+     "name": "u5c17",
+     "insert": "尗"
+    },
+    {
+     "slogan": "𠕋",
+     "name": "u2054b",
+     "insert": "𠕋"
+    },
+    {
+     "slogan": "𥫗",
+     "name": "u25ad7",
+     "insert": "𥫗"
+    },
+    {
+     "slogan": "𦥑",
+     "name": "u26951",
+     "insert": "𦥑"
+    },
+    {
+     "slogan": "𠂤",
+     "name": "u200a4",
+     "insert": "𠂤"
+    },
+    {
+     "slogan": "囟",
+     "name": "u56df",
+     "insert": "囟"
+    },
+    {
+     "slogan": "舛",
+     "name": "u821b",
+     "insert": "舛"
+    },
+    {
+     "slogan": "夅",
+     "name": "u5905",
+     "insert": "夅"
+    },
+    {
+     "slogan": "𠂢",
+     "name": "u200a2",
+     "insert": "𠂢"
+    },
+    {
+     "slogan": "甶",
+     "name": "u7536",
+     "insert": "甶"
+    },
+    {
+     "slogan": "𠇍",
+     "name": "u201cd",
+     "insert": "𠇍"
+    },
+    {
+     "slogan": "𠂭",
+     "name": "u200ad",
+     "insert": "𠂭"
+    },
+    {
+     "slogan": "𧰨",
+     "name": "u27c28",
+     "insert": "𧰨"
+    },
+    {
+     "slogan": "𠫤",
+     "name": "u20ae4",
+     "insert": "𠫤"
+    },
+    {
+     "slogan": "𫥞",
+     "name": "u2b95e",
+     "insert": "𫥞"
+    },
+    {
+     "slogan": "乑",
+     "name": "u4e51",
+     "insert": "乑"
+    },
+    {
+     "slogan": "𭤨",
+     "name": "u2d928",
+     "insert": "𭤨"
+    },
+    {
+     "slogan": "龹",
+     "name": "u9fb9",
+     "insert": "龹"
+    },
+    {
+     "slogan": "𦍌",
+     "name": "u2634c",
+     "insert": "𦍌"
+    },
+    {
+     "slogan": "㐫",
+     "name": "u342b",
+     "insert": "㐫"
+    },
+    {
+     "slogan": "屰",
+     "name": "u5c70",
+     "insert": "屰"
+    },
+    {
+     "slogan": "𣅀",
+     "name": "u23140",
+     "insert": "𣅀"
+    },
+    {
+     "slogan": "𰁜",
+     "name": "u3005c",
+     "insert": "𰁜"
+    },
+    {
+     "slogan": "艮",
+     "name": "u826e",
+     "insert": "艮"
+    },
+    {
+     "slogan": "聿",
+     "name": "u807f",
+     "insert": "聿"
+    },
+    {
+     "slogan": "𢑑",
+     "name": "u22451",
+     "insert": "𢑑"
+    },
+    {
+     "slogan": "劦",
+     "name": "u52a6",
+     "insert": "劦"
+    },
+    {
+     "slogan": "叒",
+     "name": "u53d2",
+     "insert": "叒"
+    },
+    {
+     "slogan": "艸",
+     "name": "u8278",
+     "insert": "艸"
+    },
+    {
+     "slogan": "糸",
+     "name": "u7cf8",
+     "insert": "糸"
+    },
+    {
+     "slogan": "䏍",
+     "name": "u43cd",
+     "insert": "䏍"
+    },
+    {
+     "slogan": "厽",
+     "name": "u53bd",
+     "insert": "厽"
+    },
+    {
+     "slogan": "酉",
+     "name": "u9149",
+     "insert": "酉"
+    },
+    {
+     "slogan": "豕",
+     "name": "u8c55",
+     "insert": "豕"
+    },
+    {
+     "slogan": "巠",
+     "name": "u5de0",
+     "insert": "巠"
+    },
+    {
+     "slogan": "孛",
+     "name": "u5b5b",
+     "insert": "孛"
+    },
+    {
+     "slogan": "𦣞",
+     "name": "u268de",
+     "insert": "𦣞"
+    },
+    {
+     "slogan": "尨",
+     "name": "u5c28",
+     "insert": "尨"
+    },
+    {
+     "slogan": "𦣻",
+     "name": "u268fb",
+     "insert": "𦣻"
+    },
+    {
+     "slogan": "𦔮",
+     "name": "u2652e",
+     "insert": "𦔮"
+    },
+    {
+     "slogan": "耴",
+     "name": "u8034",
+     "insert": "耴"
+    },
+    {
+     "slogan": "𡉵",
+     "name": "u21275",
+     "insert": "𡉵"
+    },
+    {
+     "slogan": "丣",
+     "name": "u4e23",
+     "insert": "丣"
+    },
+    {
+     "slogan": "𫠩",
+     "name": "u2b829",
+     "insert": "𫠩"
+    },
+    {
+     "slogan": "𢦒",
+     "name": "u22992",
+     "insert": "𢦒"
+    },
+    {
+     "slogan": "𧾷",
+     "name": "u27fb7",
+     "insert": "𧾷"
+    },
+    {
+     "slogan": "镸",
+     "name": "u9578",
+     "insert": "镸"
+    },
+    {
+     "slogan": "邑",
+     "name": "u9091",
+     "insert": "邑"
+    },
+    {
+     "slogan": "肙",
+     "name": "u8099",
+     "insert": "肙"
+    },
+    {
+     "slogan": "圼",
+     "name": "u573c",
+     "insert": "圼"
+    },
+    {
+     "slogan": "冏",
+     "name": "u518f",
+     "insert": "冏"
+    },
+    {
+     "slogan": "囧",
+     "name": "u56e7",
+     "insert": "囧"
+    },
+    {
+     "slogan": "甹",
+     "name": "u7539",
+     "insert": "甹"
+    },
+    {
+     "slogan": "𣦼",
+     "name": "u239bc",
+     "insert": "𣦼"
+    },
+    {
+     "slogan": "豸",
+     "name": "u8c78",
+     "insert": "豸"
+    },
+    {
+     "slogan": "釆",
+     "name": "u91c6",
+     "insert": "釆"
+    },
+    {
+     "slogan": "夆",
+     "name": "u5906",
+     "insert": "夆"
+    },
+    {
+     "slogan": "攸",
+     "name": "u6538",
+     "insert": "攸"
+    },
+    {
+     "slogan": "寽",
+     "name": "u5bfd",
+     "insert": "寽"
+    },
+    {
+     "slogan": "䖝",
+     "name": "u459d",
+     "insert": "䖝"
+    },
+    {
+     "slogan": "𦥔",
+     "name": "u26954",
+     "insert": "𦥔"
+    },
+    {
+     "slogan": "佥",
+     "name": "u4f65",
+     "insert": "佥"
+    },
+    {
+     "slogan": "皃",
+     "name": "u7683",
+     "insert": "皃"
+    },
+    {
+     "slogan": "𦈢",
+     "name": "u26222",
+     "insert": "𦈢"
+    },
+    {
+     "slogan": "𭻾",
+     "name": "u2defe",
+     "insert": "𭻾"
+    },
+    {
+     "slogan": "㐬",
+     "name": "u342c",
+     "insert": "㐬"
+    },
+    {
+     "slogan": "𠬶",
+     "name": "u20b36",
+     "insert": "𠬶"
+    },
+    {
+     "slogan": "𠃬",
+     "name": "u200ec",
+     "insert": "𠃬"
+    },
+    {
+     "slogan": "夋",
+     "name": "u590b",
+     "insert": "夋"
+    },
+    {
+     "slogan": "矣",
+     "name": "u77e3",
+     "insert": "矣"
+    },
+    {
+     "slogan": "𣧄",
+     "name": "u239c4",
+     "insert": "𣧄"
+    },
+    {
+     "slogan": "戼",
+     "name": "u623c",
+     "insert": "戼"
+    },
+    {
+     "slogan": "枼",
+     "name": "u67bc",
+     "insert": "枼"
+    },
+    {
+     "slogan": "夌",
+     "name": "u590c",
+     "insert": "夌"
+    },
+    {
+     "slogan": "戔",
+     "name": "u6214",
+     "insert": "戔"
+    },
+    {
+     "slogan": "𦭝",
+     "name": "u26b5d",
+     "insert": "𦭝"
+    },
+    {
+     "slogan": "疌",
+     "name": "u758c",
+     "insert": "疌"
+    },
+    {
+     "slogan": "𠦝",
+     "name": "u2099d",
+     "insert": "𠦝"
+    },
+    {
+     "slogan": "臤",
+     "name": "u81e4",
+     "insert": "臤"
+    },
+    {
+     "slogan": "坴",
+     "name": "u5774",
+     "insert": "坴"
+    },
+    {
+     "slogan": "豖",
+     "name": "u8c56",
+     "insert": "豖"
+    },
+    {
+     "slogan": "亟",
+     "name": "u4e9f",
+     "insert": "亟"
+    },
+    {
+     "slogan": "㚔",
+     "name": "u3694",
+     "insert": "㚔"
+    },
+    {
+     "slogan": "叀",
+     "name": "u53c0",
+     "insert": "叀"
+    },
+    {
+     "slogan": "𡘆",
+     "name": "u21606",
+     "insert": "𡘆"
+    },
+    {
+     "slogan": "忝",
+     "name": "u5fdd",
+     "insert": "忝"
+    },
+    {
+     "slogan": "𣏟",
+     "name": "u233df",
+     "insert": "𣏟"
+    },
+    {
+     "slogan": "咼",
+     "name": "u54bc",
+     "insert": "咼"
+    },
+    {
+     "slogan": "㝵",
+     "name": "u3775",
+     "insert": "㝵"
+    },
+    {
+     "slogan": "畀",
+     "name": "u7540",
+     "insert": "畀"
+    },
+    {
+     "slogan": "冐",
+     "name": "u5190",
+     "insert": "冐"
+    },
+    {
+     "slogan": "㡀",
+     "name": "u3840",
+     "insert": "㡀"
+    },
+    {
+     "slogan": "𫩠",
+     "name": "u2ba60",
+     "insert": "𫩠"
+    },
+    {
+     "slogan": "𦙃",
+     "name": "u26643",
+     "insert": "𦙃"
+    },
+    {
+     "slogan": "卥",
+     "name": "u5365",
+     "insert": "卥"
+    },
+    {
+     "slogan": "飠",
+     "name": "u98e0",
+     "insert": "飠"
+    },
+    {
+     "slogan": "隹",
+     "name": "u96b9",
+     "insert": "隹"
+    },
+    {
+     "slogan": "臾",
+     "name": "u81fe",
+     "insert": "臾"
+    },
+    {
+     "slogan": "𠈌",
+     "name": "u2020c",
+     "insert": "𠈌"
+    },
+    {
+     "slogan": "臽",
+     "name": "u81fd",
+     "insert": "臽"
+    },
+    {
+     "slogan": "匊",
+     "name": "u530a",
+     "insert": "匊"
+    },
+    {
+     "slogan": "𨸏",
+     "name": "u28e0f",
+     "insert": "𨸏"
+    },
+    {
+     "slogan": "匋",
+     "name": "u530b",
+     "insert": "匋"
+    },
+    {
+     "slogan": "阜",
+     "name": "u961c",
+     "insert": "阜"
+    },
+    {
+     "slogan": "𥝢",
+     "name": "u25762",
+     "insert": "𥝢"
+    },
+    {
+     "slogan": "忩",
+     "name": "u5fe9",
+     "insert": "忩"
+    },
+    {
+     "slogan": "㸚",
+     "name": "u3e1a",
+     "insert": "㸚"
+    },
+    {
+     "slogan": "㸒",
+     "name": "u3e12",
+     "insert": "㸒"
+    },
+    {
+     "slogan": "㑒",
+     "name": "u3452",
+     "insert": "㑒"
+    },
+    {
+     "slogan": "咅",
+     "name": "u5485",
+     "insert": "咅"
+    },
+    {
+     "slogan": "𣏋",
+     "name": "u233cb",
+     "insert": "𣏋"
+    },
+    {
+     "slogan": "㐭",
+     "name": "u342d",
+     "insert": "㐭"
+    },
+    {
+     "slogan": "罙",
+     "name": "u7f59",
+     "insert": "罙"
+    },
+    {
+     "slogan": "𢼄",
+     "name": "u22f04",
+     "insert": "𢼄"
+    },
+    {
+     "slogan": "斉",
+     "name": "u6589",
+     "insert": "斉"
+    },
+    {
+     "slogan": "㫄",
+     "name": "u3ac4",
+     "insert": "㫄"
+    },
+    {
+     "slogan": "叕",
+     "name": "u53d5",
+     "insert": "叕"
+    },
+    {
+     "slogan": "𡬠",
+     "name": "u21b20",
+     "insert": "𡬠"
+    },
+    {
+     "slogan": "沓",
+     "name": "u6c93",
+     "insert": "沓"
+    },
+    {
+     "slogan": "㣇",
+     "name": "u38c7",
+     "insert": "㣇"
+    },
+    {
+     "slogan": "甾",
+     "name": "u753e",
+     "insert": "甾"
+    },
+    {
+     "slogan": "畐",
+     "name": "u7550",
+     "insert": "畐"
+    },
+    {
+     "slogan": "壴",
+     "name": "u58f4",
+     "insert": "壴"
+    },
+    {
+     "slogan": "垔",
+     "name": "u5794",
+     "insert": "垔"
+    },
+    {
+     "slogan": "耎",
+     "name": "u800e",
+     "insert": "耎"
+    },
+    {
+     "slogan": "荅",
+     "name": "u8345",
+     "insert": "荅"
+    },
+    {
+     "slogan": "㪅",
+     "name": "u3a85",
+     "insert": "㪅"
+    },
+    {
+     "slogan": "𠀷",
+     "name": "u20037",
+     "insert": "𠀷"
+    },
+    {
+     "slogan": "曷",
+     "name": "u66f7",
+     "insert": "曷"
+    },
+    {
+     "slogan": "昜",
+     "name": "u661c",
+     "insert": "昜"
+    },
+    {
+     "slogan": "禺",
+     "name": "u79ba",
+     "insert": "禺"
+    },
+    {
+     "slogan": "昷",
+     "name": "u6637",
+     "insert": "昷"
+    },
+    {
+     "slogan": "耑",
+     "name": "u8011",
+     "insert": "耑"
+    },
+    {
+     "slogan": "咢",
+     "name": "u54a2",
+     "insert": "咢"
+    },
+    {
+     "slogan": "咠",
+     "name": "u54a0",
+     "insert": "咠"
+    },
+    {
+     "slogan": "𬙙",
+     "name": "u2c659",
+     "insert": "𬙙"
+    },
+    {
+     "slogan": "𠧪",
+     "name": "u209ea",
+     "insert": "𠧪"
+    },
+    {
+     "slogan": "臿",
+     "name": "u81ff",
+     "insert": "臿"
+    },
+    {
+     "slogan": "叟",
+     "name": "u53df",
+     "insert": "叟"
+    },
+    {
+     "slogan": "爰",
+     "name": "u7230",
+     "insert": "爰"
+    },
+    {
+     "slogan": "禹",
+     "name": "u79b9",
+     "insert": "禹"
+    },
+    {
+     "slogan": "𣬉",
+     "name": "u23b09",
+     "insert": "𣬉"
+    },
+    {
+     "slogan": "矦",
+     "name": "u77e6",
+     "insert": "矦"
+    },
+    {
+     "slogan": "弇",
+     "name": "u5f07",
+     "insert": "弇"
+    },
+    {
+     "slogan": "㲋",
+     "name": "u3c8b",
+     "insert": "㲋"
+    },
+    {
+     "slogan": "爯",
+     "name": "u722f",
+     "insert": "爯"
+    },
+    {
+     "slogan": "叜",
+     "name": "u53dc",
+     "insert": "叜"
+    },
+    {
+     "slogan": "㒸",
+     "name": "u34b8",
+     "insert": "㒸"
+    },
+    {
+     "slogan": "叚",
+     "name": "u53da",
+     "insert": "叚"
+    },
+    {
+     "slogan": "癸",
+     "name": "u7678",
+     "insert": "癸"
+    },
+    {
+     "slogan": "凾",
+     "name": "u51fe",
+     "insert": "凾"
+    },
+    {
+     "slogan": "𢏚",
+     "name": "u223da",
+     "insert": "𢏚"
+    },
+    {
+     "slogan": "彖",
+     "name": "u5f56",
+     "insert": "彖"
+    },
+    {
+     "slogan": "㚇",
+     "name": "u3687",
+     "insert": "㚇"
+    },
+    {
+     "slogan": "芔",
+     "name": "u8294",
+     "insert": "芔"
+    },
+    {
+     "slogan": "𡿺",
+     "name": "u21ffa",
+     "insert": "𡿺"
+    },
+    {
+     "slogan": "𩠐",
+     "name": "u29810",
+     "insert": "𩠐"
+    },
+    {
+     "slogan": "尃",
+     "name": "u5c03",
+     "insert": "尃"
+    },
+    {
+     "slogan": "㱿",
+     "name": "u3c7f",
+     "insert": "㱿"
+    },
+    {
+     "slogan": "冓",
+     "name": "u5193",
+     "insert": "冓"
+    },
+    {
+     "slogan": "𤰇",
+     "name": "u24c07",
+     "insert": "𤰇"
+    },
+    {
+     "slogan": "𡘤",
+     "name": "u21624",
+     "insert": "𡘤"
+    },
+    {
+     "slogan": "髟",
+     "name": "u9adf",
+     "insert": "髟"
+    },
+    {
+     "slogan": "𦐇",
+     "name": "u26407",
+     "insert": "𦐇"
+    },
+    {
+     "slogan": "眔",
+     "name": "u7714",
+     "insert": "眔"
+    },
+    {
+     "slogan": "𧴪",
+     "name": "u27d2a",
+     "insert": "𧴪"
+    },
+    {
+     "slogan": "畟",
+     "name": "u755f",
+     "insert": "畟"
+    },
+    {
+     "slogan": "丵",
+     "name": "u4e35",
+     "insert": "丵"
+    },
+    {
+     "slogan": "䍃",
+     "name": "u4343",
+     "insert": "䍃"
+    },
+    {
+     "slogan": "奚",
+     "name": "u595a",
+     "insert": "奚"
+    },
+    {
+     "slogan": "芻",
+     "name": "u82bb",
+     "insert": "芻"
+    },
+    {
+     "slogan": "虒",
+     "name": "u8652",
+     "insert": "虒"
+    },
+    {
+     "slogan": "𠂹",
+     "name": "u200b9",
+     "insert": "𠂹"
+    },
+    {
+     "slogan": "皋",
+     "name": "u768b",
+     "insert": "皋"
+    },
+    {
+     "slogan": "𰮤",
+     "name": "u30ba4",
+     "insert": "𰮤"
+    },
+    {
+     "slogan": "竜",
+     "name": "u7adc",
+     "insert": "竜"
+    },
+    {
+     "slogan": "𤇾",
+     "name": "u241fe",
+     "insert": "𤇾"
+    },
+    {
+     "slogan": "𡨄",
+     "name": "u21a04",
+     "insert": "𡨄"
+    },
+    {
+     "slogan": "隺",
+     "name": "u96ba",
+     "insert": "隺"
+    },
+    {
+     "slogan": "冡",
+     "name": "u51a1",
+     "insert": "冡"
+    },
+    {
+     "slogan": "圅",
+     "name": "u5705",
+     "insert": "圅"
+    },
+    {
+     "slogan": "鬯",
+     "name": "u9b2f",
+     "insert": "鬯"
+    },
+    {
+     "slogan": "𣁋",
+     "name": "u2304b",
+     "insert": "𣁋"
+    },
+    {
+     "slogan": "殸",
+     "name": "u6bb8",
+     "insert": "殸"
+    },
+    {
+     "slogan": "堇",
+     "name": "u5807",
+     "insert": "堇"
+    },
+    {
+     "slogan": "㒼",
+     "name": "u34bc",
+     "insert": "㒼"
+    },
+    {
+     "slogan": "埶",
+     "name": "u57f6",
+     "insert": "埶"
+    },
+    {
+     "slogan": "𦰩",
+     "name": "u26c29",
+     "insert": "𦰩"
+    },
+    {
+     "slogan": "殹",
+     "name": "u6bb9",
+     "insert": "殹"
+    },
+    {
+     "slogan": "𠩺",
+     "name": "u20a7a",
+     "insert": "𠩺"
+    },
+    {
+     "slogan": "桼",
+     "name": "u687c",
+     "insert": "桼"
+    },
+    {
+     "slogan": "䙴",
+     "name": "u4674",
+     "insert": "䙴"
+    },
+    {
+     "slogan": "𢛳",
+     "name": "u226f3",
+     "insert": "𢛳"
+    },
+    {
+     "slogan": "𮍏",
+     "name": "u2e34f",
+     "insert": "𮍏"
+    },
+    {
+     "slogan": "虘",
+     "name": "u8658",
+     "insert": "虘"
+    },
+    {
+     "slogan": "虖",
+     "name": "u8656",
+     "insert": "虖"
+    },
+    {
+     "slogan": "啚",
+     "name": "u555a",
+     "insert": "啚"
+    },
+    {
+     "slogan": "𠁁",
+     "name": "u20041",
+     "insert": "𠁁"
+    },
+    {
+     "slogan": "皐",
+     "name": "u7690",
+     "insert": "皐"
+    },
+    {
+     "slogan": "悤",
+     "name": "u60a4",
+     "insert": "悤"
+    },
+    {
+     "slogan": "𬀷",
+     "name": "u2c037",
+     "insert": "𬀷"
+    },
+    {
+     "slogan": "𣶒",
+     "name": "u23d92",
+     "insert": "𣶒"
+    },
+    {
+     "slogan": "𡕩",
+     "name": "u21569",
+     "insert": "𡕩"
+    },
+    {
+     "slogan": "啇",
+     "name": "u5547",
+     "insert": "啇"
+    },
+    {
+     "slogan": "羕",
+     "name": "u7f95",
+     "insert": "羕"
+    },
+    {
+     "slogan": "翏",
+     "name": "u7fcf",
+     "insert": "翏"
+    },
+    {
+     "slogan": "尞",
+     "name": "u5c1e",
+     "insert": "尞"
+    },
+    {
+     "slogan": "賁",
+     "name": "u8cc1",
+     "insert": "賁"
+    },
+    {
+     "slogan": "𦓔",
+     "name": "u264d4",
+     "insert": "𦓔"
+    },
+    {
+     "slogan": "朁",
+     "name": "u6701",
+     "insert": "朁"
+    },
+    {
+     "slogan": "厤",
+     "name": "u53a4",
+     "insert": "厤"
+    },
+    {
+     "slogan": "棥",
+     "name": "u68e5",
+     "insert": "棥"
+    },
+    {
+     "slogan": "畱",
+     "name": "u7571",
+     "insert": "畱"
+    },
+    {
+     "slogan": "菐",
+     "name": "u83d0",
+     "insert": "菐"
+    },
+    {
+     "slogan": "戢",
+     "name": "u6222",
+     "insert": "戢"
+    },
+    {
+     "slogan": "黹",
+     "name": "u9ef9",
+     "insert": "黹"
+    },
+    {
+     "slogan": "敫",
+     "name": "u656b",
+     "insert": "敫"
+    },
+    {
+     "slogan": "翕",
+     "name": "u7fd5",
+     "insert": "翕"
+    },
+    {
+     "slogan": "雋",
+     "name": "u96cb",
+     "insert": "雋"
+    },
+    {
+     "slogan": "㫺",
+     "name": "u3afa",
+     "insert": "㫺"
+    },
+    {
+     "slogan": "衆",
+     "name": "u8846",
+     "insert": "衆"
+    },
+    {
+     "slogan": "𡍮",
+     "name": "u2136e",
+     "insert": "𡍮"
+    },
+    {
+     "slogan": "𤔔",
+     "name": "u24514",
+     "insert": "𤔔"
+    },
+    {
+     "slogan": "舄",
+     "name": "u8204",
+     "insert": "舄"
+    },
+    {
+     "slogan": "戠",
+     "name": "u6220",
+     "insert": "戠"
+    },
+    {
+     "slogan": "𰕎",
+     "name": "u3054e",
+     "insert": "𰕎"
+    },
+    {
+     "slogan": "叅",
+     "name": "u53c5",
+     "insert": "叅"
+    },
+    {
+     "slogan": "畺",
+     "name": "u757a",
+     "insert": "畺"
+    },
+    {
+     "slogan": "𣪠",
+     "name": "u23aa0",
+     "insert": "𣪠"
+    },
+    {
+     "slogan": "皷",
+     "name": "u76b7",
+     "insert": "皷"
+    },
+    {
+     "slogan": "𰯲",
+     "name": "u30bf2",
+     "insert": "𰯲"
+    },
+    {
+     "slogan": "臧",
+     "name": "u81e7",
+     "insert": "臧"
+    },
+    {
+     "slogan": "𡏳",
+     "name": "u213f3",
+     "insert": "𡏳"
+    },
+    {
+     "slogan": "賛",
+     "name": "u8cdb",
+     "insert": "賛"
+    },
+    {
+     "slogan": "𧶠",
+     "name": "u27da0",
+     "insert": "𧶠"
+    },
+    {
+     "slogan": "韯",
+     "name": "u97ef",
+     "insert": "韯"
+    },
+    {
+     "slogan": "奭",
+     "name": "u596d",
+     "insert": "奭"
+    },
+    {
+     "slogan": "𤴡",
+     "name": "u24d21",
+     "insert": "𤴡"
+    },
+    {
+     "slogan": "雚",
+     "name": "u96da",
+     "insert": "雚"
+    },
+    {
+     "slogan": "霝",
+     "name": "u971d",
+     "insert": "霝"
+    },
+    {
+     "slogan": "夒",
+     "name": "u5912",
+     "insert": "夒"
+    },
+    {
+     "slogan": "喿",
+     "name": "u55bf",
+     "insert": "喿"
+    },
+    {
+     "slogan": "睘",
+     "name": "u7758",
+     "insert": "睘"
+    },
+    {
+     "slogan": "睪",
+     "name": "u776a",
+     "insert": "睪"
+    },
+    {
+     "slogan": "豊",
+     "name": "u8c4a",
+     "insert": "豊"
+    },
+    {
+     "slogan": "豦",
+     "name": "u8c66",
+     "insert": "豦"
+    },
+    {
+     "slogan": "㬎",
+     "name": "u3b0e",
+     "insert": "㬎"
+    },
+    {
+     "slogan": "畾",
+     "name": "u757e",
+     "insert": "畾"
+    },
+    {
+     "slogan": "嶲",
+     "name": "u5db2",
+     "insert": "嶲"
+    },
+    {
+     "slogan": "瞏",
+     "name": "u778f",
+     "insert": "瞏"
+    },
+    {
+     "slogan": "瞿",
+     "name": "u77bf",
+     "insert": "瞿"
+    },
+    {
+     "slogan": "𪉷",
+     "name": "u2a277",
+     "insert": "𪉷"
+    },
+    {
+     "slogan": "僉",
+     "name": "u50c9",
+     "insert": "僉"
+    },
+    {
+     "slogan": "𦥯",
+     "name": "u2696f",
+     "insert": "𦥯"
+    },
+    {
+     "slogan": "㥯",
+     "name": "u396f",
+     "insert": "㥯"
+    },
+    {
+     "slogan": "夐",
+     "name": "u5910",
+     "insert": "夐"
+    },
+    {
+     "slogan": "臱",
+     "name": "u81f1",
+     "insert": "臱"
+    },
+    {
+     "slogan": "䝿",
+     "name": "u477f",
+     "insert": "䝿"
+    },
+    {
+     "slogan": "𢀩",
+     "name": "u22029",
+     "insert": "𢀩"
+    },
+    {
+     "slogan": "龠",
+     "name": "u9fa0",
+     "insert": "龠"
+    },
+    {
+     "slogan": "毚",
+     "name": "u6bda",
+     "insert": "毚"
+    },
+    {
+     "slogan": "韱",
+     "name": "u97f1",
+     "insert": "韱"
+    },
+    {
+     "slogan": "𤐫",
+     "name": "u2442b",
+     "insert": "𤐫"
+    },
+    {
+     "slogan": "亶",
+     "name": "u4eb6",
+     "insert": "亶"
+    },
+    {
+     "slogan": "𣎆",
+     "name": "u23386",
+     "insert": "𣎆"
+    },
+    {
+     "slogan": "稟",
+     "name": "u7a1f",
+     "insert": "稟"
+    },
+    {
+     "slogan": "廌",
+     "name": "u5ecc",
+     "insert": "廌"
+    },
+    {
+     "slogan": "賔",
+     "name": "u8cd4",
+     "insert": "賔"
+    },
+    {
+     "slogan": "廛",
+     "name": "u5edb",
+     "insert": "廛"
+    },
+    {
+     "slogan": "褱",
+     "name": "u8931",
+     "insert": "褱"
+    },
+    {
+     "slogan": "襄",
+     "name": "u8944",
+     "insert": "襄"
+    },
+    {
+     "slogan": "𦎫",
+     "name": "u263ab",
+     "insert": "𦎫"
+    },
+    {
+     "slogan": "𦎧",
+     "name": "u263a7",
+     "insert": "𦎧"
+    },
+    {
+     "slogan": "𬴘",
+     "name": "u2cd18",
+     "insert": "𬴘"
+    },
+    {
+     "slogan": "𩫏",
+     "name": "u29acf",
+     "insert": "𩫏"
+    },
+    {
+     "slogan": "𡕰",
+     "name": "u21570",
+     "insert": "𡕰"
+    },
+    {
+     "slogan": "㡭",
+     "name": "u386d",
+     "insert": "㡭"
+    },
+    {
+     "slogan": "巤",
+     "name": "u5de4",
+     "insert": "巤"
+    },
+    {
+     "slogan": "䜌",
+     "name": "u470c",
+     "insert": "䜌"
+    }
+   ]
+  }
+ ]
+}

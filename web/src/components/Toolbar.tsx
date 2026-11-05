@@ -278,8 +278,12 @@ function Toolbar({
         >
           注
         </button>
-        <button className="toolbar-btn" title="IPA 输入 (Alt+key)">
-          IPA
+        <button
+          className={`toolbar-btn ${panelMode === "symbols" ? "active" : ""}`}
+          onClick={() => onOpenPanel("symbols")}
+          title="符号 (IPA / 难输入部件)"
+        >
+          符号
         </button>
       </div>
     </div>

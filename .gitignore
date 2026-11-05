@@ -80,6 +80,7 @@ scripts/*.py
 !scripts/extract_ipa.py
 !scripts/extract_core_glyphs.py
 !scripts/slim_bundle.py
+!scripts/build_symbols.py
 # scripts/ 下的实验产物 (csv/png/svg 与 render 输出)
 scripts/output/
 scripts/render*

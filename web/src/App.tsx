@@ -13,7 +13,7 @@ import { candidateEngine } from "./editor/candidateEngine";
 import type { CandidateSource, CandidateSourceState } from "./editor/candidateEngine";
 import "./App.css";
 
-export type PanelMode = "kage" | "ruby" | "annotation" | "search" | null;
+export type PanelMode = "kage" | "ruby" | "annotation" | "symbols" | "search" | null;
 export type WritingMode = "horizontal" | "vertical";
 
 function App() {
@@ -495,6 +495,7 @@ function App() {
             <div className="panel-resize-handle" />
             <SidePanel
               mode={panelMode!}
+            onInsertSymbol={(t: string) => editorRef.current?.insertAtCursor(t)}
               onClose={() => { setShowPanel(false); setPanelMode(null); }}
               onInsertKageGlyph={insertKageGlyph}
               kageInitialName={kageInitial.name}

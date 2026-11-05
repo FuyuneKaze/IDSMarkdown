@@ -4,6 +4,7 @@ import type { RubyTarget, AnnotationTarget } from "./Editor";
 import KageEditorPanel from "./KageEditorPanel";
 import RubyEditorPanel from "./RubyEditorPanel";
 import AnnotationEditorPanel from "./AnnotationEditorPanel";
+import SymbolPanel from "./SymbolPanel";
 
 interface SidePanelProps {
   mode: PanelMode;
@@ -17,6 +18,7 @@ interface SidePanelProps {
   onInsertRuby?: (base: string, rt: string) => void;
   onUpdateRuby?: (pos: number, base: string, rt: string) => void;
   onInsertAnnotation?: (text: string) => void;
+  onInsertSymbol?: (text: string) => void;
   onUpdateAnnotation?: (pos: number, text: string) => void;
 }
 
@@ -24,7 +26,8 @@ const PANEL_TITLES: Record<string, string> = {
   kage: "KAGE 字形编辑",
   ruby: "Ruby 注音编辑",
   annotation: "双行小字注释",
-  search: "部件搜索",
+  symbols: "符号",
+    search: "部件搜索",
 };
 
 const MIN_WIDTH = 240;
@@ -32,7 +35,7 @@ const MAX_WIDTH = 600;
 
 function SidePanel({
   mode, onClose, onInsertKageGlyph, kageInitialName, kageInitialData, kageKey,
-  rubyTarget, annotationTarget, onInsertRuby, onUpdateRuby, onInsertAnnotation, onUpdateAnnotation,
+  rubyTarget, annotationTarget, onInsertRuby, onUpdateRuby, onInsertAnnotation, onUpdateAnnotation, onInsertSymbol,
 }: SidePanelProps) {
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -88,7 +91,7 @@ function SidePanel({
         <span>{PANEL_TITLES[mode || ""] || "面板"}</span>
         <button className="panel-close" onClick={onClose}>×</button>
       </div>
-      <div className={`panel-body${mode === "kage" ? " kage-panel" : mode === "ruby" || mode === "annotation" ? " form-panel" : ""}`}>
+      <div className={`panel-body${mode === "kage" ? " kage-panel" : mode === "ruby" || mode === "annotation" || mode === "symbols" ? " form-panel" : ""}`}>
         {mode === "kage" && onInsertKageGlyph ? (
           <KageEditorPanel
             key={kageKey}
@@ -108,8 +111,10 @@ function SidePanel({
             onInsert={(text) => onInsertAnnotation?.(text)}
             onUpdate={(pos, text) => onUpdateAnnotation?.(pos, text)}
           />
-        ) : (
-          <span>
+        ) : mode === "symbols" ? (
+            <SymbolPanel onInsert={(text) => onInsertSymbol?.(text)} />
+          ) : (
+            <span>
             {mode === "search" ? "功能开发中..." : "选择文字后可在此编辑 Ruby 注音"}
           </span>
         )}
