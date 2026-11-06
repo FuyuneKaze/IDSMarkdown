@@ -3837,6 +3837,873 @@
      "insert": "䜌"
     }
    ]
+  },
+  {
+    "id": "Speical IPA",
+    "title": "非标准IPA",
+    "items":[
+{
+        "slogan": "◌〪",
+        "name": "◌〪",
+        "insert": "〪"
+},
+{
+        "slogan": "◌〫",
+        "name": "◌〫",
+        "insert": "〫"
+},
+{
+        "slogan": "〬◌",
+        "name": "〬◌",
+        "insert": "〬"
+},
+{
+        "slogan": "〭◌",
+        "name": "〭◌",
+        "insert": "〭"
+},
+{
+        "slogan": "꜂◌",
+        "name": "꜂◌",
+        "insert": "꜂"
+},
+{
+        "slogan": "◌꜄",
+        "name": "◌꜄",
+        "insert": "꜄"
+},
+{
+        "slogan": "꜀◌",
+        "name": "꜀◌",
+        "insert": "꜀"
+},
+{
+        "slogan": "◌꜆",
+        "name": "◌꜆",
+        "insert": "꜆"
+},
+{
+        "slogan": "꜃◌",
+        "name": "꜃◌",
+        "insert": "꜃"
+},
+{
+        "slogan": "◌꜅",
+        "name": "◌꜅",
+        "insert": "꜅"
+},
+{
+        "slogan": "꜁◌",
+        "name": "꜁◌",
+        "insert": "꜁"
+},
+{
+        "slogan": "◌꜇",
+        "name": "◌꜇",
+        "insert": "꜇"
+},
+{
+        "slogan": "꜂◌",
+        "name": "꜂◌",
+        "insert": "꜂"
+},
+{
+        "slogan": "◌꜄",
+        "name": "◌꜄",
+        "insert": "꜄"
+},
+{
+        "slogan": "꜀◌",
+        "name": "꜀◌",
+        "insert": "꜀"
+},
+{
+        "slogan": "◌꜆",
+        "name": "◌꜆",
+        "insert": "꜆"
+},
+{
+        "slogan": "◌꜆",
+        "name": "◌꜆",
+        "insert": "꜆"
+},
+{
+        "slogan": "◌꜇",
+        "name": "◌꜇",
+        "insert": "꜇"
+},
+{
+        "slogan": "◌꜀",
+        "name": "◌꜀",
+        "insert": "꜀"
+},
+{
+        "slogan": "◌꜁",
+        "name": "◌꜁",
+        "insert": "꜁"
+},
+{
+        "slogan": "ɿ",
+        "name": "ɿ",
+        "insert": "ɿ"
+},
+{
+        "slogan": "ʮ",
+        "name": "ʮ",
+        "insert": "ʮ"
+},
+{
+        "slogan": "ʅ",
+        "name": "ʅ",
+        "insert": "ʅ"
+},
+{
+        "slogan": "ʯ",
+        "name": "ʯ",
+        "insert": "ʯ"
+},
+{
+        "slogan": "ᴀ",
+        "name": "ᴀ",
+        "insert": "ᴀ"
+},
+{
+        "slogan": "ᴇ",
+        "name": "ᴇ",
+        "insert": "ᴇ"
+},
+{
+        "slogan": "ᴁ",
+        "name": "ᴁ",
+        "insert": "ᴁ"
+},
+{
+        "slogan": "ꭥ",
+        "name": "ꭥ",
+        "insert": "ꭥ"
+},
+{
+        "slogan": "ᵻ",
+        "name": "ᵻ",
+        "insert": "ᵻ"
+},
+{
+        "slogan": "ᵿ",
+        "name": "ᵿ",
+        "insert": "ᵿ"
+},
+{
+        "slogan": "ɷ",
+        "name": "ɷ",
+        "insert": "ɷ"
+},
+{
+        "slogan": "ʚ",
+        "name": "ʚ",
+        "insert": "ʚ"
+},
+{
+        "slogan": "ɩ",
+        "name": "ɩ",
+        "insert": "ɩ"
+},
+{
+        "slogan": "ω",
+        "name": "ω",
+        "insert": "ω"
+},
+{
+        "slogan": "ɘ",
+        "name": "ɘ",
+        "insert": "ɘ"
+},
+{
+        "slogan": "ᶏ",
+        "name": "ᶏ",
+        "insert": "ᶏ"
+},
+{
+        "slogan": "ᶐ",
+        "name": "ᶐ",
+        "insert": "ᶐ"
+},
+{
+        "slogan": "ᶒ",
+        "name": "ᶒ",
+        "insert": "ᶒ"
+},
+{
+        "slogan": "ᶓ",
+        "name": "ᶓ",
+        "insert": "ᶓ"
+},
+{
+        "slogan": "ᶔ",
+        "name": "ᶔ",
+        "insert": "ᶔ"
+},
+{
+        "slogan": "ᶕ",
+        "name": "ᶕ",
+        "insert": "ᶕ"
+},
+{
+        "slogan": "ᶖ",
+        "name": "ᶖ",
+        "insert": "ᶖ"
+},
+{
+        "slogan": "ᶗ",
+        "name": "ᶗ",
+        "insert": "ᶗ"
+},
+{
+        "slogan": "ᶙ",
+        "name": "ᶙ",
+        "insert": "ᶙ"
+},
+{
+        "slogan": "ɚ",
+        "name": "ɚ",
+        "insert": "ɚ"
+},
+{
+        "slogan": "ɝ",
+        "name": "ɝ",
+        "insert": "ɝ"
+},
+{
+        "slogan": "ȶ",
+        "name": "ȶ",
+        "insert": "ȶ"
+},
+{
+        "slogan": "ȡ",
+        "name": "ȡ",
+        "insert": "ȡ"
+},
+{
+        "slogan": "ȵ",
+        "name": "ȵ",
+        "insert": "ȵ"
+},
+{
+        "slogan": "ȴ",
+        "name": "ȴ",
+        "insert": "ȴ"
+},
+{
+        "slogan": "ȸ",
+        "name": "ȸ",
+        "insert": "ȸ"
+},
+{
+        "slogan": "ȹ",
+        "name": "ȹ",
+        "insert": "ȹ"
+},
+{
+        "slogan": "ʆ",
+        "name": "ʆ",
+        "insert": "ʆ"
+},
+{
+        "slogan": "ʓ",
+        "name": "ʓ",
+        "insert": "ʓ"
+},
+{
+        "slogan": "ʦ",
+        "name": "ʦ",
+        "insert": "ʦ"
+},
+{
+        "slogan": "ʣ",
+        "name": "ʣ",
+        "insert": "ʣ"
+},
+{
+        "slogan": "ʧ",
+        "name": "ʧ",
+        "insert": "ʧ"
+},
+{
+        "slogan": "ʤ",
+        "name": "ʤ",
+        "insert": "ʤ"
+},
+{
+        "slogan": "ʨ",
+        "name": "ʨ",
+        "insert": "ʨ"
+},
+{
+        "slogan": "ʥ",
+        "name": "ʥ",
+        "insert": "ʥ"
+},
+{
+        "slogan": "ʪ",
+        "name": "ʪ",
+        "insert": "ʪ"
+},
+{
+        "slogan": "ʫ",
+        "name": "ʫ",
+        "insert": "ʫ"
+},
+{
+        "slogan": "ƥ",
+        "name": "ƥ",
+        "insert": "ƥ"
+},
+{
+        "slogan": "ƭ",
+        "name": "ƭ",
+        "insert": "ƭ"
+},
+{
+        "slogan": "ƈ",
+        "name": "ƈ",
+        "insert": "ƈ"
+},
+{
+        "slogan": "ƙ",
+        "name": "ƙ",
+        "insert": "ƙ"
+},
+{
+        "slogan": "ʠ",
+        "name": "ʠ",
+        "insert": "ʠ"
+},
+{
+        "slogan": "ʇ",
+        "name": "ʇ",
+        "insert": "ʇ"
+},
+{
+        "slogan": "ʗ",
+        "name": "ʗ",
+        "insert": "ʗ"
+},
+{
+        "slogan": "ʖ",
+        "name": "ʖ",
+        "insert": "ʖ"
+},
+{
+        "slogan": "ɫ",
+        "name": "ɫ",
+        "insert": "ɫ"
+},
+{
+        "slogan": "ɼ",
+        "name": "ɼ",
+        "insert": "ɼ"
+},
+{
+        "slogan": "ᶑ",
+        "name": "ᶑ",
+        "insert": "ᶑ"
+},
+{
+        "slogan": "ᶘ",
+        "name": "ᶘ",
+        "insert": "ᶘ"
+},
+{
+        "slogan": "ᶚ",
+        "name": "ᶚ",
+        "insert": "ᶚ"
+},
+{
+        "slogan": "ꞎ",
+        "name": "ꞎ",
+        "insert": "ꞎ"
+},
+{
+        "slogan": "ᶀ",
+        "name": "ᶀ",
+        "insert": "ᶀ"
+},
+{
+        "slogan": "ᶁ",
+        "name": "ᶁ",
+        "insert": "ᶁ"
+},
+{
+        "slogan": "ᶂ",
+        "name": "ᶂ",
+        "insert": "ᶂ"
+},
+{
+        "slogan": "ᶃ",
+        "name": "ᶃ",
+        "insert": "ᶃ"
+},
+{
+        "slogan": "ᶄ",
+        "name": "ᶄ",
+        "insert": "ᶄ"
+},
+{
+        "slogan": "ᶅ",
+        "name": "ᶅ",
+        "insert": "ᶅ"
+},
+{
+        "slogan": "ᶆ",
+        "name": "ᶆ",
+        "insert": "ᶆ"
+},
+{
+        "slogan": "ᶇ",
+        "name": "ᶇ",
+        "insert": "ᶇ"
+},
+{
+        "slogan": "ᶈ",
+        "name": "ᶈ",
+        "insert": "ᶈ"
+},
+{
+        "slogan": "ᶉ",
+        "name": "ᶉ",
+        "insert": "ᶉ"
+},
+{
+        "slogan": "ᶊ",
+        "name": "ᶊ",
+        "insert": "ᶊ"
+},
+{
+        "slogan": "ƫ",
+        "name": "ƫ",
+        "insert": "ƫ"
+},
+{
+        "slogan": "ᶋ",
+        "name": "ᶋ",
+        "insert": "ᶋ"
+},
+{
+        "slogan": "ᶌ",
+        "name": "ᶌ",
+        "insert": "ᶌ"
+},
+{
+        "slogan": "ᶍ",
+        "name": "ᶍ",
+        "insert": "ᶍ"
+},
+{
+        "slogan": "ᶎ",
+        "name": "ᶎ",
+        "insert": "ᶎ"
+},
+{
+        "slogan": "ᵬ",
+        "name": "ᵬ",
+        "insert": "ᵬ"
+},
+{
+        "slogan": "ᵭ",
+        "name": "ᵭ",
+        "insert": "ᵭ"
+},
+{
+        "slogan": "ᵮ",
+        "name": "ᵮ",
+        "insert": "ᵮ"
+},
+{
+        "slogan": "ɫ",
+        "name": "ɫ",
+        "insert": "ɫ"
+},
+{
+        "slogan": "ᵯ",
+        "name": "ᵯ",
+        "insert": "ᵯ"
+},
+{
+        "slogan": "ᵰ",
+        "name": "ᵰ",
+        "insert": "ᵰ"
+},
+{
+        "slogan": "ᵱ",
+        "name": "ᵱ",
+        "insert": "ᵱ"
+},
+{
+        "slogan": "ᵲ",
+        "name": "ᵲ",
+        "insert": "ᵲ"
+},
+{
+        "slogan": "ᵳ",
+        "name": "ᵳ",
+        "insert": "ᵳ"
+},
+{
+        "slogan": "ᵴ",
+        "name": "ᵴ",
+        "insert": "ᵴ"
+},
+{
+        "slogan": "ᵵ",
+        "name": "ᵵ",
+        "insert": "ᵵ"
+},
+{
+        "slogan": "ᵶ",
+        "name": "ᵶ",
+        "insert": "ᵶ"
+},
+{
+        "slogan": "ʩ",
+        "name": "ʩ",
+        "insert": "ʩ"
+},
+{
+        "slogan": "ʬ",
+        "name": "ʬ",
+        "insert": "ʬ"
+},
+{
+        "slogan": "ʭ",
+        "name": "ʭ",
+        "insert": "ʭ"
+},
+{
+        "slogan": "ʞ",
+        "name": "ʞ",
+        "insert": "ʞ"
+},
+{
+        "slogan": "¡",
+        "name": "¡",
+        "insert": "¡"
+},
+{
+        "slogan": "ᴌ",
+        "name": "ᴌ",
+        "insert": "ᴌ"
+},
+{
+        "slogan": "ɉ",
+        "name": "ɉ",
+        "insert": "ɉ"
+},
+{
+        "slogan": "ȷ",
+        "name": "ȷ",
+        "insert": "ȷ"
+},
+{
+        "slogan": "ᴝ",
+        "name": "ᴝ",
+        "insert": "ᴝ"
+},
+{
+        "slogan": "ᵙ",
+        "name": "ᵙ",
+        "insert": "ᵙ"
+},
+{
+        "slogan": "ᴃ",
+        "name": "ᴃ",
+        "insert": "ᴃ"
+}
+    ]
+  },
+  {
+    "id":"VoQS IPA",
+    "title":"病理IPA",
+    "items":[
+        {
+        "slogan": "ↀ",
+        "name": "颊气流",
+        "insert": "ↀ"
+    },
+    {
+        "slogan": "↓",
+        "name": "肺部吸气言语",
+        "insert": "↓"
+},
+{
+        "slogan": "Œ",
+        "name": "食管气流",
+        "insert": "Œ"
+},
+{
+        "slogan": "Ю",
+        "name": "气管–食管言语",
+        "insert": "Ю"
+},
+{
+        "slogan": "V",
+        "name": "常态浊声",
+        "insert": "V"
+},
+{
+        "slogan": "F",
+        "name": "假声",
+        "insert": "F"
+},
+{
+        "slogan": "W",
+        "name": "耳语",
+        "insert": "W"
+},
+{
+        "slogan": "C",
+        "name": "嘎裂",
+        "insert": "C"
+},
+{
+        "slogan": "Ṿ",
+        "name": "耳语声",
+        "insert": "̣"
+},
+{
+        "slogan": "V̰",
+        "name": "嘎裂声",
+        "insert": "̰"
+},
+{
+        "slogan": "V̤",
+        "name": "气声",
+        "insert": "̤"
+},
+{
+        "slogan": "V!",
+        "name": "糙声",
+        "insert": "!"
+},
+{
+        "slogan": "F̣",
+        "name": "耳语假声",
+        "insert": "̣"
+},
+{
+        "slogan": "F̰",
+        "name": "嘎裂假声",
+        "insert": "̰"
+},
+{
+        "slogan": "F!",
+        "name": "糙假声",
+        "insert": "!"
+},
+{
+        "slogan": "C!",
+        "name": "糙嘎裂",
+        "insert": "!"
+},
+{
+        "slogan": "Ṿ!",
+        "name": "糙耳语声",
+        "insert": "̣!"
+},
+{
+        "slogan": "V̰!",
+        "name": "糙嘎裂声",
+        "insert": "̰!"
+},
+{
+        "slogan": "V̰̣",
+        "name": "耳语嘎裂声",
+        "insert": "̰̣"
+},
+{
+        "slogan": "V̰̣!",
+        "name": "糙耳语嘎裂声",
+        "insert": "̰̣!"
+},
+{
+        "slogan": "F̰̣",
+        "name": "耳语嘎裂假声",
+        "insert": "̰̣"
+},
+{
+        "slogan": "F̰̣!",
+        "name": "糙耳语嘎裂假声",
+        "insert": "̰̣!"
+},
+{
+        "slogan": "V͉",
+        "name": "弛/松声",
+        "insert": "͉"
+},
+{
+        "slogan": "V͈",
+        "name": "挤喉发声/紧声",
+        "insert": "͈"
+},
+{
+        "slogan": "V‼",
+        "name": "室襞性发声",
+        "insert": "‼"
+},
+{
+        "slogan": "V̬‼",
+        "name": "复音",
+        "insert": "̬‼"
+},
+{
+        "slogan": "Ṿ‼",
+        "name": "耳语室襞性发声",
+        "insert": "̣‼"
+},
+{
+        "slogan": "V^Ꜳ",
+        "name": "杓状会厌襞性发声",
+        "insert": "^Ꜳ"
+},
+{
+        "slogan": "ꟿ",
+        "name": "痉挛性发声障碍",
+        "insert": "ꟿ"
+},
+{
+        "slogan": "И",
+        "name": "电子喉发声",
+        "insert": "И"
+},
+{
+        "slogan": "L̝",
+        "name": "喉位偏高声",
+        "insert": "̝"
+},
+{
+        "slogan": "L̞",
+        "name": "喉位偏低声",
+        "insert": "̞"
+},
+{
+        "slogan": "Vꟹ",
+        "name": "唇化声（开圆唇）",
+        "insert": "ꟹ"
+},
+{
+        "slogan": "Vʷ",
+        "name": "唇化声（闭圆唇）",
+        "insert": "ʷ"
+},
+{
+        "slogan": "V͍",
+        "name": "展唇声",
+        "insert": "͍"
+},
+{
+        "slogan": "Vᶹ",
+        "name": "唇齿化声",
+        "insert": "ᶹ"
+},
+{
+        "slogan": "V̺",
+        "name": "舌尖化声",
+        "insert": "̺"
+},
+{
+        "slogan": "V̻",
+        "name": "舌叶化声",
+        "insert": "̻"
+},
+{
+        "slogan": "V˞",
+        "name": "卷舌声",
+        "insert": "˞"
+},
+{
+        "slogan": "V̪",
+        "name": "齿化声",
+        "insert": "̪"
+},
+{
+        "slogan": "V͇",
+        "name": "龈化声",
+        "insert": "͇"
+},
+{
+        "slogan": "V͇ʲ",
+        "name": "腭–龈化声",
+        "insert": "͇ʲ"
+},
+{
+        "slogan": "Vʲ",
+        "name": "腭化声",
+        "insert": "ʲ"
+},
+{
+        "slogan": "Vˠ",
+        "name": "软腭化声",
+        "insert": "ˠ"
+},
+{
+        "slogan": "Vʶ",
+        "name": "小舌化声",
+        "insert": "ʶ"
+},
+{
+        "slogan": "Vˤ",
+        "name": "咽化声",
+        "insert": "ˤ"
+},
+{
+        "slogan": "V̙ˤ",
+        "name": "喉–咽化声",
+        "insert": "̙ˤ"
+},
+{
+        "slogan": "Vꟸ",
+        "name": "咽门化声",
+        "insert": "ꟸ"
+},
+{
+        "slogan": "Ṽ",
+        "name": "鼻化声",
+        "insert": "Ṽ"
+},
+{
+        "slogan": "V͊",
+        "name": "去鼻化声",
+        "insert": "͊"
+},
+{
+        "slogan": "J̞",
+        "name": "颌位偏开声",
+        "insert": "̞"
+},
+{
+        "slogan": "J̝",
+        "name": "颌位偏闭声",
+        "insert": "̝"
+},
+{
+        "slogan": "J͔",
+        "name": "颌位偏右声",
+        "insert": "͔"
+},
+{
+        "slogan": "J͕",
+        "name": "颌位偏左声",
+        "insert": "͕"
+},
+{
+        "slogan": "J̟",
+        "name": "颌位突出声",
+        "insert": "̟"
+},
+{
+        "slogan": "Θ",
+        "name": "舌突出声",
+        "insert": "Θ"
+}
+    ]
   }
  ]
 }
