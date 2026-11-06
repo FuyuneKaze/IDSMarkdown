@@ -471,27 +471,27 @@
     },
     {
      "slogan": "ʘ",
-     "name": "bilabial click",
+     "name": "双唇啧音",
      "insert": "ʘ"
     },
     {
      "slogan": "ǀ",
-     "name": "dental click",
+     "name": "齿啧音",
      "insert": "ǀ"
     },
     {
      "slogan": "ǃ",
-     "name": "(post-)alveolar click",
+     "name": "龈（后）啧音",
      "insert": "ǃ"
     },
     {
      "slogan": "ǂ",
-     "name": "palatal click",
+     "name": "硬腭啧音",
      "insert": "ǂ"
     },
     {
      "slogan": "ǁ",
-     "name": "lateral click",
+     "name": "龈边啧音",
      "insert": "ǁ"
     },
     {
