@@ -1016,9 +1016,9 @@
      "insert": "t͡ɬ"
     },
     {
-     "slogan": "d͡zˡ",
+     "slogan": "d͡ɮ",
      "name": "浊齿龈边塞擦音",
-     "insert": "d͡zˡ"
+     "insert": "d͡ɮ"
     },
     {
      "slogan": "ʈ͡ʂ",
@@ -3840,557 +3840,577 @@
   },
   {
     "id": "Speical IPA",
-    "title": "非标准IPA",
+    "title": "扩展和非标准IPA",
     "items":[
 {
         "slogan": "◌〪",
-        "name": "◌〪",
+        "name": "平",
         "insert": "〪"
 },
 {
         "slogan": "◌〫",
-        "name": "◌〫",
+        "name": "上",
         "insert": "〫"
 },
 {
-        "slogan": "〬◌",
-        "name": "〬◌",
+        "slogan": "◌〬",
+        "name": "去",
         "insert": "〬"
 },
 {
-        "slogan": "〭◌",
-        "name": "〭◌",
+        "slogan": "◌〭",
+        "name": "入",
         "insert": "〭"
 },
 {
+        "slogan": "꜀◌",
+        "name": "阴平",
+        "insert": "꜀"
+},
+{
         "slogan": "꜂◌",
-        "name": "꜂◌",
+        "name": "阴上",
         "insert": "꜂"
 },
 {
         "slogan": "◌꜄",
-        "name": "◌꜄",
+        "name": "阴去",
         "insert": "꜄"
 },
 {
-        "slogan": "꜀◌",
-        "name": "꜀◌",
-        "insert": "꜀"
-},
-{
         "slogan": "◌꜆",
-        "name": "◌꜆",
+        "name": "阴入",
         "insert": "꜆"
 },
 {
+        "slogan": "꜁◌",
+        "name": "阳平",
+        "insert": "꜁"
+},
+{
         "slogan": "꜃◌",
-        "name": "꜃◌",
+        "name": "阳上",
         "insert": "꜃"
 },
 {
         "slogan": "◌꜅",
-        "name": "◌꜅",
+        "name": "阳去",
         "insert": "꜅"
 },
 {
-        "slogan": "꜁◌",
-        "name": "꜁◌",
-        "insert": "꜁"
-},
-{
         "slogan": "◌꜇",
-        "name": "◌꜇",
+        "name": "阳入",
         "insert": "꜇"
 },
 {
-        "slogan": "꜂◌",
-        "name": "꜂◌",
-        "insert": "꜂"
-},
-{
-        "slogan": "◌꜄",
-        "name": "◌꜄",
-        "insert": "꜄"
-},
-{
-        "slogan": "꜀◌",
-        "name": "꜀◌",
-        "insert": "꜀"
-},
-{
         "slogan": "◌꜆",
-        "name": "◌꜆",
-        "insert": "꜆"
-},
-{
-        "slogan": "◌꜆",
-        "name": "◌꜆",
+        "name": "上阴入",
         "insert": "꜆"
 },
 {
         "slogan": "◌꜇",
-        "name": "◌꜇",
+        "name": "上阳入",
         "insert": "꜇"
 },
 {
         "slogan": "◌꜀",
-        "name": "◌꜀",
+        "name": "下阴入",
         "insert": "꜀"
 },
 {
         "slogan": "◌꜁",
-        "name": "◌꜁",
+        "name": "下阳入",
         "insert": "꜁"
 },
 {
         "slogan": "ɿ",
-        "name": "ɿ",
+        "name": "不圆唇舌尖前元音",
         "insert": "ɿ"
 },
 {
         "slogan": "ʮ",
-        "name": "ʮ",
+        "name": "圆唇舌尖前元音",
         "insert": "ʮ"
 },
 {
         "slogan": "ʅ",
-        "name": "ʅ",
+        "name": "不圆唇舌尖后元音",
         "insert": "ʅ"
 },
 {
         "slogan": "ʯ",
-        "name": "ʯ",
+        "name": "圆唇舌尖后元音",
         "insert": "ʯ"
 },
 {
         "slogan": "ᴀ",
-        "name": "ᴀ",
+        "name": "开央不圆唇元音",
         "insert": "ᴀ"
 },
 {
         "slogan": "ᴇ",
-        "name": "ᴇ",
+        "name": "中前不圆唇元音",
         "insert": "ᴇ"
 },
 {
+        "slogan": "Ǝ",
+        "name": "半闭近后不圆唇元音",
+        "insert": "Ǝ"
+},
+{
         "slogan": "ᴁ",
-        "name": "ᴁ",
+        "name": "小型大写近开前不圆唇元音",
         "insert": "ᴁ"
 },
 {
         "slogan": "ꭥ",
-        "name": "ꭥ",
+        "name": "偏低半闭后圆唇元音",
         "insert": "ꭥ"
 },
 {
         "slogan": "ᵻ",
-        "name": "ᵻ",
+        "name": "近闭央不圆唇元音",
         "insert": "ᵻ"
 },
 {
         "slogan": "ᵿ",
-        "name": "ᵿ",
+        "name": "近闭央圆唇元音",
         "insert": "ᵿ"
 },
 {
+        "slogan": "ȣ",
+        "name": "近闭后圆唇元音/浊软腭擦音",
+        "insert": "ȣ"
+},
+{
         "slogan": "ɷ",
-        "name": "ɷ",
+        "name": "近闭近后元音",
         "insert": "ɷ"
 },
 {
         "slogan": "ʚ",
-        "name": "ʚ",
+        "name": "半开央不圆唇元音",
         "insert": "ʚ"
 },
 {
+        "slogan": "ı",
+        "name": "近闭近前不圆唇元音",
+        "insert": "ı"
+},
+{
         "slogan": "ɩ",
-        "name": "ɩ",
+        "name": "近闭近前不圆唇元音",
         "insert": "ɩ"
 },
 {
         "slogan": "ω",
-        "name": "ω",
+        "name": "近闭近后不圆唇元音",
         "insert": "ω"
 },
 {
-        "slogan": "ɘ",
-        "name": "ɘ",
-        "insert": "ɘ"
+        "slogan": "ᶖ",
+        "name": "卷舌闭前不圆唇元音",
+        "insert": "ᶖ"
+},
+{
+        "slogan": "ᶙ",
+        "name": "卷舌闭前圆唇元音",
+        "insert": "ᶙ"
+},
+{
+        "slogan": "ᶒ",
+        "name": "卷舌半闭前不圆唇元音",
+        "insert": "ᶒ"
+},
+{
+        "slogan": "ɚ",
+        "name": "卷舌中央元音",
+        "insert": "ɚ"
+},
+{
+        "slogan": "ᶕ",
+        "name": "卷舌中央元音",
+        "insert": "ᶕ"
+},
+{
+        "slogan": "ᶓ",
+        "name": "卷舌半开前不圆唇元音",
+        "insert": "ᶓ"
+},
+{
+        "slogan": "ɝ",
+        "name": "卷舌半开央不圆唇元音",
+        "insert": "ɝ"
+},
+{
+        "slogan": "ᶔ",
+        "name": "卷舌半开央不圆唇元音",
+        "insert": "ᶔ"
+},
+{
+        "slogan": "ᶗ",
+        "name": "卷舌半开后圆唇元音",
+        "insert": "ᶗ"
 },
 {
         "slogan": "ᶏ",
-        "name": "ᶏ",
+        "name": "卷舌开前不圆唇元音",
         "insert": "ᶏ"
 },
 {
         "slogan": "ᶐ",
-        "name": "ᶐ",
+        "name": "卷舌开后不圆唇元音",
         "insert": "ᶐ"
 },
 {
-        "slogan": "ᶒ",
-        "name": "ᶒ",
-        "insert": "ᶒ"
-},
-{
-        "slogan": "ᶓ",
-        "name": "ᶓ",
-        "insert": "ᶓ"
-},
-{
-        "slogan": "ᶔ",
-        "name": "ᶔ",
-        "insert": "ᶔ"
-},
-{
-        "slogan": "ᶕ",
-        "name": "ᶕ",
-        "insert": "ᶕ"
-},
-{
-        "slogan": "ᶖ",
-        "name": "ᶖ",
-        "insert": "ᶖ"
-},
-{
-        "slogan": "ᶗ",
-        "name": "ᶗ",
-        "insert": "ᶗ"
-},
-{
-        "slogan": "ᶙ",
-        "name": "ᶙ",
-        "insert": "ᶙ"
-},
-{
-        "slogan": "ɚ",
-        "name": "ɚ",
-        "insert": "ɚ"
-},
-{
-        "slogan": "ɝ",
-        "name": "ɝ",
-        "insert": "ɝ"
-},
-{
         "slogan": "ȶ",
-        "name": "ȶ",
+        "name": "知母",
         "insert": "ȶ"
 },
 {
         "slogan": "ȡ",
-        "name": "ȡ",
+        "name": "澄母",
         "insert": "ȡ"
 },
 {
         "slogan": "ȵ",
-        "name": "ȵ",
+        "name": "娘母",
         "insert": "ȵ"
 },
 {
         "slogan": "ȴ",
-        "name": "ȴ",
+        "name": "偏前硬腭边近音",
         "insert": "ȴ"
 },
 {
         "slogan": "ȸ",
-        "name": "ȸ",
+        "name": "齿化浊双唇塞音",
         "insert": "ȸ"
 },
 {
         "slogan": "ȹ",
-        "name": "ȹ",
+        "name": "齿化清双唇塞音",
         "insert": "ȹ"
 },
 {
         "slogan": "ʆ",
-        "name": "ʆ",
+        "name": "清龈腭擦音",
         "insert": "ʆ"
 },
 {
         "slogan": "ʓ",
-        "name": "ʓ",
+        "name": "浊龈腭擦音",
         "insert": "ʓ"
 },
 {
         "slogan": "ʦ",
-        "name": "ʦ",
+        "name": "清齿龈塞擦音合字",
         "insert": "ʦ"
 },
 {
         "slogan": "ʣ",
-        "name": "ʣ",
+        "name": "浊齿龈塞擦音合字",
         "insert": "ʣ"
 },
 {
         "slogan": "ʧ",
-        "name": "ʧ",
+        "name": "清龈后塞擦音合字",
         "insert": "ʧ"
 },
 {
         "slogan": "ʤ",
-        "name": "ʤ",
+        "name": "浊龈后塞擦音合字",
         "insert": "ʤ"
 },
 {
         "slogan": "ʨ",
-        "name": "ʨ",
+        "name": "清龈腭塞擦音合字",
         "insert": "ʨ"
 },
 {
         "slogan": "ʥ",
-        "name": "ʥ",
+        "name": "浊龈腭塞擦音合字",
         "insert": "ʥ"
 },
 {
         "slogan": "ʪ",
-        "name": "ʪ",
+        "name": "清边擦音-齿龈擦音协同合字",
         "insert": "ʪ"
 },
 {
         "slogan": "ʫ",
-        "name": "ʫ",
+        "name": "浊边擦音-齿龈擦音协同合字",
         "insert": "ʫ"
 },
 {
+        "slogan": "ł",
+        "name": "清齿龈边擦音",
+        "insert": "ł"
+},
+{
         "slogan": "ƥ",
-        "name": "ƥ",
+        "name": "清双唇内爆音",
         "insert": "ƥ"
 },
 {
         "slogan": "ƭ",
-        "name": "ƭ",
+        "name": "清齿龈内爆音",
         "insert": "ƭ"
 },
 {
         "slogan": "ƈ",
-        "name": "ƈ",
+        "name": "清硬腭内爆音",
         "insert": "ƈ"
 },
 {
         "slogan": "ƙ",
-        "name": "ƙ",
+        "name": "清软腭内爆音",
         "insert": "ƙ"
 },
 {
         "slogan": "ʠ",
-        "name": "ʠ",
+        "name": "清小舌内爆音",
         "insert": "ʠ"
 },
 {
         "slogan": "ʇ",
-        "name": "ʇ",
+        "name": "齿龈啧音",
         "insert": "ʇ"
 },
 {
         "slogan": "ʗ",
-        "name": "ʗ",
+        "name": "龈（后）啧音",
         "insert": "ʗ"
 },
 {
         "slogan": "ʖ",
-        "name": "ʖ",
+        "name": "龈边啧音",
         "insert": "ʖ"
 },
 {
         "slogan": "ɫ",
-        "name": "ɫ",
+        "name": "咽化边近音",
         "insert": "ɫ"
 },
 {
         "slogan": "ɼ",
-        "name": "ɼ",
+        "name": "偏高齿龈颤音",
         "insert": "ɼ"
 },
 {
         "slogan": "ᶑ",
-        "name": "ᶑ",
+        "name": "浊卷舌塞音",
         "insert": "ᶑ"
 },
 {
         "slogan": "ᶘ",
-        "name": "ᶘ",
+        "name": "带卷舌钩清龈后擦音",
         "insert": "ᶘ"
 },
 {
         "slogan": "ᶚ",
-        "name": "ᶚ",
+        "name": "带卷舌钩浊龈后擦音",
         "insert": "ᶚ"
 },
 {
         "slogan": "ꞎ",
-        "name": "ꞎ",
+        "name": "清卷舌边擦音",
         "insert": "ꞎ"
 },
 {
         "slogan": "ᶀ",
-        "name": "ᶀ",
+        "name": "腭化浊双唇塞音",
         "insert": "ᶀ"
 },
 {
-        "slogan": "ᶁ",
-        "name": "ᶁ",
-        "insert": "ᶁ"
+        "slogan": "ᶈ",
+        "name": "腭化清双唇塞音",
+        "insert": "ᶈ"
 },
 {
         "slogan": "ᶂ",
-        "name": "ᶂ",
+        "name": "腭化清唇齿擦音",
         "insert": "ᶂ"
 },
 {
+        "slogan": "ᶌ",
+        "name": "腭化浊唇齿擦音",
+        "insert": "ᶌ"
+},
+{
+        "slogan": "ᶆ",
+        "name": "腭化双唇鼻音",
+        "insert": "ᶆ"
+},
+{
+        "slogan": "ᶁ",
+        "name": "腭化浊齿龈塞音",
+        "insert": "ᶁ"
+},
+{
+        "slogan": "ƫ",
+        "name": "腭化清齿龈塞音",
+        "insert": "ƫ"
+},
+{
+        "slogan": "ᶊ",
+        "name": "腭化清齿龈擦音",
+        "insert": "ᶊ"
+},
+{
+        "slogan": "ᶎ",
+        "name": "腭化浊齿龈擦音",
+        "insert": "ᶎ"
+},
+{
+        "slogan": "ᶇ",
+        "name": "腭化齿龈鼻音",
+        "insert": "ᶇ"
+},
+{
+        "slogan": "ᶉ",
+        "name": "腭化清齿龈颤音",
+        "insert": "ᶉ"
+},
+{
+        "slogan": "ᶅ",
+        "name": "腭化齿龈边音",
+        "insert": "ᶅ"
+},
+{
+        "slogan": "ᶋ",
+        "name": "腭化清龈后擦音",
+        "insert": "ᶋ"
+},
+{
         "slogan": "ᶃ",
-        "name": "ᶃ",
+        "name": "腭化浊软腭塞音",
         "insert": "ᶃ"
 },
 {
         "slogan": "ᶄ",
-        "name": "ᶄ",
+        "name": "腭化清软腭塞音",
         "insert": "ᶄ"
 },
 {
-        "slogan": "ᶅ",
-        "name": "ᶅ",
-        "insert": "ᶅ"
-},
-{
-        "slogan": "ᶆ",
-        "name": "ᶆ",
-        "insert": "ᶆ"
-},
-{
-        "slogan": "ᶇ",
-        "name": "ᶇ",
-        "insert": "ᶇ"
-},
-{
-        "slogan": "ᶈ",
-        "name": "ᶈ",
-        "insert": "ᶈ"
-},
-{
-        "slogan": "ᶉ",
-        "name": "ᶉ",
-        "insert": "ᶉ"
-},
-{
-        "slogan": "ᶊ",
-        "name": "ᶊ",
-        "insert": "ᶊ"
-},
-{
-        "slogan": "ƫ",
-        "name": "ƫ",
-        "insert": "ƫ"
-},
-{
-        "slogan": "ᶋ",
-        "name": "ᶋ",
-        "insert": "ᶋ"
-},
-{
-        "slogan": "ᶌ",
-        "name": "ᶌ",
-        "insert": "ᶌ"
-},
-{
         "slogan": "ᶍ",
-        "name": "ᶍ",
+        "name": "腭化清软腭擦音",
         "insert": "ᶍ"
 },
 {
-        "slogan": "ᶎ",
-        "name": "ᶎ",
-        "insert": "ᶎ"
-},
-{
         "slogan": "ᵬ",
-        "name": "ᵬ",
+        "name": "软腭化浊双唇塞音",
         "insert": "ᵬ"
 },
 {
-        "slogan": "ᵭ",
-        "name": "ᵭ",
-        "insert": "ᵭ"
-},
-{
-        "slogan": "ᵮ",
-        "name": "ᵮ",
-        "insert": "ᵮ"
-},
-{
-        "slogan": "ɫ",
-        "name": "ɫ",
-        "insert": "ɫ"
-},
-{
-        "slogan": "ᵯ",
-        "name": "ᵯ",
-        "insert": "ᵯ"
-},
-{
-        "slogan": "ᵰ",
-        "name": "ᵰ",
-        "insert": "ᵰ"
-},
-{
         "slogan": "ᵱ",
-        "name": "ᵱ",
+        "name": "软腭化清双唇塞音",
         "insert": "ᵱ"
 },
 {
+        "slogan": "ᵮ",
+        "name": "软腭化清唇齿擦音",
+        "insert": "ᵮ"
+},
+{
+        "slogan": "ᵯ",
+        "name": "软腭化双唇鼻音",
+        "insert": "ᵯ"
+},
+{
+        "slogan": "ᵭ",
+        "name": "软腭化浊齿龈塞音",
+        "insert": "ᵭ"
+},
+{
+        "slogan": "ᵵ",
+        "name": "软腭化清齿龈塞音",
+        "insert": "ᵵ"
+},
+{
+        "slogan": "ᵴ",
+        "name": "软腭化清齿龈擦音",
+        "insert": "ᵴ"
+},
+{
+        "slogan": "ᵶ",
+        "name": "软腭化浊齿龈擦音",
+        "insert": "ᵶ"
+},
+{
+        "slogan": "ᵰ",
+        "name": "软腭化浊齿龈鼻音",
+        "insert": "ᵰ"
+},
+{
+        "slogan": "ɫ",
+        "name": "软腭化齿龈边近音",
+        "insert": "ɫ"
+},
+{
         "slogan": "ᵲ",
-        "name": "ᵲ",
+        "name": "软腭化齿龈颤音",
         "insert": "ᵲ"
 },
 {
         "slogan": "ᵳ",
-        "name": "ᵳ",
+        "name": "软腭化齿龈闪音",
         "insert": "ᵳ"
 },
 {
-        "slogan": "ᵴ",
-        "name": "ᵴ",
-        "insert": "ᵴ"
-},
-{
-        "slogan": "ᵵ",
-        "name": "ᵵ",
-        "insert": "ᵵ"
-},
-{
-        "slogan": "ᵶ",
-        "name": "ᵶ",
-        "insert": "ᵶ"
-},
-{
         "slogan": "ʩ",
-        "name": "ʩ",
+        "name": "腭咽颤音",
         "insert": "ʩ"
 },
 {
+        "slogan": "",
+        "name": "清腭咽塞音",
+        "insert": ""
+},
+{
+        "slogan": "",
+        "name": "浊腭咽塞音",
+        "insert": ""
+},
+{
+        "slogan": "я",
+        "name": "浊会厌颤音",
+        "insert": "я"
+},
+{
         "slogan": "ʬ",
-        "name": "ʬ",
+        "name": "双唇击音",
         "insert": "ʬ"
 },
 {
         "slogan": "ʭ",
-        "name": "ʭ",
+        "name": "双齿击音",
         "insert": "ʭ"
 },
 {
         "slogan": "ʞ",
-        "name": "ʞ",
+        "name": "软腭啧音",
         "insert": "ʞ"
 },
 {
         "slogan": "¡",
-        "name": "¡",
+        "name": "下颚击音",
         "insert": "¡"
 },
 {
+        "slogan": "!¡",
+        "name": "下颚击除阻的齿龈啧音",
+        "insert": "!¡"
+},
+{
         "slogan": "ᴌ",
-        "name": "ᴌ",
+        "name": "清软腭边擦音",
         "insert": "ᴌ"
+},
+{
+        "slogan": "",
+        "name": "清软腭边擦音",
+        "insert": ""
 },
 {
         "slogan": "ɉ",
@@ -4416,12 +4436,22 @@
         "slogan": "ᴃ",
         "name": "ᴃ",
         "insert": "ᴃ"
+},
+{
+        "slogan": "Q",
+        "name": "促音",
+        "insert": "Q"
+},
+{
+        "slogan": "∅",
+        "name": "空",
+        "insert": "∅"
 }
     ]
   },
   {
     "id":"VoQS IPA",
-    "title":"病理IPA",
+    "title":"音质IPA",
     "items":[
         {
         "slogan": "ↀ",
