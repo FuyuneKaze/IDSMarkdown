@@ -32,7 +32,8 @@ export default function SymbolPanel({ onInsert }: { onInsert: (text: string) => 
 
   useEffect(() => {
     let alive = true;
-    fetch(assetUrl("/data/symbols.json"))
+    // cache: "no-cache" → 每次都做协商请求(GitHub Pages 的 max-age=600 会让旧表滞留 10 分钟)
+    fetch(assetUrl("/data/symbols.json"), { cache: "no-cache" })
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status))))
       .then((j: SymTable) => {
         if (!alive) return;

@@ -571,7 +571,7 @@
     },
     {
      "slogan": "ɺ",
-     "name": "浊卷舌近音",
+     "name": "浊齿龈边拍音",
      "insert": "ɺ"
     },
     {
@@ -3953,9 +3953,9 @@
         "insert": "ᴇ"
 },
 {
-        "slogan": "Ǝ",
+        "slogan": "ⱻ",
         "name": "半闭近后不圆唇元音",
-        "insert": "Ǝ"
+        "insert": "ⱻ"
 },
 {
         "slogan": "ᴁ",
@@ -4013,6 +4013,11 @@
         "insert": "ᶖ"
 },
 {
+        "slogan": "𝼚",
+        "name": "卷舌化闭央不圆唇元音",
+        "insert": "𝼚"
+},
+{
         "slogan": "ᶙ",
         "name": "卷舌闭前圆唇元音",
         "insert": "ᶙ"
@@ -4021,6 +4026,11 @@
         "slogan": "ᶒ",
         "name": "卷舌半闭前不圆唇元音",
         "insert": "ᶒ"
+},
+{
+        "slogan": "𝼛",
+        "name": "卷舌化近闭后圆唇元音",
+        "insert": "𝼛"
 },
 {
         "slogan": "ɚ",
@@ -4061,6 +4071,16 @@
         "slogan": "ᶐ",
         "name": "卷舌开后不圆唇元音",
         "insert": "ᶐ"
+},
+{
+        "slogan": "ɉ",
+        "name": "闭央不圆唇近音",
+        "insert": "ɉ"
+},
+{
+        "slogan": "ȷ",
+        "name": "近闭近前不圆唇近音",
+        "insert": "ȷ"
 },
 {
         "slogan": "ȶ",
@@ -4133,6 +4153,16 @@
         "insert": "ʥ"
 },
 {
+        "slogan": "ꭧ",
+        "name": "清卷舌塞擦音合字",
+        "insert": "ꭧ"
+},
+{
+        "slogan": "ꭦ",
+        "name": "浊卷舌塞擦音合字",
+        "insert": "ꭦ"
+},
+{
         "slogan": "ʪ",
         "name": "清边擦音-齿龈擦音协同合字",
         "insert": "ʪ"
@@ -4178,14 +4208,29 @@
         "insert": "ʇ"
 },
 {
+        "slogan": "𝼍",
+        "name": "卷舌化齿龈啧音",
+        "insert": "𝼍"
+},
+{
         "slogan": "ʗ",
         "name": "龈（后）啧音",
         "insert": "ʗ"
 },
 {
+        "slogan": "𝼏",
+        "name": "卷舌化龈后啧音",
+        "insert": "𝼏"
+},
+{
         "slogan": "ʖ",
         "name": "龈边啧音",
         "insert": "ʖ"
+},
+{
+        "slogan": "𝼎",
+        "name": "卷舌化龈边啧音",
+        "insert": "𝼎"
 },
 {
         "slogan": "ɫ",
@@ -4198,19 +4243,49 @@
         "insert": "ɼ"
 },
 {
+        "slogan": "𝼉",
+        "name": "卷舌化清唇齿擦音",
+        "insert": "𝼉"
+},
+{
         "slogan": "ᶑ",
         "name": "浊卷舌塞音",
         "insert": "ᶑ"
 },
 {
+        "slogan": "𝼝",
+        "name": "卷舌化清硬腭塞音",
+        "insert": "𝼝"
+},
+{
         "slogan": "ᶘ",
-        "name": "带卷舌钩清龈后擦音",
+        "name": "卷舌化清龈后擦音",
         "insert": "ᶘ"
 },
 {
         "slogan": "ᶚ",
-        "name": "带卷舌钩浊龈后擦音",
+        "name": "卷舌化浊龈后擦音",
         "insert": "ᶚ"
+},
+{
+        "slogan": "𝼙",
+        "name": "卷舌化浊龈后塞擦音",
+        "insert": "𝼙"
+},
+{
+        "slogan": "𝼜",
+        "name": "卷舌化清龈后塞擦音",
+        "insert": "𝼜"
+},
+{
+        "slogan": "𝼅",
+        "name": "卷舌化浊龈后边擦音",
+        "insert": "𝼅"
+},
+{
+        "slogan": "𝼈",
+        "name": "浊卷舌近音",
+        "insert": "𝼈"
 },
 {
         "slogan": "ꞎ",
@@ -4273,14 +4348,44 @@
         "insert": "ᶉ"
 },
 {
+        "slogan": "𝼕",
+        "name": "腭化齿龈近音",
+        "insert": "𝼕"
+},
+{
+        "slogan": "𝼖",
+        "name": "腭化齿龈闪音",
+        "insert": "𝼖"
+},
+{
         "slogan": "ᶅ",
         "name": "腭化齿龈边音",
         "insert": "ᶅ"
 },
 {
+        "slogan": "𝼓",
+        "name": "腭化清齿龈边擦音",
+        "insert": "𝼓"
+},
+{
         "slogan": "ᶋ",
         "name": "腭化清龈后擦音",
         "insert": "ᶋ"
+},
+{
+        "slogan": "𝼘",
+        "name": "腭化浊龈后擦音",
+        "insert": "𝼘"
+},
+{
+        "slogan": "𝼒",
+        "name": "腭化浊龈后塞擦音",
+        "insert": "𝼒"
+},
+{
+        "slogan": "𝼗",
+        "name": "腭化清龈后塞擦音",
+        "insert": "𝼗"
 },
 {
         "slogan": "ᶃ",
@@ -4296,6 +4401,11 @@
         "slogan": "ᶍ",
         "name": "腭化清软腭擦音",
         "insert": "ᶍ"
+},
+{
+        "slogan": "𝼔",
+        "name": "腭化软腭鼻音",
+        "insert": "𝼔"
 },
 {
         "slogan": "ᵬ",
@@ -4358,24 +4468,49 @@
         "insert": "ᵳ"
 },
 {
-        "slogan": "ʩ",
-        "name": "腭咽颤音",
-        "insert": "ʩ"
-},
-{
-        "slogan": "",
+        "slogan": "ꞯ",
         "name": "清腭咽塞音",
-        "insert": ""
+        "insert": "ꞯ"
 },
 {
-        "slogan": "",
+        "slogan": "𝼂",
         "name": "浊腭咽塞音",
-        "insert": ""
+        "insert": "𝼂"
 },
 {
         "slogan": "я",
         "name": "浊会厌颤音",
         "insert": "я"
+},
+{
+        "slogan": "𝼆",
+        "name": "清硬腭边擦音",
+        "insert": "𝼆"
+},
+{
+        "slogan": "ᴌ",
+        "name": "清软腭边擦音",
+        "insert": "ᴌ"
+},
+{
+        "slogan": "𝼄",
+        "name": "清软腭边擦音",
+        "insert": "𝼄"
+},
+{
+        "slogan": "𝼞",
+        "name": "清硬腭擦音",
+        "insert": "𝼞"
+},
+{
+        "slogan": "ʩ",
+        "name": "腭咽擦音",
+        "insert": "ʩ"
+},
+{
+        "slogan": "𝼀",
+        "name": "腭咽颤音",
+        "insert": "𝼀"
 },
 {
         "slogan": "ʬ",
@@ -4403,24 +4538,314 @@
         "insert": "!¡"
 },
 {
-        "slogan": "ᴌ",
-        "name": "清软腭边擦音",
-        "insert": "ᴌ"
+        "slogan": "◌͇",
+        "name": "龈化",
+        "insert": "͇"
 },
 {
-        "slogan": "",
-        "name": "清软腭边擦音",
-        "insert": ""
+        "slogan": "◌͆",
+        "name": "下齿化",
+        "insert": "͆"
 },
 {
-        "slogan": "ɉ",
-        "name": "ɉ",
-        "insert": "ɉ"
+        "slogan": "◌̪",
+        "name": "上齿化",
+        "insert": "̪"
 },
 {
-        "slogan": "ȷ",
-        "name": "ȷ",
-        "insert": "ȷ"
+        "slogan": "◌̪͆",
+        "name": "双齿化",
+        "insert": "̪͆"
+},
+{
+        "slogan": "◌͍",
+        "name": "展唇化",
+        "insert": "͍"
+},
+{
+        "slogan": "◌͊",
+        "name": "去鼻化",
+        "insert": "͊"
+},
+{
+        "slogan": "◌͊᪻",
+        "name": "部分去鼻化",
+        "insert": "͊᪻"
+},
+{
+        "slogan": "◌͔",
+        "name": "主音姿右偏",
+        "insert": "͔"
+},
+{
+        "slogan": "◌͕",
+        "name": "主音姿左偏",
+        "insert": "͕"
+},
+{
+        "slogan": "◌͈",
+        "name": "强发音",
+        "insert": "͈"
+},
+{
+        "slogan": "◌͉",
+        "name": "弱发音",
+        "insert": "͉"
+},
+{
+        "slogan": "◌͋",
+        "name": "鼻擦化",
+        "insert": "͋"
+},
+{
+        "slogan": "◌̾",
+        "name": "鼻擦化",
+        "insert": "̾"
+},
+{
+        "slogan": "◌͌",
+        "name": "咽腭擦化",
+        "insert": "͌"
+},
+{
+        "slogan": "◌𐞐",
+        "name": "咽腭擦化",
+        "insert": "𐞐"
+},
+{
+        "slogan": "◌͎",
+        "name": "哨音",
+        "insert": "͎"
+},
+{
+        "slogan": "\\",
+        "name": "重复",
+        "insert": "\\"
+},
+{
+        "slogan": "↓",
+        "name": "吸气",
+        "insert": "↓"
+},
+{
+        "slogan": "◌͢◌",
+        "name": "滑动发音",
+        "insert": "͢"
+},
+{
+        "slogan": "⃝",
+        "name": "不确定音素",
+        "insert": "⃝"
+},
+{
+        "slogan": "Ⓒ",
+        "name": "不确定辅音",
+        "insert": "Ⓒ"
+},
+{
+        "slogan": "Ȼ⃝",
+        "name": "不确定阻音",
+        "insert": "Ȼ⃝"
+},
+{
+        "slogan": "Ⓥ",
+        "name": "不确定元音",
+        "insert": "Ⓥ"
+},
+{
+        "slogan": "Ṽ⃝",
+        "name": "不确定鼻化元音",
+        "insert": "Ṽ⃝"
+},
+{
+        "slogan": "Ⓕ",
+        "name": "不确定擦音",
+        "insert": "Ⓕ"
+},
+{
+        "slogan": "Ⓟ",
+        "name": "不确定爆破音",
+        "insert": "Ⓟ"
+},
+{
+        "slogan": "Ⓖ",
+        "name": "不确定滑音",
+        "insert": "Ⓖ"
+},
+{
+        "slogan": "Ⓛ",
+        "name": "不确定流音",
+        "insert": "Ⓛ"
+},
+{
+        "slogan": "Ⓝ",
+        "name": "不确定鼻音",
+        "insert": "Ⓝ"
+},
+{
+        "slogan": "Ⓡ",
+        "name": "不确定r类音",
+        "insert": "Ⓡ"
+},
+{
+        "slogan": "Ⓢ",
+        "name": "不确定咝音",
+        "insert": "Ⓢ"
+},
+{
+        "slogan": "Ⓣ",
+        "name": "不确定声带/词重音",
+        "insert": "Ⓣ"
+},
+{
+        "slogan": "Ʞ⃝",
+        "name": "不确定啧音",
+        "insert": "Ʞ⃝"
+},
+{
+        "slogan": "σ⃝",
+        "name": "不确定音节",
+        "insert": "σ⃝"
+},
+{
+        "slogan": "̬◌",
+        "name": "前带声",
+        "insert": "̬"
+},
+{
+        "slogan": "◌̬",
+        "name": "后带声",
+        "insert": "̬"
+},
+{
+        "slogan": "◌˷",
+        "name": "后嘎裂",
+        "insert": "˷"
+},
+{
+        "slogan": "◌̥᪽",
+        "name": "部分不带声",
+        "insert": "̥᪽"
+},
+{
+        "slogan": "◌̥᫃",
+        "name": "头部不带声",
+        "insert": "̥᫃"
+},
+{
+        "slogan": "◌̥᫄",
+        "name": "尾部不带声",
+        "insert": "̥᫄"
+},
+{
+        "slogan": "◌̬᪽",
+        "name": "部分带声",
+        "insert": "̬᪽"
+},
+{
+        "slogan": "◌̬᫃",
+        "name": "头部带声",
+        "insert": "̬᫃"
+},
+{
+        "slogan": "◌̬᫄",
+        "name": "尾部带声",
+        "insert": "̬᫄"
+},
+{
+        "slogan": "◌̊᪻",
+        "name": "上标部分不带声",
+        "insert": "̊᪻"
+},
+{
+        "slogan": "◌̊᫁",
+        "name": "上标头部不带声",
+        "insert": "̊᫁"
+},
+{
+        "slogan": "◌̊᫂",
+        "name": "上标尾部不带声",
+        "insert": "̊᫂"
+},
+{
+        "slogan": "◌̌᪻",
+        "name": "上标部分带声",
+        "insert": "̌᪻"
+},
+{
+        "slogan": "◌̌᫁",
+        "name": "上标头部带声",
+        "insert": "̌᫁"
+},
+{
+        "slogan": "◌̌᫂",
+        "name": "上标尾部带声",
+        "insert": "̌᫂"
+},
+{
+        "slogan": "◌˭",
+        "name": "不送气",
+        "insert": "˭"
+},
+{
+        "slogan": "ͪ◌",
+        "name": "预送气",
+        "insert": "ͪ"
+},
+{
+        "slogan": "◌ʰʰ",
+        "name": "长送气",
+        "insert": "ʰʰ"
+},
+{
+        "slogan": "◌ʰ𐞁",
+        "name": "长送气",
+        "insert": "ʰ𐞁"
+},
+{
+        "slogan": "◌̺",
+        "name": "舌尖性",
+        "insert": "̺"
+},
+{
+        "slogan": "◌̈",
+        "name": "舌面隆起",
+        "insert": "̈"
+},
+{
+        "slogan": "◌̻",
+        "name": "舌叶性",
+        "insert": "̻"
+},
+{
+        "slogan": "◌𐞜",
+        "name": "清边擦音除阻",
+        "insert": "𐞜"
+},
+{
+        "slogan": "◌𐞞",
+        "name": "浊边擦音除阻",
+        "insert": "𐞞"
+},
+{
+        "slogan": "◌̫",
+        "name": "舌唇",
+        "insert": "̫"
+},
+{
+        "slogan": "𝼃",
+        "name": "清软腭-舌面塞音",
+        "insert": "𝼃"
+},
+{
+        "slogan": "𝼁",
+        "name": "浊软腭-舌面塞音",
+        "insert": "𝼁"
+},
+{
+        "slogan": "𝼇",
+        "name": "软腭-舌面鼻音",
+        "insert": "𝼇"
 },
 {
         "slogan": "ᴝ",
@@ -4428,13 +4853,8 @@
         "insert": "ᴝ"
 },
 {
-        "slogan": "ᵙ",
-        "name": "ᵙ",
-        "insert": "ᵙ"
-},
-{
         "slogan": "ᴃ",
-        "name": "ᴃ",
+        "name": "双唇内爆音",
         "insert": "ᴃ"
 },
 {
@@ -4589,9 +5009,9 @@
         "insert": "̣‼"
 },
 {
-        "slogan": "V^Ꜳ",
+        "slogan": "V𐞀",
         "name": "杓状会厌襞性发声",
-        "insert": "^Ꜳ"
+        "insert": "𐞀"
 },
 {
         "slogan": "ꟿ",
