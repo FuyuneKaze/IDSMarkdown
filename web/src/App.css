@@ -905,7 +905,8 @@
 .sym-cell:hover { border-color: var(--accent, rgb(128, 0, 21)); }
 .sym-glyph {
   display: flex; align-items: center; justify-content: center;
-  min-height: 34px; padding: 2px 1px; font-size: 18px; line-height: 1.1;
+  min-height: 34px; padding: 2px 1px; font-family: var(--font-symbol);
+  font-size: 18px; line-height: 1.1;
 }
 .sym-name {
   display: block; width: 100%; padding: 1px 1px;
@@ -920,4 +921,25 @@
   .sym-grid { grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); gap: 4px; }
   .sym-glyph { min-height: 40px; font-size: 22px; }
   .sym-name { font-size: 10px; }
+}
+
+/* ===== IPA Sans (用户自制: DejaVu Sans 改版, 扩展了 IPA 字形与 OpenType 特性) =====
+   许可: Bitstream Vera License (+ Arev / Tavmjong Bah 部分)
+   → 必须随附版权声明与许可全文: web/public/fonts/IPASans-LICENSE.txt
+   → 修改版不得使用 Bitstream / Vera / Arev / Tavmjong Bah 命名（本字体已改名 IPA Sans） */
+@font-face {
+  font-family: "IPA Sans";
+  src: url("/fonts/IPASans-Regular.woff2") format("woff2"),
+       url("/fonts/IPASans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 符号显示字体栈: IPA Sans 优先, 其余是各平台/语言学字体兜底 (按字符逐个回退) */
+:root {
+  --font-symbol: "IPA Sans", "Gentium Plus", "Charis SIL",
+                 "Noto Sans Symbols 2", "Noto Sans Symbols",
+                 "Apple Symbols", "Segoe UI Symbol", "DejaVu Sans",
+                 "Noto Sans", "Noto Sans SC", sans-serif;
 }

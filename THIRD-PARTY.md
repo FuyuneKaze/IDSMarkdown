@@ -24,6 +24,7 @@
 | 字体 | 用途 | 状态 |
 | --- | --- | --- |
 | MetaHan Myungjo (`mthmyung.ttf`) | 古谚文显示 | ⚠️ 来源 <http://ko.cheonhyeong.com/fonts/mthmyung.ttf>，许可未核实 → **不入库** |
+| **IPA Sans** (`web/public/fonts/IPASans-Regular.woff2/.woff`) | IPA 与扩展 IPA 符号显示 | **Bitstream Vera License**（含 Tavmjong Bah / Arev 部分） | DejaVu Sans 2.038 改版并扩展（新增 Ʞ ꭥ、U+20DD 圈与 OpenType 特性、括号 mkmk、软腭化附标定位）。**义务**：随附版权声明与许可全文（`IPASans-LICENSE.txt`）；修改版不得用 Bitstream/Vera/Arev/Tavmjong Bah 命名；不得单独售卖字体 |
 | Noto Serif Tangut | 西夏文 | OFL 1.1 → 可分发（需附 `OFL.txt`，不得改字体名） |
 | 說文小篆（Unicode 字表字形） | 小篆显示 | 属 Unicode 数据/字形，体积大 → **不入库** |
 

@@ -25,7 +25,13 @@ dist-ssr
 
 # 大文件 / 数据 (不入 git; 体积过大, 且可由 dump 重新生成)
 public/core_glyphs.json
-public/fonts/
+# 字体: 大体积 ttf 不入库, 只放行符号面板/IDS 用的 webfont
+public/fonts/*
+!public/fonts/ids-symbols.woff2
+!public/fonts/ids-symbols.woff
+!public/fonts/IPASans-Regular.woff2
+!public/fonts/IPASans-Regular.woff
+!public/fonts/IPASans-LICENSE.txt
 public/ids_lv*.txt
 
 # Python 缓存 (preview 工具)
