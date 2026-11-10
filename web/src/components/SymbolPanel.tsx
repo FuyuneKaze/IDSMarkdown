@@ -73,7 +73,8 @@ export default function SymbolPanel({ onInsert }: { onInsert: (text: string) => 
                       title={it.name || it.slogan}
                       onClick={() => onInsert(it.insert)}
                     >
-                      <span className="sym-glyph">{it.slogan}</span>
+                      {/* lang="en": 这些串只有 Common/Inherited 字符，浏览器按文档 lang(zh-CN) 推定 script=Hans 会丢掉 mark/mkmk */}
+                      <span className="sym-glyph" lang="en">{it.slogan}</span>
                       <span className="sym-name">{it.name}</span>
                     </button>
                   ))}

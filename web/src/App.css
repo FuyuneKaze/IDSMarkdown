@@ -187,7 +187,7 @@
   min-height: 100%;
   padding: 32px 48px;
   outline: none;
-  font-family: "IDS Symbols", 'Times New Roman',IDSGlyphFont, 'Noto Serif Tangut', 'Noto Serif SC', 'Noto Serif JP', 'MetaHan Myungjo', 'Malgun Gothic', 'OEOEBM+CMEXShuowenSeal', '宋体', serif;
+  font-family: "IDS Symbols", "IPA Serif", 'Times New Roman',IDSGlyphFont, 'Noto Serif Tangut', 'Noto Serif SC', 'Noto Serif JP', 'MetaHan Myungjo', 'Malgun Gothic', 'OEOEBM+CMEXShuowenSeal', '宋体', serif;
   font-size: 18px;
   line-height: 1.8;
   color: var(--text-primary);
@@ -938,8 +938,20 @@
 
 /* 符号显示字体栈: IPA Sans 优先, 其余是各平台/语言学字体兜底 (按字符逐个回退) */
 :root {
-  --font-symbol: "IPA Sans", "Gentium Plus", "Charis SIL",
+  --font-symbol: "IPA Sans", "IPA Serif", "Gentium Plus", "Charis SIL",
                  "Noto Sans Symbols 2", "Noto Sans Symbols",
                  "Apple Symbols", "Segoe UI Symbol", "DejaVu Sans",
                  "Noto Sans", "Noto Sans SC", sans-serif;
 }
+
+/* ===== IPA Serif (用户自制: 以 Gentium Plus 为底的衬线版, 同 IPASans 的扩展特性) =====
+   许可: SIL Open Font License 1.1 (Gentium, 保留字体名 "Gentium"/"SIL") */
+@font-face {
+  font-family: "IPA Serif";
+  src: url("/fonts/IPASerif-Regular.woff2") format("woff2"),
+       url("/fonts/IPASerif-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+

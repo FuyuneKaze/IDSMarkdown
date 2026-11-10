@@ -32,6 +32,8 @@ public/fonts/*
 !public/fonts/IPASans-Regular.woff2
 !public/fonts/IPASans-Regular.woff
 !public/fonts/IPASans-LICENSE.txt
+!public/fonts/IPASerif-Regular.woff2
+!public/fonts/IPASerif-Regular.woff
 public/ids_lv*.txt
 
 # Python 缓存 (preview 工具)
